@@ -1,0 +1,65 @@
+Team 33 / Paper ID 44: v2 implementation and evidence scope
+Date: 2026-10-22
+
+Implementation
+The periodic Top-1 donor screen is in poet-reproduction/isaaclab_port/core.py.
+The default is periodic_transfer_mode="full". topk with transfer_top_k=1 only screens which donors get a one-step adaptation; all direct transfer candidates can still be accepted.
+Donors are frozen at the start of the event, and replacements are committed together after all targets are compared; the strict-improvement rule for the target itself, direct candidates, and adapted candidates is kept.
+Regular ES, child environment initialization, minimal criterion, novelty, and FIFO semantics are unchanged by screening.
+Compatibility with old checkpoint JSON and the physical task fingerprint are separate checks; old sidecars are not edited to bypass validation.
+42 core tests pass, and 8 new experiment record/aggregation tests pass. Test logs are saved in output/.
+
+Three kinds of evidence, used separately
+1. paper_comparisons.json / .txt: original paper results with source pages, from the original Box2D task.
+2. mechanism_comparison.json: single transfer events on two analytic objective families, three seeds, three modes.
+   Full / Top-1 use 792 / 272 policy evaluations per event, 65.66% fewer; this is not a robot training or wall-clock speedup.
+   The two-peak counterexample shows direct score and adaptation potential can rank differently, so Top-1 can miss a better adaptation candidate.
+3. physics_comparison.json: nine actual Isaac Lab physics training runs with a frozen test set.
+   Aggregated only from experiments/selected_main/. comparison_runs and groups use the common checkpoint; runs keeps each condition's full end point.
+   matched_checkpoint_iteration gives the actual common round; the planned 20 rounds must not be written as 20 completed rounds.
+   Completeness, completed rounds, returns, and compute are taken from the aggregate JSON and independent_physics_audit.json.
+
+Actual physics protocol
+Requested environment: ~/env_isaaclab. Installed: Isaac Lab 3 Beta 2, source commit ffff603eafc6b74264a5261cc0183d6a65390d78.
+The main matrix uses Newton / Featherstone on CPU throughout, 16 substeps, 4 parallel worlds, 60 Hz control, at most 600 steps per episode.
+Four fixed training tasks (flat, rough, stump, gap), one policy each; no environment mutation or reproduction.
+Three seeds: 24582922, 24582923, 24582924; Full / Top-1 / No transfer.
+Initial policies and initial physics test results for the same seed across methods were verified item by item to match.
+Each policy uses 4 ES perturbation pairs per optimization; periodic transfer is attempted after rounds 5, 10, 15, and 20, with none at round 0.
+Each condition is planned for 20 rounds with a 900-second soft time limit; the main comparison uses the largest checkpoint saved by all nine conditions.
+The actual geometry hashes of the four frozen test terrains differ from the training terrains. Each terrain tests all four current policies, with no test-time adaptation.
+The test metric takes the best policy return on each terrain and averages across terrains. This includes test-time oracle selection and is not single-policy generalization.
+Training and test world steps are counted separately; world steps include padded parallel lanes. Equal rounds are not equal compute.
+Start at x=2 m, initial flat ground to x=4 m, goal at x=30 m, which must be reached without falling. 600 steps is only 10 seconds, so reaching the goal needs an average of at least 2.8 m/s.
+
+Run records and retries
+Six earlier attempts were interrupted with exit code 143 (consistent with SIGTERM; cause undetermined). The original files were not deleted.
+All six were rerun with the same parameters in new directories; the replacements were written to selection_manifest.json before launch, not chosen by performance.
+Reported totals cover only the nine selected complete runs; the cost of evaluations unreturned at interruption cannot be reconstructed exactly, so the totals are not whole-project compute.
+The handoff package keeps both completed and interrupted records. Recomputation reads only selected_main, to avoid double counting.
+
+Actual replay
+The selection rule for physics_replay.json was fixed in advance: Full, seed 24582922, policy 0, heldout rough_low, common checkpoint.
+It records actual link poses at each control step, reconstructed in 2D in the video; it is neither an Isaac Lab window recording nor an illustrative walking trajectory.
+It is recorded up to the first episode termination, keeping the pre-reset position. Return, length, success, and position were each checked against the production Evaluator replay and the original four-world test.
+physics_replay_pilot_validation.json only validates the recording interface in a pilot and is not used for the main result visual.
+
+Boundaries
+The GPU smoke test actually passed, recorded in gpu_smoke_summary.json and gpu_smoke_fingerprint.json; the main matrix did not switch to GPU.
+The target GA dependency set has not been upgraded or validated; do not write Beta 2 results as latest GA results.
+This is a small-budget, fixed-task physics comparison, not a complete open-ended POET reproduction; it makes no claim that Top-1 is generally better.
+Return, farthest position, and reaching the goal are different metrics; an improved negative return must not be written as having learned stable walking or obstacle-crossing generalization.
+The course Project note does not require physical robot experiments. This project uses physics engine simulation, with no hardware experiments.
+
+Original version retained (as of this date)
+presentation/ was kept unchanged; original_checksums.json verified 127 old files item by item.
+The new video, PDF, bilingual script, source, and experiment records were all in presentation_v2/, later merged.
+
+Final main comparison (common round 5)
+- Mean test oracle return for Full / Top-1 / No transfer: -73.5999 / -74.8555 / -74.8981.
+- Cumulative training world steps across 3 seeds: 220,160 / 160,496 / 135,440; Top-1 uses 27.10% fewer than Full.
+- Of 36 "method × seed × test task" combinations, 0 have a policy reaching the goal; none of 144 current-policy test trajectories reached the goal.
+- The farthest x across all test trajectories is 3.731159 m, still short of the x=4 m edge of the initial flat ground.
+- Differences are mainly seed-driven; this data cannot show that screening preserves full transfer's learning quality.
+- Actual terminal rounds by seed 24582922/23/24: Full=15/10/9; Top-1=20/15/9; No transfer=15/14/10.
+- The nine selected complete runs total 1,133,724 training world steps and 96,088 test world steps, excluding incomplete records of interrupted attempts.

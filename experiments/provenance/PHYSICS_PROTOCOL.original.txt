@@ -1,0 +1,89 @@
+Actual CPU physics protocol — separate v2 experiment
+
+Scope: four fixed, predeclared tasks and four independently initialized policies.
+No mutation, reproduction, novelty selection or retirement. This is a controlled
+test of optimization and periodic transfer, not full open-ended POET evolution.
+The production POET.optimize, POET.transfer and Evaluator are used unchanged.
+
+Commands (run from /home/tz61/Gatech/8803DRL):
+~/env_isaaclab/bin/python presentation_v2/experiments/run_physics_comparison.py --pilot --output presentation_v2/experiments/pilot_001
+~/env_isaaclab/bin/python presentation_v2/experiments/run_physics_comparison.py --output presentation_v2/experiments/main_001
+The second command runs three seeds x three modes sequentially. To schedule one
+seed per process, pass --seeds 24582922 (or 24582923 / 24582924) and unique output.
+Outputs must be new or empty. Never rerun into an existing evidence directory.
+
+Default actual simulator settings:
+Installed IsaacLab environment (version recorded, currently local beta), CPU,
+Featherstone, 16 solver substeps, 4 parallel worlds, 4 antithetic ES pairs,
+600-control-step horizon (10 seconds), at most20 optimization iterations.
+The default train-world-step limit is30000, checked between complete iterations.
+The default wall limit is180 seconds, also checked between complete iterations.
+Wall includes initialization, task rebuilds and evaluation; world counts do not
+include setup. Limits may be exceeded by one iteration and final evaluation.
+Actual train/eval world steps and overshoot are saved; do not claim equal work.
+
+Per seed, modes full/topk/no_transfer use identical starting parameter matrices.
+The four rows are independent Gaussian random policies; their shared matrix hash
+is recorded. Each mode naturally consumes a different later RNG sequence.
+Transfer occurs AFTER completed iterations5,10,15,20, never at iteration0.
+This explicit schedule is common across modes and differs from core.step's
+iteration-zero convention. No_transfer has no transfer events.
+
+Training task parameters (roughness, stump height, gap width, seed):
+(0,0,0,910001); (.06,0,0,910002); (0,.1,0,910003); (0,0,.4,910004).
+Shared evaluation set: rough_low, stump_low, gap_mid, mixed_low from the frozen
+original bank. Their realized tile profiles are saved before execution and
+checked geometrically disjoint from these four training profiles.
+This narrow bank is not a representative random sample of all possible tasks.
+
+At initial state and iterations5/10/15/20 (plus final early-stop iteration), save
+a complete core checkpoint and evaluate every CURRENT policy on all four test
+tasks, with no adaptation. Initial train scores are obtained by actual rollout.
+Evaluation does not consume the core algorithm RNG or update its optimizer.
+Best-of-library return chooses the maximum after testing all four policies:
+it is an oracle coverage metric, not a deployed selector or universal policy.
+Success means x>=30m without falling, not the original paper's230-score rule.
+Record every policy's return, success, length, terminal x and maximum x.
+The x tracker samples before same-step reset and stops updating after first done.
+The course begins with a flat margin to x=4m; max_x below4 means the robot never
+reached nonflat terrain, even though its privileged preview can observe it.
+
+Files per condition:
+settings.json; task_fingerprint.json; events.jsonl; evaluations.jsonl;
+progress.jsonl; checkpoint_NNN.json; evaluation_NNN.json; summary.json.
+At batch root: environment.json; protocol.json; comparison.json (including errors).
+Training and evaluation costs are separate. Raw evaluator calls include every
+candidate, and world counts include padded/finished lanes still being stepped.
+
+Eight pure analytical protocol/aggregation tests verify initialization pairing,
+no heldout learning, transfer timing/cost, budget overshoot, raw accounting,
+checkpoint identity, and selection of common saved iterations. They do not prove physical
+performance. Existing source/asset files and all presentation v1 artifacts are
+unchanged by this runner. Pilot2 iterations measures runtime but cannot exercise
+the first transfer; compare modes only after confirming at least5 iterations.
+
+Selected main matrix and reporting:
+The nine canonical condition directories are linked in experiments/selected_main.
+selection_manifest.json records their selection independently of observed outcomes.
+Main runs use at most 20 iterations, no world-step target, and a soft 900-second
+wall limit checked between iterations. This is not an equal-compute experiment.
+Aggregate only selected_main, never mix it with pilot or duplicate chain runs:
+  ~/env_isaaclab/bin/python presentation_v2/experiments/aggregate_physics_results.py \
+    --inputs presentation_v2/experiments/selected_main \
+    --output presentation_v2/evidence/physics_comparison.json
+Only once all nine conditions have completed, the primary comparison uses the
+greatest actual saved iteration present in all nine checkpoint sets, at least 5.
+comparison_runs and groups use this common iteration; runs and totals retain all
+terminal results and recorded work of the selected completed attempts. Failed
+execution attempts remain separate and are not included in those totals; work
+inside a terminated evaluator call cannot be reconstructed exactly from the log.
+Legacy group field names beginning final_
+therefore mean the final COMMON checkpoint, not each run's terminal checkpoint.
+Group max_recorded_x_by_seed is the maximum from the 16 complete heldout cases
+at the common checkpoint. Terminal runs.max_recorded_x includes recorded calls
+over the run but excludes multi-batch perturbation calls without x tracking.
+
+Final video replay is preselected as seed 24582922, mode full, current policy 0,
+heldout task 0 (rough_low), at the same common checkpoint. It is a reconstruction
+of genuine simulator body states, not a captured simulator viewport. The extractor
+checks the saved four-world heldout result and a fresh production evaluator call.

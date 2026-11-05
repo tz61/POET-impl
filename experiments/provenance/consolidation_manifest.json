@@ -1,0 +1,1649 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-22T22:43:41.309819+00:00",
+  "scope": "Materialized preservation of the nine predeclared completed physics conditions underlying current presentation evidence. No new training; no outcome selection.",
+  "source_root": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments",
+  "destination_root": "/home/tz61/Gatech/8803DRL/presentation/experiments",
+  "selected_conditions": [
+    {
+      "seed": 24582922,
+      "mode": "full",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/full_seed_24582922",
+      "materialized_condition": "selected_main/full_seed_24582922",
+      "summary_sha256": "ee8b2936dfaf314a0e06b9e232d2d9d0c8a91e5a9d79f0a321161de98854a11b",
+      "raw_evaluations_sha256": "85cea350ae9ebeee80f27fff2b7398886c387f53fb69b5fcfc41ea5e16882c61",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "fd828b07ef2522063faec63bb1abf0a2732368f9a9e7f5e9e3e6018ebd82db55",
+      "terminal_iteration": 15,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582922,
+      "mode": "topk",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/topk_seed_24582922",
+      "materialized_condition": "selected_main/topk_seed_24582922",
+      "summary_sha256": "a329a1b3aab16c25971d732542bb0c2daba427281502d1df608e4989c2259450",
+      "raw_evaluations_sha256": "1479f85edfb5bcc9595f4e14aba4f4d40185b9206d2c9d39c464674d1185c608",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "9753833168a3afb3c7fb9718de97fe6d79409a01a4af8d62ca2dc9f77d8f7b71",
+      "terminal_iteration": 20,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582922,
+      "mode": "no_transfer",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/no_transfer_seed_24582922",
+      "materialized_condition": "selected_main/no_transfer_seed_24582922",
+      "summary_sha256": "072231cce1a387e1782f88d91027ee5eb0e85efdafbb4aa1ed8427233522410f",
+      "raw_evaluations_sha256": "c009cc428ae21bd616fa71a459b60469e4ec09889cd093f8f7492a7bea6d52f1",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "56365f1bb6f587d14b728fcf719dfd8af37a410d75e7d6088da3e48d37fd91fa",
+      "terminal_iteration": 15,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582923,
+      "mode": "full",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/full_seed_24582923",
+      "materialized_condition": "selected_main/full_seed_24582923",
+      "summary_sha256": "35634d046ed4885229d71fb2af09527bf38fb329c6125864b58bd67ffd5f3fc9",
+      "raw_evaluations_sha256": "384b8db00cb26dd1a3facf265d8f4309bd6a70c21368bf80d7ae51f50ec3faaf",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "2c8bf902def3cbc8fee329cdaca436e50154847bca8f24a866caa6a886566fa1",
+      "terminal_iteration": 10,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582923,
+      "mode": "topk",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/topk_seed_24582923",
+      "materialized_condition": "selected_main/topk_seed_24582923",
+      "summary_sha256": "38c0a9f18f35f7253706b9bf8bee45af63d73ae7a30b1e510d6a26ab8d7d00fc",
+      "raw_evaluations_sha256": "edd01fd5dad9a2ec8ab4616851a39adbf12d255d8d777188ec08b0825e001fe2",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "fa0fdd0a462e64c946051e8607120a133a22622f675e86276832725f6fbb2e2e",
+      "terminal_iteration": 15,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582923,
+      "mode": "no_transfer",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/no_transfer_seed_24582923",
+      "materialized_condition": "selected_main/no_transfer_seed_24582923",
+      "summary_sha256": "806dce688b743761843005a8768d68ad5ce9697fd47e0af94efb24080c66c2a0",
+      "raw_evaluations_sha256": "4bdfe5b5bd5ffaaf1be7e747621e207bb63dacefdbbf6c5820321df9a05f7783",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "faa39539e803dc8debd5d6db049144fb8e0967b8edeae9bc40911eb58bc75ace",
+      "terminal_iteration": 14,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582924,
+      "mode": "full",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/full_seed_24582924",
+      "materialized_condition": "selected_main/full_seed_24582924",
+      "summary_sha256": "085ab5750882f947f7a1f51db4db83b413db82738bb326cd0eb68432bcf5e73b",
+      "raw_evaluations_sha256": "fa2ee4d54ecf2912c0d69f695145c278d5614b2298741a61435b16463bd1407c",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "bb879b9ad77bb3d064f23a5ba2a6c614b9766fe64988d51a2e561f254eb6f73b",
+      "terminal_iteration": 9,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582924,
+      "mode": "topk",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/topk_seed_24582924",
+      "materialized_condition": "selected_main/topk_seed_24582924",
+      "summary_sha256": "5127fe49717ec51e407b40cecdde973c18fb09c87c77c52ec583b5d9f2648ee4",
+      "raw_evaluations_sha256": "ba721b164094785af4c1e006b9b76d95ce681f2724ca5846d8513336387c1acb",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "8c2a69277b6dd936ad8b170e0d5cad152a5fc4905295be41034380b8ca8e3ab9",
+      "terminal_iteration": 9,
+      "all_original_condition_files_byte_identical": true
+    },
+    {
+      "seed": 24582924,
+      "mode": "no_transfer",
+      "original_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924",
+      "original_selected_link": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/no_transfer_seed_24582924",
+      "materialized_condition": "selected_main/no_transfer_seed_24582924",
+      "summary_sha256": "469f834419df0332d5cb25daffb406bb65a0d60971ff286308dfcae729b2a960",
+      "raw_evaluations_sha256": "4e51ed74064053f8787f67566960fa8c3141eacbbd81543b17042edc3914c6b3",
+      "matched_checkpoint": "checkpoint_005.json",
+      "matched_checkpoint_sha256": "8af5b252f2feb9364f81afee99c1bb336038b0c010fb2583b3abda9f21e06071",
+      "terminal_iteration": 10,
+      "all_original_condition_files_byte_identical": true
+    }
+  ],
+  "matched_checkpoint_iteration": 5,
+  "frozen_evidence": {
+    "path": "../evidence/physics_comparison.json",
+    "sha256": "9e43fd80f873fe0e3a6ed80b1a2a00260d724536829ad945e0711604e1271ec3"
+  },
+  "heldout_bank_sha256": "84c13204027e52865be3d54e471d9aa019af30568bdfd3439676cf9b3e61c7d9",
+  "interrupted_prefixes": [
+    {
+      "mode": "full",
+      "seed": 24582922,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582922/full_seed_24582922",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922",
+      "declared_at": "2026-10-22T14:10:30.245556-04:00",
+      "retained_prefix": "main_seed_24582922/full_seed_24582922/evaluations.jsonl",
+      "retained_evaluator_calls": 64,
+      "raw_sha256": "0554e15d482f32773030904e4e0c59be2dfc310ae34423139f40752b55998285",
+      "retention_scope": "Only completed evaluator-call records retained for exact restart-prefix audit; unfinished-call work is not reconstructed. Other interrupted files are not needed for selected outcomes."
+    },
+    {
+      "mode": "full",
+      "seed": 24582923,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582923/full_seed_24582923",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923",
+      "declared_at": "2026-10-22T14:10:30.245625-04:00",
+      "retained_prefix": "main_seed_24582923/full_seed_24582923/evaluations.jsonl",
+      "retained_evaluator_calls": 80,
+      "raw_sha256": "3efa642682f4b5f99ce9c4981ef25e05dc57dbdfda6104964f7f2e731f98f9bd",
+      "retention_scope": "Only completed evaluator-call records retained for exact restart-prefix audit; unfinished-call work is not reconstructed. Other interrupted files are not needed for selected outcomes."
+    },
+    {
+      "mode": "full",
+      "seed": 24582924,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582924/full_seed_24582924",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924",
+      "declared_at": "2026-10-22T14:10:30.245668-04:00",
+      "retained_prefix": "main_seed_24582924/full_seed_24582924/evaluations.jsonl",
+      "retained_evaluator_calls": 48,
+      "raw_sha256": "0a2a8a1581e14d7002a3c0a7073d675d280105c15e5f94e4ed7d7b0a87e5357f",
+      "retention_scope": "Only completed evaluator-call records retained for exact restart-prefix audit; unfinished-call work is not reconstructed. Other interrupted files are not needed for selected outcomes."
+    },
+    {
+      "mode": "no_transfer",
+      "seed": 24582922,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582922/no_transfer_seed_24582922",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922",
+      "declared_at": "2026-10-22T14:10:30.245711-04:00",
+      "retained_prefix": "parallel_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluations.jsonl",
+      "retained_evaluator_calls": 33,
+      "raw_sha256": "02c5fafd2ed679cb5376bf5b3415423dd21f41dc94a18fcc1bef80bf817d045e",
+      "retention_scope": "Only completed evaluator-call records retained for exact restart-prefix audit; unfinished-call work is not reconstructed. Other interrupted files are not needed for selected outcomes."
+    },
+    {
+      "mode": "no_transfer",
+      "seed": 24582923,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582923/no_transfer_seed_24582923",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923",
+      "declared_at": "2026-10-22T14:10:30.245751-04:00",
+      "retained_prefix": "parallel_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluations.jsonl",
+      "retained_evaluator_calls": 38,
+      "raw_sha256": "79fad2a545c465cb632fc9023f36ecf0f4d1317c15cd0d67a4ff7f6d9a5add44",
+      "retention_scope": "Only completed evaluator-call records retained for exact restart-prefix audit; unfinished-call work is not reconstructed. Other interrupted files are not needed for selected outcomes."
+    },
+    {
+      "mode": "topk",
+      "seed": 24582923,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582923/topk_seed_24582923",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923",
+      "declared_at": "2026-10-22T14:10:30.245792-04:00",
+      "retained_prefix": "parallel_topk_seed_24582923/topk_seed_24582923/evaluations.jsonl",
+      "retained_evaluator_calls": 40,
+      "raw_sha256": "c18a8f1d22cc9addae674721362c79fa3a2f0a541f72070b09cd1ca85e1fffe2",
+      "retention_scope": "Only completed evaluator-call records retained for exact restart-prefix audit; unfinished-call work is not reconstructed. Other interrupted files are not needed for selected outcomes."
+    }
+  ],
+  "omitted": "Pilot runs and all unselected/interrupted checkpoints are omitted; six interrupted raw evaluator prefixes retained solely for strict replacement audit. Completed selected runs include all their saved checkpoints and raw calls.",
+  "dependencies": {
+    "production_source_project": "/home/tz61/Gatech/8803DRL/poet-reproduction",
+    "simulation_python": "/home/tz61/env_isaaclab/bin/python",
+    "old_presentation_directories_required": false
+  },
+  "copied_file_count": 178,
+  "copied_bytes": 27743438,
+  "files": [
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/protocol.json",
+      "destination": "selected_main/protocol.json",
+      "sha256": "de4fb1f60d7ebea95f6e953ef1e4211bbe181701b183398b067e1d5b573c7ddd",
+      "bytes": 13784,
+      "role": "original_predeclared_selection_or_shared_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/environment.json",
+      "destination": "selected_main/environment.json",
+      "sha256": "dbe73efd51815057d8617d24e29ae299aac49850720340272858d2a3080aab02",
+      "bytes": 1068,
+      "role": "original_predeclared_selection_or_shared_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/selection_manifest.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/selected_main/selection_manifest.json",
+      "destination": "selected_main/selection_manifest.json",
+      "sha256": "c3d98d55590da6e8059787e286e491fd5c81e4467605544f4784a84483462a95",
+      "bytes": 6751,
+      "role": "original_predeclared_selection_or_shared_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_000.json",
+      "destination": "selected_main/full_seed_24582922/checkpoint_000.json",
+      "sha256": "ced21637d0e7ab3944186e211fe49ad27a329fbbe1f5e23452412b443932c24b",
+      "bytes": 599933,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_005.json",
+      "destination": "selected_main/full_seed_24582922/checkpoint_005.json",
+      "sha256": "fd828b07ef2522063faec63bb1abf0a2732368f9a9e7f5e9e3e6018ebd82db55",
+      "bytes": 689791,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_010.json",
+      "destination": "selected_main/full_seed_24582922/checkpoint_010.json",
+      "sha256": "d00afa3f32f158c66b7417a4b964fbdf09caa56cef85c938db3134465a6c7b03",
+      "bytes": 690289,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/checkpoint_015.json",
+      "destination": "selected_main/full_seed_24582922/checkpoint_015.json",
+      "sha256": "cb4b2b103f9ea7182a98b13c68b7a691faf5bc33b3b044869c596d3d5be77a84",
+      "bytes": 598952,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_000.json",
+      "destination": "selected_main/full_seed_24582922/evaluation_000.json",
+      "sha256": "763d5db13bc7a6a2e6a9085e114ec80156878d51b56d6067fd26b27886bc6269",
+      "bytes": 4729,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_005.json",
+      "destination": "selected_main/full_seed_24582922/evaluation_005.json",
+      "sha256": "0fe7121bbf4dcf40123cae8b8dd17bc3b892109427464221b4fba11d2ef47d34",
+      "bytes": 4788,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_010.json",
+      "destination": "selected_main/full_seed_24582922/evaluation_010.json",
+      "sha256": "26198afec4112ab5a02b9afc172d1ac8039e390dab9910588dcb2fb42a2de1b0",
+      "bytes": 4799,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluation_015.json",
+      "destination": "selected_main/full_seed_24582922/evaluation_015.json",
+      "sha256": "78c7a2d92014b375806b4b88042626b8c45afeec7a0b1dfbf410aeaa7283a16c",
+      "bytes": 4793,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/evaluations.jsonl",
+      "destination": "selected_main/full_seed_24582922/evaluations.jsonl",
+      "sha256": "85cea350ae9ebeee80f27fff2b7398886c387f53fb69b5fcfc41ea5e16882c61",
+      "bytes": 137117,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/events.jsonl",
+      "destination": "selected_main/full_seed_24582922/events.jsonl",
+      "sha256": "0f00cad2c317461f44724f8845c2a4b6f3779cedddf4d88ad236211cc6904843",
+      "bytes": 10531,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/progress.jsonl",
+      "destination": "selected_main/full_seed_24582922/progress.jsonl",
+      "sha256": "959a8111eb50bd4f39b837b2f405086c34c70ac781630961c14ac779b69a1fe4",
+      "bytes": 8007,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/settings.json",
+      "destination": "selected_main/full_seed_24582922/settings.json",
+      "sha256": "7da96408b45fab6bd2d02cd21b49fb5b0c8729449b97e766961c1205fd178671",
+      "bytes": 789,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/summary.json",
+      "destination": "selected_main/full_seed_24582922/summary.json",
+      "sha256": "ee8b2936dfaf314a0e06b9e232d2d9d0c8a91e5a9d79f0a321161de98854a11b",
+      "bytes": 31899,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922/task_fingerprint.json",
+      "destination": "selected_main/full_seed_24582922/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/environment.json",
+      "destination": "selected_main/full_seed_24582922/source_environment.json",
+      "sha256": "68538b5ec0969de705cf0d5a2f0a7e0d1ea9caaa0f01cf64f1a68c0e93fbc8d6",
+      "bytes": 1067,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/protocol.json",
+      "destination": "selected_main/full_seed_24582922/source_protocol.json",
+      "sha256": "2713f9185ebb19a35989be8719830d0dc8efc5deaaefd5d7496de2d902724b6b",
+      "bytes": 13783,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/comparison.json",
+      "destination": "selected_main/full_seed_24582922/source_batch_comparison.json",
+      "sha256": "c123826063f7a695f7444baaa46d9514e829613c25f24ea8434885b2ac2a23d2",
+      "bytes": 53128,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922.log",
+      "destination": "selected_main/full_seed_24582922/source_execution.log",
+      "sha256": "1566c8fe7828a2b0febe1bc2ed39bfd0a79b325ac3a695269d6f234f745cb519",
+      "bytes": 114837,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_000.json",
+      "destination": "selected_main/topk_seed_24582922/checkpoint_000.json",
+      "sha256": "88e8857f98b78380eaa6723a5e1a9e4ec80e6c51a529a368f9126c518b018ff0",
+      "bytes": 599933,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_005.json",
+      "destination": "selected_main/topk_seed_24582922/checkpoint_005.json",
+      "sha256": "9753833168a3afb3c7fb9718de97fe6d79409a01a4af8d62ca2dc9f77d8f7b71",
+      "bytes": 689657,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_010.json",
+      "destination": "selected_main/topk_seed_24582922/checkpoint_010.json",
+      "sha256": "7a4586d013e4b98b5fd5cf308ce0b4af15533e8f31f88b98ea3ed703adc4d12c",
+      "bytes": 689964,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_015.json",
+      "destination": "selected_main/topk_seed_24582922/checkpoint_015.json",
+      "sha256": "9a46849db452837088b07682ef078981a2d10a2dce63eae02e550f043020594e",
+      "bytes": 688251,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_020.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/checkpoint_020.json",
+      "destination": "selected_main/topk_seed_24582922/checkpoint_020.json",
+      "sha256": "6eef50c00826175dc923c1c31160f8e8b2f7bbc3dfa8c059ffa3cb4ab78d3d01",
+      "bytes": 690243,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_000.json",
+      "destination": "selected_main/topk_seed_24582922/evaluation_000.json",
+      "sha256": "ca2729e5837c3a24eaba8fa1311e9ef1c74626d0dfdcc9301a1651654e764462",
+      "bytes": 4729,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_005.json",
+      "destination": "selected_main/topk_seed_24582922/evaluation_005.json",
+      "sha256": "233c200e7fd3294ffbf4aba1abc998aa5e1d8fd952004e0178b0e32864184c41",
+      "bytes": 4784,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_010.json",
+      "destination": "selected_main/topk_seed_24582922/evaluation_010.json",
+      "sha256": "4301827ba21949de5f864f459addffb464cd73353ebabd4b71a1e913e995f52d",
+      "bytes": 4792,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_015.json",
+      "destination": "selected_main/topk_seed_24582922/evaluation_015.json",
+      "sha256": "e9102c0418a85f3f58f3da7c4e22065f415c0ef4c1739adc41d12f55abbeae48",
+      "bytes": 4784,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_020.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluation_020.json",
+      "destination": "selected_main/topk_seed_24582922/evaluation_020.json",
+      "sha256": "b8e8d436ec4430d2ac769f5d8c786825bcfd581d060501ea8e9c707ccc87e6a9",
+      "bytes": 4792,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/evaluations.jsonl",
+      "destination": "selected_main/topk_seed_24582922/evaluations.jsonl",
+      "sha256": "1479f85edfb5bcc9595f4e14aba4f4d40185b9206d2c9d39c464674d1185c608",
+      "bytes": 145622,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/events.jsonl",
+      "destination": "selected_main/topk_seed_24582922/events.jsonl",
+      "sha256": "47093d12b956e6788d371caa048c777ec270f33acf6bbc191b2aed0569a5f6ef",
+      "bytes": 13400,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/progress.jsonl",
+      "destination": "selected_main/topk_seed_24582922/progress.jsonl",
+      "sha256": "706c9de4c50a6d23c53b6715e1f67ea217baef475fb422aef51b4092da7c9c76",
+      "bytes": 10672,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/settings.json",
+      "destination": "selected_main/topk_seed_24582922/settings.json",
+      "sha256": "f1cd80360559b02b505abc0451925e76132ed4afbad2d31137e9c6077c9f064a",
+      "bytes": 789,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/summary.json",
+      "destination": "selected_main/topk_seed_24582922/summary.json",
+      "sha256": "a329a1b3aab16c25971d732542bb0c2daba427281502d1df608e4989c2259450",
+      "bytes": 37416,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922/task_fingerprint.json",
+      "destination": "selected_main/topk_seed_24582922/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/environment.json",
+      "destination": "selected_main/topk_seed_24582922/source_environment.json",
+      "sha256": "dbe73efd51815057d8617d24e29ae299aac49850720340272858d2a3080aab02",
+      "bytes": 1068,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/protocol.json",
+      "destination": "selected_main/topk_seed_24582922/source_protocol.json",
+      "sha256": "180f856494f1e80f02e3a784d15ffba080fa29d9ba4080aec768a45c4a007090",
+      "bytes": 13758,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/comparison.json",
+      "destination": "selected_main/topk_seed_24582922/source_batch_comparison.json",
+      "sha256": "441429d2970d180adde5cc869d8951093d0cd0ad4a17a15bcc3c5c1c34d427c9",
+      "bytes": 59385,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922.log",
+      "destination": "selected_main/topk_seed_24582922/source_execution.log",
+      "sha256": "484f7d3738469167439ea47f4e85e4480e24ac6c90ab7ac4f8397320122e0761",
+      "bytes": 150210,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_000.json",
+      "destination": "selected_main/no_transfer_seed_24582922/checkpoint_000.json",
+      "sha256": "f69566ed7c78540a0c6ecf543dd62f7e43b38fe945cd5319df17167e852ad208",
+      "bytes": 599934,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_005.json",
+      "destination": "selected_main/no_transfer_seed_24582922/checkpoint_005.json",
+      "sha256": "56365f1bb6f587d14b728fcf719dfd8af37a410d75e7d6088da3e48d37fd91fa",
+      "bytes": 963318,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_010.json",
+      "destination": "selected_main/no_transfer_seed_24582922/checkpoint_010.json",
+      "sha256": "ccc31ae39423c9d963577d22b61bac02c3592a610ce7c0a25639aae48ee43131",
+      "bytes": 957922,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/checkpoint_015.json",
+      "destination": "selected_main/no_transfer_seed_24582922/checkpoint_015.json",
+      "sha256": "786eaa20166da7685b5411f19c0cc6d4e1c1cace8e8ce686adfac6575e8ee85c",
+      "bytes": 955940,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_000.json",
+      "destination": "selected_main/no_transfer_seed_24582922/evaluation_000.json",
+      "sha256": "ecfe8d14299039994071ccab6689cc1a74faaa97db0238b6f067acd444a0874c",
+      "bytes": 4730,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_005.json",
+      "destination": "selected_main/no_transfer_seed_24582922/evaluation_005.json",
+      "sha256": "cc3c02eccb01e1fe75f706a040b6760bfcbe3c2181972867dcd37b85e519998a",
+      "bytes": 4738,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_010.json",
+      "destination": "selected_main/no_transfer_seed_24582922/evaluation_010.json",
+      "sha256": "0794a4e2e138303e396a9e510e1b3d6f5993182ec3beea87e6df3f1003d604db",
+      "bytes": 4750,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluation_015.json",
+      "destination": "selected_main/no_transfer_seed_24582922/evaluation_015.json",
+      "sha256": "4dd375d8ce3d5b4b894bead7ff3da4f9295312ce1546982a394dcc66808b0a37",
+      "bytes": 4786,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluations.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582922/evaluations.jsonl",
+      "sha256": "c009cc428ae21bd616fa71a459b60469e4ec09889cd093f8f7492a7bea6d52f1",
+      "bytes": 79750,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/events.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582922/events.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/progress.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582922/progress.jsonl",
+      "sha256": "95c1d20513f4c3e61f359a3c2e34339c7a228a43568c35b0f21840cb1cc02470",
+      "bytes": 8121,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/settings.json",
+      "destination": "selected_main/no_transfer_seed_24582922/settings.json",
+      "sha256": "591a328c3c30524bdd5c9559f5af4b9f666296e3878eb3e50574599849804486",
+      "bytes": 790,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/summary.json",
+      "destination": "selected_main/no_transfer_seed_24582922/summary.json",
+      "sha256": "072231cce1a387e1782f88d91027ee5eb0e85efdafbb4aa1ed8427233522410f",
+      "bytes": 31792,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922/task_fingerprint.json",
+      "destination": "selected_main/no_transfer_seed_24582922/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/environment.json",
+      "destination": "selected_main/no_transfer_seed_24582922/source_environment.json",
+      "sha256": "68538b5ec0969de705cf0d5a2f0a7e0d1ea9caaa0f01cf64f1a68c0e93fbc8d6",
+      "bytes": 1067,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/protocol.json",
+      "destination": "selected_main/no_transfer_seed_24582922/source_protocol.json",
+      "sha256": "8c128f2574c45a338a775591469fc4128207f639bb613b88c8c0eae01a11d11b",
+      "bytes": 13797,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/comparison.json",
+      "destination": "selected_main/no_transfer_seed_24582922/source_batch_comparison.json",
+      "sha256": "a8763b4f80aa22341783956947d8ec720d4eadb5369cce8b98f0c7d8606c8f2b",
+      "bytes": 53032,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922.log",
+      "destination": "selected_main/no_transfer_seed_24582922/source_execution.log",
+      "sha256": "06864c23fbcd23e87de0e7262d53256a085e01a8ebfe93e984e5ce90bd981d36",
+      "bytes": 101272,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/checkpoint_000.json",
+      "destination": "selected_main/full_seed_24582923/checkpoint_000.json",
+      "sha256": "20d796e3a545280ae808b061b6a7575361d8d624dddd9563d4004c7d9b8adf0b",
+      "bytes": 599599,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/checkpoint_005.json",
+      "destination": "selected_main/full_seed_24582923/checkpoint_005.json",
+      "sha256": "2c8bf902def3cbc8fee329cdaca436e50154847bca8f24a866caa6a886566fa1",
+      "bytes": 599701,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/checkpoint_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/checkpoint_010.json",
+      "destination": "selected_main/full_seed_24582923/checkpoint_010.json",
+      "sha256": "7b7444c0dad100380d4023301caed989ce5d0a9710c378aeecb330b07f9dfbb2",
+      "bytes": 689862,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluation_000.json",
+      "destination": "selected_main/full_seed_24582923/evaluation_000.json",
+      "sha256": "758043be6e8fbc3e3e90b3c9652d6e911de35a3e19843d5e99e2150db4901894",
+      "bytes": 4681,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluation_005.json",
+      "destination": "selected_main/full_seed_24582923/evaluation_005.json",
+      "sha256": "e808114b9a8b738b8ed3232cf8b37c7202a46c368988a45c165b3e681c919996",
+      "bytes": 4794,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluation_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluation_010.json",
+      "destination": "selected_main/full_seed_24582923/evaluation_010.json",
+      "sha256": "389f38d4c4f5de9b476c485e5d1d3ef6188a21889b27579a535fb6ea97b35d1a",
+      "bytes": 4791,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/evaluations.jsonl",
+      "destination": "selected_main/full_seed_24582923/evaluations.jsonl",
+      "sha256": "384b8db00cb26dd1a3facf265d8f4309bd6a70c21368bf80d7ae51f50ec3faaf",
+      "bytes": 93102,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/events.jsonl",
+      "destination": "selected_main/full_seed_24582923/events.jsonl",
+      "sha256": "23d77ba96785afbe6b680e49087b99c788f96d1fe0f68c814840f089a2d9d19a",
+      "bytes": 7070,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/progress.jsonl",
+      "destination": "selected_main/full_seed_24582923/progress.jsonl",
+      "sha256": "a7ccea521aaab3355a1d7f1cc9bd50c3d0e835487989cb938ee6df37ec133f8d",
+      "bytes": 5323,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/settings.json",
+      "destination": "selected_main/full_seed_24582923/settings.json",
+      "sha256": "56e080b15d197041a7daee729627000b8dce077bea3569898b0303fa50c556c2",
+      "bytes": 789,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/summary.json",
+      "destination": "selected_main/full_seed_24582923/summary.json",
+      "sha256": "35634d046ed4885229d71fb2af09527bf38fb329c6125864b58bd67ffd5f3fc9",
+      "bytes": 26236,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923/task_fingerprint.json",
+      "destination": "selected_main/full_seed_24582923/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/environment.json",
+      "destination": "selected_main/full_seed_24582923/source_environment.json",
+      "sha256": "68538b5ec0969de705cf0d5a2f0a7e0d1ea9caaa0f01cf64f1a68c0e93fbc8d6",
+      "bytes": 1067,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/protocol.json",
+      "destination": "selected_main/full_seed_24582923/source_protocol.json",
+      "sha256": "a8e0726f6da4ce3426066ee3c0d49a1c44ee2279e473db9558dd4b0c2d2f4a10",
+      "bytes": 13783,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/comparison.json",
+      "destination": "selected_main/full_seed_24582923/source_batch_comparison.json",
+      "sha256": "3e8099039de758ab973e5342dd3188f033a4603935dd172b90a23383bf6125bd",
+      "bytes": 46697,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923.log",
+      "destination": "selected_main/full_seed_24582923/source_execution.log",
+      "sha256": "c1c1300bea9f5c361471a683128d239a55dc1cb5d63b8a67b1204d2631f9a6fa",
+      "bytes": 79795,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_000.json",
+      "destination": "selected_main/topk_seed_24582923/checkpoint_000.json",
+      "sha256": "803c1b15dbdeb30e8ce9eb19680964f0a1ac782993ccf3d4f2ca42ab2eeb5949",
+      "bytes": 599599,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_005.json",
+      "destination": "selected_main/topk_seed_24582923/checkpoint_005.json",
+      "sha256": "fa0fdd0a462e64c946051e8607120a133a22622f675e86276832725f6fbb2e2e",
+      "bytes": 599734,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_010.json",
+      "destination": "selected_main/topk_seed_24582923/checkpoint_010.json",
+      "sha256": "bdc3a1858e89e1304a33e91981ad590b4e192f915496ac6858d23a5f8731ea6a",
+      "bytes": 690460,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/checkpoint_015.json",
+      "destination": "selected_main/topk_seed_24582923/checkpoint_015.json",
+      "sha256": "011d7b2f569f1fa4f3b6b2b0495cfcf36d39428db2b270ecd7584be0ba68ec1f",
+      "bytes": 689346,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_000.json",
+      "destination": "selected_main/topk_seed_24582923/evaluation_000.json",
+      "sha256": "9ad5a8e4c451ede5ce4f9d465100e39de9ba2eba5c86cf9ad529f2d12ec27bf2",
+      "bytes": 4682,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_005.json",
+      "destination": "selected_main/topk_seed_24582923/evaluation_005.json",
+      "sha256": "11baac2cf5bd4976daa4fac439eeecc1e627326fbd47403a331fa3a3e834999f",
+      "bytes": 4797,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_010.json",
+      "destination": "selected_main/topk_seed_24582923/evaluation_010.json",
+      "sha256": "c8cdbc0232e9ae8572f532b96244ef635b31cd247ed03a524d0cf341b8894b05",
+      "bytes": 4784,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_015.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluation_015.json",
+      "destination": "selected_main/topk_seed_24582923/evaluation_015.json",
+      "sha256": "b9b8cdba7cbc80fc06f63d70feb37b65932dcaa31bd9aa4c1019d19e1f5fe808",
+      "bytes": 4791,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/evaluations.jsonl",
+      "destination": "selected_main/topk_seed_24582923/evaluations.jsonl",
+      "sha256": "edd01fd5dad9a2ec8ab4616851a39adbf12d255d8d777188ec08b0825e001fe2",
+      "bytes": 110462,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/events.jsonl",
+      "destination": "selected_main/topk_seed_24582923/events.jsonl",
+      "sha256": "9db75eb8c1b9cf15ac4b71f33980714d697e4bb1ae220371e2405c746418e318",
+      "bytes": 10225,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/progress.jsonl",
+      "destination": "selected_main/topk_seed_24582923/progress.jsonl",
+      "sha256": "c5a8f8ec04ef0ef3d6a040f50e23370b773085244644dcd2fc4c32b94fe1ed50",
+      "bytes": 8010,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/settings.json",
+      "destination": "selected_main/topk_seed_24582923/settings.json",
+      "sha256": "6735fa090b93254afcc4ab78eed72deddf6708d6cb2a36fea22effc32244807d",
+      "bytes": 789,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/summary.json",
+      "destination": "selected_main/topk_seed_24582923/summary.json",
+      "sha256": "38c0a9f18f35f7253706b9bf8bee45af63d73ae7a30b1e510d6a26ab8d7d00fc",
+      "bytes": 31794,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923/task_fingerprint.json",
+      "destination": "selected_main/topk_seed_24582923/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/environment.json",
+      "destination": "selected_main/topk_seed_24582923/source_environment.json",
+      "sha256": "68538b5ec0969de705cf0d5a2f0a7e0d1ea9caaa0f01cf64f1a68c0e93fbc8d6",
+      "bytes": 1067,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/protocol.json",
+      "destination": "selected_main/topk_seed_24582923/source_protocol.json",
+      "sha256": "ccc03cdaa91510b4506d18f2cb379eca41f15ec491ad6cc8522a01ccaa6eab9c",
+      "bytes": 13783,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/comparison.json",
+      "destination": "selected_main/topk_seed_24582923/source_batch_comparison.json",
+      "sha256": "b98f3d75379f87be09aa12700676dbb11781783b768352c124a47dc2e67e8e65",
+      "bytes": 53023,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923.log",
+      "destination": "selected_main/topk_seed_24582923/source_execution.log",
+      "sha256": "ccabe8ab7adb244f6f7bd8cf66f3f4e284b474d2b1780048e096d708aff58d52",
+      "bytes": 114840,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_000.json",
+      "destination": "selected_main/no_transfer_seed_24582923/checkpoint_000.json",
+      "sha256": "fa0c8a52a6e007e48b98239a30287d03de2f64813a50be1e29a42b69dc54a49d",
+      "bytes": 599600,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_005.json",
+      "destination": "selected_main/no_transfer_seed_24582923/checkpoint_005.json",
+      "sha256": "faa39539e803dc8debd5d6db049144fb8e0967b8edeae9bc40911eb58bc75ace",
+      "bytes": 964055,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_010.json",
+      "destination": "selected_main/no_transfer_seed_24582923/checkpoint_010.json",
+      "sha256": "61424f3ca1dc0a045b24cf3b1a0d5c9436475ad896d5ea449c3a22c8e64b31a5",
+      "bytes": 958100,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_014.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/checkpoint_014.json",
+      "destination": "selected_main/no_transfer_seed_24582923/checkpoint_014.json",
+      "sha256": "d45d4d6c1f8d33848ef59263b28cb1f2729e398625469955b8ed6c62b5609502",
+      "bytes": 955576,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_000.json",
+      "destination": "selected_main/no_transfer_seed_24582923/evaluation_000.json",
+      "sha256": "393f6caf4dfc5749ae86eac2fbdfdac4ac63f1a8afad88bd6779130ce89762cc",
+      "bytes": 4680,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_005.json",
+      "destination": "selected_main/no_transfer_seed_24582923/evaluation_005.json",
+      "sha256": "d3f9018e52e4604cdf52c26371702444f959a664ef28fbf45ae954dead823c32",
+      "bytes": 4799,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_010.json",
+      "destination": "selected_main/no_transfer_seed_24582923/evaluation_010.json",
+      "sha256": "2017bb9f56b667a2ff3d8bc50fde642da83d07425d67b9aac5d63ef864184f4c",
+      "bytes": 4797,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_014.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluation_014.json",
+      "destination": "selected_main/no_transfer_seed_24582923/evaluation_014.json",
+      "sha256": "583c3215e54991d84b61e4c3bd9c516dba5aa23e9be0ebd81321ef3bb4adedfd",
+      "bytes": 4808,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluations.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582923/evaluations.jsonl",
+      "sha256": "4bdfe5b5bd5ffaaf1be7e747621e207bb63dacefdbbf6c5820321df9a05f7783",
+      "bytes": 75458,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/events.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582923/events.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/progress.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582923/progress.jsonl",
+      "sha256": "29d04e83090883a7174b209ae0c786e1f4cf200058310edc16cfe5348e40e1e5",
+      "bytes": 7574,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/settings.json",
+      "destination": "selected_main/no_transfer_seed_24582923/settings.json",
+      "sha256": "3048ec1b54cc0872bdeb74f101e3542d0315782c7a21f6523ef18a221ab47087",
+      "bytes": 790,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/summary.json",
+      "destination": "selected_main/no_transfer_seed_24582923/summary.json",
+      "sha256": "806dce688b743761843005a8768d68ad5ce9697fd47e0af94efb24080c66c2a0",
+      "bytes": 31845,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923/task_fingerprint.json",
+      "destination": "selected_main/no_transfer_seed_24582923/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/environment.json",
+      "destination": "selected_main/no_transfer_seed_24582923/source_environment.json",
+      "sha256": "68538b5ec0969de705cf0d5a2f0a7e0d1ea9caaa0f01cf64f1a68c0e93fbc8d6",
+      "bytes": 1067,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/protocol.json",
+      "destination": "selected_main/no_transfer_seed_24582923/source_protocol.json",
+      "sha256": "7015034e506e169394636956d370b0c31eeeeb38d48a7b135b17ab3a88d21916",
+      "bytes": 13797,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/comparison.json",
+      "destination": "selected_main/no_transfer_seed_24582923/source_batch_comparison.json",
+      "sha256": "5fa53c6cb2ae05668249f84e0096d5bcec29c3a59fb44cfa8e509ca9a91ddef6",
+      "bytes": 53088,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923.log",
+      "destination": "selected_main/no_transfer_seed_24582923/source_execution.log",
+      "sha256": "bdf6fdadfb9d56fde6f5c9d79633b3a9c4448e7ee6ef72ee2f38cc771ad0207d",
+      "bytes": 96091,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/checkpoint_000.json",
+      "destination": "selected_main/full_seed_24582924/checkpoint_000.json",
+      "sha256": "c6730fbac305d170408090a0dcc3f9fc4535ca796fab8fd47bc1e0e9febf4f06",
+      "bytes": 599571,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/checkpoint_005.json",
+      "destination": "selected_main/full_seed_24582924/checkpoint_005.json",
+      "sha256": "bb879b9ad77bb3d064f23a5ba2a6c614b9766fe64988d51a2e561f254eb6f73b",
+      "bytes": 691270,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/checkpoint_009.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/checkpoint_009.json",
+      "destination": "selected_main/full_seed_24582924/checkpoint_009.json",
+      "sha256": "a70579a9e542cf42c712aa81c810fc64e30fcab0e515932ba99e6c0700d63a4e",
+      "bytes": 963905,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluation_000.json",
+      "destination": "selected_main/full_seed_24582924/evaluation_000.json",
+      "sha256": "fdb9a8cbb06a40b62dd4e5ed60ab0f0ed31cb1f387ad2828ee4343bae464831e",
+      "bytes": 4740,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluation_005.json",
+      "destination": "selected_main/full_seed_24582924/evaluation_005.json",
+      "sha256": "cef7bf3a835048acf53531294a18cb2b7053a99289520af61d0fac363de5e187",
+      "bytes": 4802,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluation_009.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluation_009.json",
+      "destination": "selected_main/full_seed_24582924/evaluation_009.json",
+      "sha256": "068d35f8837eefd8695e39b9611cde802bd528d15b8a8d419ff25fc25aaeb007",
+      "bytes": 4804,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/evaluations.jsonl",
+      "destination": "selected_main/full_seed_24582924/evaluations.jsonl",
+      "sha256": "fa2ee4d54ecf2912c0d69f695145c278d5614b2298741a61435b16463bd1407c",
+      "bytes": 69646,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/events.jsonl",
+      "destination": "selected_main/full_seed_24582924/events.jsonl",
+      "sha256": "ba0ee215a04df0a13b1645e5c700c338b4f3bfcf5268b108e7aca6040d120c26",
+      "bytes": 3447,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/progress.jsonl",
+      "destination": "selected_main/full_seed_24582924/progress.jsonl",
+      "sha256": "5c505e093677ec99fca2b6d3e88371001e1e97f8c2ce3df3e922e45cae75b228",
+      "bytes": 4818,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/settings.json",
+      "destination": "selected_main/full_seed_24582924/settings.json",
+      "sha256": "dac3526bd4883e0977cdf57a615e39e49bb47f60116c057d13f5f83e797ce562",
+      "bytes": 789,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/summary.json",
+      "destination": "selected_main/full_seed_24582924/summary.json",
+      "sha256": "085ab5750882f947f7a1f51db4db83b413db82738bb326cd0eb68432bcf5e73b",
+      "bytes": 26387,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924/task_fingerprint.json",
+      "destination": "selected_main/full_seed_24582924/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/environment.json",
+      "destination": "selected_main/full_seed_24582924/source_environment.json",
+      "sha256": "68538b5ec0969de705cf0d5a2f0a7e0d1ea9caaa0f01cf64f1a68c0e93fbc8d6",
+      "bytes": 1067,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/protocol.json",
+      "destination": "selected_main/full_seed_24582924/source_protocol.json",
+      "sha256": "0e3db12d7850fcd8a46232b47409eb85fc8b1405ae2defe98adab7bb56445f00",
+      "bytes": 13783,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/comparison.json",
+      "destination": "selected_main/full_seed_24582924/source_batch_comparison.json",
+      "sha256": "a179adc5fe2ebb7a19f7f2d634b90d17778636b86b7273311ddff6d180bb42d4",
+      "bytes": 46848,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924.log",
+      "destination": "selected_main/full_seed_24582924/source_execution.log",
+      "sha256": "cbf3d566997bf11a89ab94c4dc0a118f02cb3828563d4b43dfe1e483e92ed7ec",
+      "bytes": 70064,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/checkpoint_000.json",
+      "destination": "selected_main/topk_seed_24582924/checkpoint_000.json",
+      "sha256": "4a92c37a5a50e25a53a4ba51cde5317c2b812780ed0c8e7c537610b0e1bd9160",
+      "bytes": 599571,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/checkpoint_005.json",
+      "destination": "selected_main/topk_seed_24582924/checkpoint_005.json",
+      "sha256": "8c2a69277b6dd936ad8b170e0d5cad152a5fc4905295be41034380b8ca8e3ab9",
+      "bytes": 691410,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/checkpoint_009.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/checkpoint_009.json",
+      "destination": "selected_main/topk_seed_24582924/checkpoint_009.json",
+      "sha256": "f56e74eecd9f3913fd66e6e5758617f5b781da967bad9566c4b884b48ce21073",
+      "bytes": 963256,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluation_000.json",
+      "destination": "selected_main/topk_seed_24582924/evaluation_000.json",
+      "sha256": "c27d0771284208d4e8817c62441a46a709eaeb76525ea6a64e6e7148b20403d1",
+      "bytes": 4742,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluation_005.json",
+      "destination": "selected_main/topk_seed_24582924/evaluation_005.json",
+      "sha256": "11a2d7d849df84704499bc73660095524df653cb9807ca92275edaea913c4bc2",
+      "bytes": 4810,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluation_009.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluation_009.json",
+      "destination": "selected_main/topk_seed_24582924/evaluation_009.json",
+      "sha256": "5eaddbdc38c4d8ae887adb8af179b7ed9a6d9099616c0d6fec1657ff2011f26b",
+      "bytes": 4794,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/evaluations.jsonl",
+      "destination": "selected_main/topk_seed_24582924/evaluations.jsonl",
+      "sha256": "ba721b164094785af4c1e006b9b76d95ce681f2724ca5846d8513336387c1acb",
+      "bytes": 60683,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/events.jsonl",
+      "destination": "selected_main/topk_seed_24582924/events.jsonl",
+      "sha256": "c5f46a3f7ebc7aa8359d0feb57c4abb0e407088c36b3700f73632bc867174760",
+      "bytes": 3345,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/progress.jsonl",
+      "destination": "selected_main/topk_seed_24582924/progress.jsonl",
+      "sha256": "db975e28889483d910b997c7318f0a9baedc6b1a91dfa6202224b9e57ed33b31",
+      "bytes": 4815,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/settings.json",
+      "destination": "selected_main/topk_seed_24582924/settings.json",
+      "sha256": "f5c240b75cc5f2b264425360c7947df04ec502a2bb8705321d027a47691f66b3",
+      "bytes": 789,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/summary.json",
+      "destination": "selected_main/topk_seed_24582924/summary.json",
+      "sha256": "5127fe49717ec51e407b40cecdde973c18fb09c87c77c52ec583b5d9f2648ee4",
+      "bytes": 26376,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924/task_fingerprint.json",
+      "destination": "selected_main/topk_seed_24582924/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/environment.json",
+      "destination": "selected_main/topk_seed_24582924/source_environment.json",
+      "sha256": "dbe73efd51815057d8617d24e29ae299aac49850720340272858d2a3080aab02",
+      "bytes": 1068,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/protocol.json",
+      "destination": "selected_main/topk_seed_24582924/source_protocol.json",
+      "sha256": "7cbf657d3bf746f92e21a7e8a47526cd1bc01578bb0b65f393eea6ed888acdaa",
+      "bytes": 13758,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/comparison.json",
+      "destination": "selected_main/topk_seed_24582924/source_batch_comparison.json",
+      "sha256": "9035254d83b5418c1fdc4989fd4023353e65b69ea7dce139c37bb83b1d7c3ef9",
+      "bytes": 46814,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924.log",
+      "destination": "selected_main/topk_seed_24582924/source_execution.log",
+      "sha256": "ac5315f29e01f7a4cd7c03e42f00b5be11ae6d93b18ad299042058e523465931",
+      "bytes": 70332,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/checkpoint_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/checkpoint_000.json",
+      "destination": "selected_main/no_transfer_seed_24582924/checkpoint_000.json",
+      "sha256": "0093cc4e9f2bff8c0ca5b5039a6de37968b3b1f2189305ddbfbfc374a1a746ab",
+      "bytes": 599572,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/checkpoint_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/checkpoint_005.json",
+      "destination": "selected_main/no_transfer_seed_24582924/checkpoint_005.json",
+      "sha256": "8af5b252f2feb9364f81afee99c1bb336038b0c010fb2583b3abda9f21e06071",
+      "bytes": 964418,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/checkpoint_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/checkpoint_010.json",
+      "destination": "selected_main/no_transfer_seed_24582924/checkpoint_010.json",
+      "sha256": "926c3c4c1d80d4c29c8893243f9910aaa2894b6d8c295a7059a39a44f8c3c642",
+      "bytes": 958947,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluation_000.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluation_000.json",
+      "destination": "selected_main/no_transfer_seed_24582924/evaluation_000.json",
+      "sha256": "822641394eadda84a762bbabd1de74b4f1a07dacd2b3f0490e0c5e2164748892",
+      "bytes": 4741,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluation_005.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluation_005.json",
+      "destination": "selected_main/no_transfer_seed_24582924/evaluation_005.json",
+      "sha256": "77452a151691f953f4aba5f5746e15f2a747275f3c8eeeec8fb4cbb0091bf96f",
+      "bytes": 4804,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluation_010.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluation_010.json",
+      "destination": "selected_main/no_transfer_seed_24582924/evaluation_010.json",
+      "sha256": "9a1911ffe14a1586f90965f251c782195ec717ff07ca221d2d0a9d42371f2ba3",
+      "bytes": 4799,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/evaluations.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582924/evaluations.jsonl",
+      "sha256": "4e51ed74064053f8787f67566960fa8c3141eacbbd81543b17042edc3914c6b3",
+      "bytes": 54886,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/events.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/events.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582924/events.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/progress.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/progress.jsonl",
+      "destination": "selected_main/no_transfer_seed_24582924/progress.jsonl",
+      "sha256": "6f40f7dc69ee5ee5eb957bfcab87a3f25298ee68189e41a5cb5a9d92c5ccb1ec",
+      "bytes": 5409,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/settings.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/settings.json",
+      "destination": "selected_main/no_transfer_seed_24582924/settings.json",
+      "sha256": "829fe381235c07018395fdda938d1853dbc2907c3c053eeb9124017884ab280f",
+      "bytes": 790,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/summary.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/summary.json",
+      "destination": "selected_main/no_transfer_seed_24582924/summary.json",
+      "sha256": "469f834419df0332d5cb25daffb406bb65a0d60971ff286308dfcae729b2a960",
+      "bytes": 26385,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/task_fingerprint.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924/task_fingerprint.json",
+      "destination": "selected_main/no_transfer_seed_24582924/task_fingerprint.json",
+      "sha256": "1c62fbc98bfc46bceaecbf9016be064f4585ddb20e90f1a89392d30d062cc806",
+      "bytes": 18516,
+      "role": "selected_completed_condition_raw"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/environment.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/environment.json",
+      "destination": "selected_main/no_transfer_seed_24582924/source_environment.json",
+      "sha256": "dbe73efd51815057d8617d24e29ae299aac49850720340272858d2a3080aab02",
+      "bytes": 1068,
+      "role": "actual_condition_batch_environment"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/protocol.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/protocol.json",
+      "destination": "selected_main/no_transfer_seed_24582924/source_protocol.json",
+      "sha256": "0c14f9e639e0cbc539e9ad6cc9e25cd9fb82617b22cd053030fbc8f3b4e32472",
+      "bytes": 13772,
+      "role": "actual_condition_batch_protocol"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/comparison.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/comparison.json",
+      "destination": "selected_main/no_transfer_seed_24582924/source_batch_comparison.json",
+      "sha256": "ab7bd66e99662aecd62e6f689d02d0350542f526076bf584ecb7e3c3554cd17d",
+      "bytes": 46836,
+      "role": "actual_condition_batch_completion_report"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924.log",
+      "destination": "selected_main/no_transfer_seed_24582924/source_execution.log",
+      "sha256": "1fdd563786cb9db3ef575f53fcdde3c392f048bf894d960ce889422a421d3811",
+      "bytes": 71036,
+      "role": "actual_condition_execution_log"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582922/full_seed_24582922/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582922/full_seed_24582922/evaluations.jsonl",
+      "destination": "main_seed_24582922/full_seed_24582922/evaluations.jsonl",
+      "sha256": "0554e15d482f32773030904e4e0c59be2dfc310ae34423139f40752b55998285",
+      "bytes": 35343,
+      "role": "interrupted_prefix_required_by_strict_independent_audit"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582923/full_seed_24582923/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582923/full_seed_24582923/evaluations.jsonl",
+      "destination": "main_seed_24582923/full_seed_24582923/evaluations.jsonl",
+      "sha256": "3efa642682f4b5f99ce9c4981ef25e05dc57dbdfda6104964f7f2e731f98f9bd",
+      "bytes": 43811,
+      "role": "interrupted_prefix_required_by_strict_independent_audit"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582924/full_seed_24582924/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582924/full_seed_24582924/evaluations.jsonl",
+      "destination": "main_seed_24582924/full_seed_24582924/evaluations.jsonl",
+      "sha256": "0a2a8a1581e14d7002a3c0a7073d675d280105c15e5f94e4ed7d7b0a87e5357f",
+      "bytes": 26966,
+      "role": "interrupted_prefix_required_by_strict_independent_audit"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluations.jsonl",
+      "destination": "parallel_no_transfer_seed_24582922/no_transfer_seed_24582922/evaluations.jsonl",
+      "sha256": "02c5fafd2ed679cb5376bf5b3415423dd21f41dc94a18fcc1bef80bf817d045e",
+      "bytes": 18645,
+      "role": "interrupted_prefix_required_by_strict_independent_audit"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluations.jsonl",
+      "destination": "parallel_no_transfer_seed_24582923/no_transfer_seed_24582923/evaluations.jsonl",
+      "sha256": "79fad2a545c465cb632fc9023f36ecf0f4d1317c15cd0d67a4ff7f6d9a5add44",
+      "bytes": 21305,
+      "role": "interrupted_prefix_required_by_strict_independent_audit"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582923/topk_seed_24582923/evaluations.jsonl",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582923/topk_seed_24582923/evaluations.jsonl",
+      "destination": "parallel_topk_seed_24582923/topk_seed_24582923/evaluations.jsonl",
+      "sha256": "c18a8f1d22cc9addae674721362c79fa3a2f0a541f72070b09cd1ca85e1fffe2",
+      "bytes": 22419,
+      "role": "interrupted_prefix_required_by_strict_independent_audit"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/run_physics_comparison.py",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/run_physics_comparison.py",
+      "destination": "run_physics_comparison.py",
+      "sha256": "4c29cbcd0c3403fab58bc549975c01512c5a538ffa4b9fe135faf5d4aa574069",
+      "bytes": 20268,
+      "role": "unchanged_experiment_or_verification_script"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/aggregate_physics_results.py",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/aggregate_physics_results.py",
+      "destination": "aggregate_physics_results.py",
+      "sha256": "beb9eba5dd48a220f2e9701231ae86db89817bc1abcf20b773e8651d425d7c4c",
+      "bytes": 16416,
+      "role": "unchanged_experiment_or_verification_script"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/audit_physics_independent.py",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/audit_physics_independent.py",
+      "destination": "audit_physics_independent.py",
+      "sha256": "bf66504f4c6f8e09377bff1f82e56b5c15d179c5a760d1ffa2b476264a59a3fe",
+      "bytes": 16381,
+      "role": "unchanged_experiment_or_verification_script"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/extract_physics_replay.py",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/extract_physics_replay.py",
+      "destination": "extract_physics_replay.py",
+      "sha256": "4ee3f64cd0d2860b6a344c0cc4a9b708acc4a18bac7dfca50cd1d798a4a0c117",
+      "bytes": 14176,
+      "role": "unchanged_experiment_or_verification_script"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/build_experiment_report.py",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/build_experiment_report.py",
+      "destination": "build_experiment_report.py",
+      "sha256": "5b1b6d219af209f5daff9c9c6e41a432641519660ac34125a182a0510127808f",
+      "bytes": 13626,
+      "role": "unchanged_experiment_or_verification_script"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/test_physics_comparison.py",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/test_physics_comparison.py",
+      "destination": "test_physics_comparison.py",
+      "sha256": "977c9b7b8827d478faf895d12486a428f8776a6c71c87eeac14c7f10feaae3c9",
+      "bytes": 12659,
+      "role": "unchanged_experiment_or_verification_script"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/reproduce_matrix.sh",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/reproduce_matrix.sh",
+      "destination": "reproduce_matrix.sh",
+      "sha256": "c0bdff5811289375b01fc1e0dce2887de105724eee5936a0c694f6ab931b1a61",
+      "bytes": 1311,
+      "role": "unchanged_experiment_or_verification_script"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/PHYSICS_PROTOCOL.txt",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/PHYSICS_PROTOCOL.txt",
+      "destination": "provenance/PHYSICS_PROTOCOL.original.txt",
+      "sha256": "7f4a1a49f64e0e8fca54b149abacc2c55e02b548fb1e2857791539e106183dc2",
+      "bytes": 6043,
+      "role": "historical_protocol_with_original_commands"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_status.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_status.json",
+      "destination": "provenance/retry01_status.json",
+      "sha256": "3dab1a1ab4092d496159ce3cdc55391d80190b53d7b1bf0d345c94f4f87290e3",
+      "bytes": 767,
+      "role": "execution_replacement_provenance"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_launcher.log",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_launcher.log",
+      "destination": "provenance/retry01_launcher.log",
+      "sha256": "72b6af5085898a4c9996d1f3b6a459274d7bf027d12f8a048673029bb19b4096",
+      "bytes": 1234,
+      "role": "execution_replacement_provenance"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/.presentation_old_pending_delete/experiments/heldout_terrains.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/.presentation_old_pending_delete/experiments/heldout_terrains.json",
+      "destination": "heldout_terrains.json",
+      "sha256": "84c13204027e52865be3d54e471d9aa019af30568bdfd3439676cf9b3e61c7d9",
+      "bytes": 25468,
+      "role": "original_frozen_evaluation_bank"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/.presentation_old_pending_delete/experiments/prepare_experiments.py",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/.presentation_old_pending_delete/experiments/prepare_experiments.py",
+      "destination": "prepare_experiments.py",
+      "sha256": "8c63e33c0232bac24dbd1d79b82feaec4dfe132b0ce31610a9e2afb1a8412e7c",
+      "bytes": 9114,
+      "role": "original_bank_generator_and_initial_plan_generator"
+    },
+    {
+      "source": "/home/tz61/Gatech/8803DRL/presentation/evidence/independent_physics_audit.json",
+      "source_resolved": "/home/tz61/Gatech/8803DRL/presentation/evidence/independent_physics_audit.json",
+      "destination": "provenance/independent_physics_audit.original.json",
+      "sha256": "0880e225f45f9c20142d5f9fd9889a491c5f08a280bf094ef38436ef738b5000",
+      "bytes": 24451,
+      "role": "frozen_original_audit_reference"
+    }
+  ],
+  "all_copy_hashes_verified": true,
+  "source_files_modified": false,
+  "no_source_symlinks_retained": true
+}

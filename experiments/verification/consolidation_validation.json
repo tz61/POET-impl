@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "verified_utc": "2026-10-22T22:44:31.148671+00:00",
+  "status": "passed",
+  "scope": "Copied selected raw-data audit and exact scientific-value comparison; no physics run and no frozen evidence edits.",
+  "frozen_evidence_sha256": "9e43fd80f873fe0e3a6ed80b1a2a00260d724536829ad945e0711604e1271ec3",
+  "reaggregated_output_sha256": "08eabfbd70564164678d292dd2f0c951eacf3937eece419612fe6945bd02a831",
+  "manifest_sha256": "766d66e431381b88cb1f2271effc8b7be3e613314247099c754a71f414120f5e",
+  "conditions": 9,
+  "matched_checkpoint_iteration": 5,
+  "comparison_fields_exact": [
+    "schema_version",
+    "evidence_kind",
+    "is_full_open_ended_poet",
+    "run_count",
+    "complete_three_by_three_matrix",
+    "primary_comparison_status",
+    "matched_checkpoint_iteration",
+    "group_field_semantics",
+    "all_runs_reached_first_transfer_iteration",
+    "task_fingerprint",
+    "protocol",
+    "statistical_unit",
+    "metric_definition",
+    "accounting",
+    "totals_scope",
+    "limitations",
+    "groups",
+    "totals"
+  ],
+  "per_condition_checks": [
+    {
+      "category": "runs",
+      "seed": 24582922,
+      "mode": "full",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582922,
+      "mode": "no_transfer",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582922,
+      "mode": "topk",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582923,
+      "mode": "full",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582923,
+      "mode": "no_transfer",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582923,
+      "mode": "topk",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582924,
+      "mode": "full",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582924,
+      "mode": "no_transfer",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "runs",
+      "seed": 24582924,
+      "mode": "topk",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582922,
+      "mode": "full",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582922,
+      "mode": "no_transfer",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582922,
+      "mode": "topk",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582923,
+      "mode": "full",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582923,
+      "mode": "no_transfer",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582923,
+      "mode": "topk",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582924,
+      "mode": "full",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582924,
+      "mode": "no_transfer",
+      "all_nonlocation_fields_exactly_equal": true
+    },
+    {
+      "category": "comparison_runs",
+      "seed": 24582924,
+      "mode": "topk",
+      "all_nonlocation_fields_exactly_equal": true
+    }
+  ],
+  "selected_environment_objects_exact_by_condition": true,
+  "original_selection_manifest_sha256_unchanged": true,
+  "raw_files_hash_verified": 178,
+  "raw_bytes_preserved": 27743438,
+  "materialized_symlinks_remaining": 0,
+  "strict_independent_audit_status": "passed",
+  "strict_interrupted_prefixes_passed": 6,
+  "analytical_tests": {
+    "count": 8,
+    "passed": true,
+    "log": "verification/experiment_tests.log",
+    "scope": "Protocol/aggregation analytical fixtures; no physical-performance claim"
+  },
+  "frozen_runner_checks": [
+    {
+      "condition": "full_seed_24582922",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "full_seed_24582923",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "full_seed_24582924",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "no_transfer_seed_24582922",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "no_transfer_seed_24582923",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "no_transfer_seed_24582924",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "topk_seed_24582922",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "topk_seed_24582923",
+      "frozen_runner_sha256_matches": true
+    },
+    {
+      "condition": "topk_seed_24582924",
+      "frozen_runner_sha256_matches": true
+    }
+  ],
+  "replay": {
+    "checkpoint": "selected_main/full_seed_24582922/checkpoint_005.json",
+    "checkpoint_sha256": "fd828b07ef2522063faec63bb1abf0a2732368f9a9e7f5e9e3e6018ebd82db55",
+    "matches_current_video_replay_source": true,
+    "recorder_sha256_matches": true
+  },
+  "allowed_reaggregation_differences": [
+    "Location-valued source_summary paths",
+    "Environment/selection provenance source paths; underlying hashes/objects identical",
+    "Ordering of run arrays due to materialized directory names; comparison keys are seed and mode"
+  ],
+  "existing_evidence_unchanged": true,
+  "old_presentation_directories_required": false,
+  "stable_external_dependencies": [
+    "Sibling poet-reproduction source project for algorithm/source fingerprint checks and future physics runs",
+    "~/env_isaaclab Python and installed simulator for future physics only"
+  ],
+  "deletion_readiness": "The nine selected completed conditions and strict-audit prefixes are fully preserved here. This report does not authorize deleting unrelated files; coordinating agent manages the user-requested old-version cleanup."
+}

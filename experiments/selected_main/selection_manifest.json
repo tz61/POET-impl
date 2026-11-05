@@ -1,0 +1,118 @@
+{
+  "selected_at": "2026-10-22T14:01:56.266537-04:00",
+  "selection": [
+    {
+      "seed": 24582922,
+      "mode": "full",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922",
+      "reason": "Predeclared replacement of interrupted exit-143 attempt; identical algorithm/physics/budget; no performance selection."
+    },
+    {
+      "seed": 24582922,
+      "mode": "topk",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582922/topk_seed_24582922",
+      "reason": "Preselected execution slot; no outcome-based selection."
+    },
+    {
+      "seed": 24582922,
+      "mode": "no_transfer",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922",
+      "reason": "Predeclared replacement of interrupted exit-143 attempt; identical algorithm/physics/budget; no performance selection."
+    },
+    {
+      "seed": 24582923,
+      "mode": "full",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923",
+      "reason": "Predeclared replacement of interrupted exit-143 attempt; identical algorithm/physics/budget; no performance selection."
+    },
+    {
+      "seed": 24582923,
+      "mode": "topk",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923",
+      "reason": "Predeclared replacement of interrupted exit-143 attempt; identical algorithm/physics/budget; no performance selection."
+    },
+    {
+      "seed": 24582923,
+      "mode": "no_transfer",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923",
+      "reason": "Predeclared replacement of interrupted exit-143 attempt; identical algorithm/physics/budget; no performance selection."
+    },
+    {
+      "seed": 24582924,
+      "mode": "full",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924",
+      "reason": "Predeclared replacement of interrupted exit-143 attempt; identical algorithm/physics/budget; no performance selection."
+    },
+    {
+      "seed": 24582924,
+      "mode": "topk",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582924/topk_seed_24582924",
+      "reason": "Preselected execution slot; no outcome-based selection."
+    },
+    {
+      "seed": 24582924,
+      "mode": "no_transfer",
+      "condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582924/no_transfer_seed_24582924",
+      "reason": "Preselected execution slot; no outcome-based selection."
+    }
+  ],
+  "execution": "Three surviving original conditions plus six replacement conditions supervised in one detached tmux session. Original interrupted records retained.",
+  "reason": "Use available CPU cores and reserve time for video quality checks. Same protocol/fingerprint and initialization.",
+  "execution_replacements": [
+    {
+      "mode": "full",
+      "seed": 24582922,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582922/full_seed_24582922",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582922/full_seed_24582922",
+      "declared_at": "2026-10-22T14:10:30.245556-04:00"
+    },
+    {
+      "mode": "full",
+      "seed": 24582923,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582923/full_seed_24582923",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582923/full_seed_24582923",
+      "declared_at": "2026-10-22T14:10:30.245625-04:00"
+    },
+    {
+      "mode": "full",
+      "seed": 24582924,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/main_seed_24582924/full_seed_24582924",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_full_seed_24582924/full_seed_24582924",
+      "declared_at": "2026-10-22T14:10:30.245668-04:00"
+    },
+    {
+      "mode": "no_transfer",
+      "seed": 24582922,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582922/no_transfer_seed_24582922",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582922/no_transfer_seed_24582922",
+      "declared_at": "2026-10-22T14:10:30.245711-04:00"
+    },
+    {
+      "mode": "no_transfer",
+      "seed": 24582923,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_no_transfer_seed_24582923/no_transfer_seed_24582923",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923/no_transfer_seed_24582923",
+      "declared_at": "2026-10-22T14:10:30.245751-04:00"
+    },
+    {
+      "mode": "topk",
+      "seed": 24582923,
+      "interrupted_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/parallel_topk_seed_24582923/topk_seed_24582923",
+      "exit_code": 143,
+      "reason": "Terminated with exit 143, consistent with SIGTERM; cause undetermined. No completed summary. Replacement is independent of performance.",
+      "replacement_condition": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_topk_seed_24582923/topk_seed_24582923",
+      "declared_at": "2026-10-22T14:10:30.245792-04:00"
+    }
+  ],
+  "cost_scope": "Reported totals cover the nine canonical completed runs only. Interrupted attempts are retained but their unfinished evaluation costs cannot be reconstructed exactly."
+}

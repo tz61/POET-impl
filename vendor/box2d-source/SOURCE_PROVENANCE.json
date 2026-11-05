@@ -1,0 +1,531 @@
+{
+  "repository": "https://github.com/jeffmahler/grasp_policies",
+  "commit": "8fdeb3af7ede7f6f2a4aee2c11e513bac9a5dd44",
+  "subdirectory": "Box2D_sim",
+  "version": "2.3.0",
+  "purpose": "Offline compatibility source candidate for original POET; compilation was not attempted after the target changed to IsaacLab.",
+  "status": "Source subset retrieved; no C API patch applied, no Box2D package built or installed.",
+  "retrieval": "Public GitHub repository blobs fetched through authorized GitHub connector.",
+  "files": [
+    {
+      "path": "Box2D/Box2D_wrap.cpp",
+      "git_blob_sha": "2ad76a32940ca9769ba9dfdc001dc560d70bc973",
+      "source_size": 1876784
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2CircleShape.h",
+      "git_blob_sha": "6c1fd543a3a40e8c9c42f7552b7e1ef6347f26b5",
+      "source_size": 2626
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2ChainShape.cpp",
+      "git_blob_sha": "76bceab45e20c792f2fb6a90f7a654494510976c",
+      "source_size": 5044
+    },
+    {
+      "path": "Box2D/Box2D_wrap.h",
+      "git_blob_sha": "b57ba5b060822d9562ebf6c42966f657b706fc90",
+      "source_size": 12065
+    },
+    {
+      "path": "Box2D/Box2D.h",
+      "git_blob_sha": "924fa89b83912c8d27d881742d59d2b29e1c8def",
+      "source_size": 2553
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2EdgeShape.cpp",
+      "git_blob_sha": "e204160b0e23e30598cf56e49b7bd89ee50d746f",
+      "source_size": 3457
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2CircleShape.cpp",
+      "git_blob_sha": "c03d662df7f05fe6d44a4049679faca04ee716db",
+      "source_size": 3179
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2ChainShape.h",
+      "git_blob_sha": "6aa41ea417d6e0e22263000c3715967b9bed40d2",
+      "source_size": 3524
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2EdgeShape.h",
+      "git_blob_sha": "99f822bec61763f74b907245b13c434588a20ff5",
+      "source_size": 2423
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2Shape.h",
+      "git_blob_sha": "fd7de2626e17e6380a61e8c130b9ad0eb10baa8c",
+      "source_size": 3598
+    },
+    {
+      "path": "Box2D/Collision/b2BroadPhase.cpp",
+      "git_blob_sha": "7a2b0d6c5cb4f032a90884d074536365aa909842",
+      "source_size": 3246
+    },
+    {
+      "path": "Box2D/Collision/b2BroadPhase.h",
+      "git_blob_sha": "49057104436014151d55ba2061b879bc9079e02a",
+      "source_size": 7213
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2PolygonShape.h",
+      "git_blob_sha": "d5c0e742317fa47101c444a844e5b2edcdb5f3c2",
+      "source_size": 3584
+    },
+    {
+      "path": "Box2D/Collision/b2CollidePolygon.cpp",
+      "git_blob_sha": "8965c4fc83b1210deed5cc16fa3337b567e5b1ac",
+      "source_size": 8978
+    },
+    {
+      "path": "Box2D/Collision/Shapes/b2PolygonShape.cpp",
+      "git_blob_sha": "09b1e553ff23a5cbe878df14650d460583aeaad7",
+      "source_size": 10614
+    },
+    {
+      "path": "Box2D/Collision/b2CollideEdge.cpp",
+      "git_blob_sha": "3f5fa372563ced2ba1f30d20a9fe21de48ba3b7e",
+      "source_size": 16223
+    },
+    {
+      "path": "Box2D/Collision/b2CollideCircle.cpp",
+      "git_blob_sha": "e60b2086b1023fb60269138ed067acf2c6445a2e",
+      "source_size": 4508
+    },
+    {
+      "path": "Box2D/Collision/b2Collision.h",
+      "git_blob_sha": "27897f70a87420692673e8f87baccaab5bbd07b7",
+      "source_size": 9248
+    },
+    {
+      "path": "Box2D/Collision/b2Collision.cpp",
+      "git_blob_sha": "4b092f0cbe9e3a4bab2c4ed3ac56b8d4955203db",
+      "source_size": 6522
+    },
+    {
+      "path": "Box2D/Collision/b2Distance.cpp",
+      "git_blob_sha": "00ac3d0cf98bad3cf0dbcf472c8846f9397b34fe",
+      "source_size": 13737
+    },
+    {
+      "path": "Box2D/Collision/b2DynamicTree.h",
+      "git_blob_sha": "97aa461b23c2abf61c3c6c540c01547ce24a56ae",
+      "source_size": 7967
+    },
+    {
+      "path": "Box2D/Collision/b2TimeOfImpact.cpp",
+      "git_blob_sha": "a2c0d762afee9cff3ae8919587fad57e343d43ed",
+      "source_size": 12193
+    },
+    {
+      "path": "Box2D/Collision/b2DynamicTree.cpp",
+      "git_blob_sha": "00ed0b1ca3d2bf8f165e359cd6382a8c551d2a1f",
+      "source_size": 17690
+    },
+    {
+      "path": "Box2D/Collision/b2Distance.h",
+      "git_blob_sha": "54ed1e136c327d3942be7bcef0dad89e43284d4f",
+      "source_size": 3918
+    },
+    {
+      "path": "Box2D/Collision/b2TimeOfImpact.h",
+      "git_blob_sha": "179a1700ec12126422d4bc039cc7ac44d3e41558",
+      "source_size": 1921
+    },
+    {
+      "path": "Box2D/Common/b2BlockAllocator.cpp",
+      "git_blob_sha": "f5060daa2a80f615896d32c404eb65536db1ee3f",
+      "source_size": 5114
+    },
+    {
+      "path": "Box2D/Common/b2BlockAllocator.h",
+      "git_blob_sha": "8ba29a5e93acf1d9feeee71669368a7f1ddc2d87",
+      "source_size": 2018
+    },
+    {
+      "path": "Box2D/Common/b2Draw.cpp",
+      "git_blob_sha": "327b580793de051c45f44669083a5910a15a35ac",
+      "source_size": 1261
+    },
+    {
+      "path": "Box2D/Common/b2Draw.h",
+      "git_blob_sha": "14f31051413c7bfc567a3faf9045d2247301ff33",
+      "source_size": 2880
+    },
+    {
+      "path": "Box2D/Common/b2GrowableStack.h",
+      "git_blob_sha": "d2e07120f057d2f3e288a7bbd4cf18e30858abb4",
+      "source_size": 2024
+    },
+    {
+      "path": "Box2D/Common/b2Math.cpp",
+      "git_blob_sha": "4974fe1871afcdeb574905a8b5f55685d140b1c4",
+      "source_size": 2815
+    },
+    {
+      "path": "Box2D/Common/b2Math.h",
+      "git_blob_sha": "9808258bff7bd0aef48631d521221aff06473bc4",
+      "source_size": 17300
+    },
+    {
+      "path": "Box2D/Common/b2Settings.cpp",
+      "git_blob_sha": "987cd3c8c276381de4c4290824600d79e08c77be",
+      "source_size": 1398
+    },
+    {
+      "path": "Box2D/Common/b2StackAllocator.h",
+      "git_blob_sha": "796c51dfd589f0caf2b2f00c333a24262cf3a52f",
+      "source_size": 1732
+    },
+    {
+      "path": "Box2D/Common/b2Settings.h",
+      "git_blob_sha": "5762daf58d07623355a3795780b70462a3099d20",
+      "source_size": 5612
+    },
+    {
+      "path": "Box2D/Common/b2StackAllocator.cpp",
+      "git_blob_sha": "4a862835ba13135ef77eb87b9811c42dab5acca7",
+      "source_size": 2132
+    },
+    {
+      "path": "Box2D/Common/b2Timer.h",
+      "git_blob_sha": "d2b8777a3e60ccff55362eda1f13e038b334cd72",
+      "source_size": 1500
+    },
+    {
+      "path": "Box2D/Common/b2Timer.cpp",
+      "git_blob_sha": "ea3479f1197932c5f7b475a2ccf6a659a1d6c1a8",
+      "source_size": 2370
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h",
+      "git_blob_sha": "2dad0b64f36ce04975f60506b5dd05c1edb3ec3f",
+      "source_size": 1578
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp",
+      "git_blob_sha": "3886dfd70bc3b5950d41593a8a7c566c4eeb23ed",
+      "source_size": 2354
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2CircleContact.cpp",
+      "git_blob_sha": "584ef2f1f610b3d25d120606199037f80f7ab3f8",
+      "source_size": 2135
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp",
+      "git_blob_sha": "02bcaaf6ab988e1d2435c971496bbb2bc54dc74e",
+      "source_size": 2369
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2CircleContact.h",
+      "git_blob_sha": "aac1f0bd6b6abc310f0b2fbe984111459f5869a6",
+      "source_size": 1506
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2Contact.h",
+      "git_blob_sha": "9c1a8b42d9870505d32118cd9f18364eb3b427b0",
+      "source_size": 9662
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2Contact.cpp",
+      "git_blob_sha": "8d0104e8c9f68137097cee70adfcb06d98a32ce7",
+      "source_size": 7639
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h",
+      "git_blob_sha": "8f30ee86706fb6bda4c20b5e46b893750a71f3b3",
+      "source_size": 1583
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2ContactSolver.cpp",
+      "git_blob_sha": "516b7257ebde0c3f7856bb29661c9abb6ec77181",
+      "source_size": 23601
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2ContactSolver.h",
+      "git_blob_sha": "cb568a338263c49ee48976b6fe57ad97130b12ec",
+      "source_size": 2513
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h",
+      "git_blob_sha": "74b27ee01c7404fd8526ad41e056d1678a8973f2",
+      "source_size": 1550
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp",
+      "git_blob_sha": "880f83e228ff3de1aece6cede314bf821f0c0bc4",
+      "source_size": 2135
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp",
+      "git_blob_sha": "04336507074eac0420fee8b4cb1bff116568ff46",
+      "source_size": 2093
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp",
+      "git_blob_sha": "8bac536a0e98862b7f1e712854a29a05a7d505e5",
+      "source_size": 2107
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2NullContact.h",
+      "git_blob_sha": "f43c3d86997179bf52dea3b834cccdb6d69e77c1",
+      "source_size": 1278
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2PolygonContact.cpp",
+      "git_blob_sha": "52e1be87467a46078ee6be9f88b681a69cf020c7",
+      "source_size": 2154
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h",
+      "git_blob_sha": "11b61b880773f50e04aa34ba5605d3985e893220",
+      "source_size": 1545
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2DistanceJoint.h",
+      "git_blob_sha": "9d0528b95ec8132e3d7ac31f9b69258c6293bae1",
+      "source_size": 4756
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h",
+      "git_blob_sha": "6beca16a2e75f3c1ba2e2bfe6ded441aa030c322",
+      "source_size": 1550
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2DistanceJoint.cpp",
+      "git_blob_sha": "1ced7d9de4413dfd631a8992f10ad03216e89f61",
+      "source_size": 7555
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2FrictionJoint.h",
+      "git_blob_sha": "785d9ac15eaeac5d5d8944c578951d004598b282",
+      "source_size": 3408
+    },
+    {
+      "path": "Box2D/Dynamics/Contacts/b2PolygonContact.h",
+      "git_blob_sha": "45932148c89844ebdefe0a61f0279bf86456fcfd",
+      "source_size": 1511
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2GearJoint.h",
+      "git_blob_sha": "48cdfd886e0eadd860c17f046336cf3109e38849",
+      "source_size": 3588
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2FrictionJoint.cpp",
+      "git_blob_sha": "075e72bb4da5a65a8b96be6cbb5db722163cc414",
+      "source_size": 7144
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2GearJoint.cpp",
+      "git_blob_sha": "233d972a87ed57da3885d73a5b6c455437c3cc93",
+      "source_size": 12019
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2Joint.h",
+      "git_blob_sha": "f6002e50643181b484d2155faf5ed4a057194d01",
+      "source_size": 5733
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2MotorJoint.cpp",
+      "git_blob_sha": "747a35df41847a906e082dcc50e71801e18bd93b",
+      "source_size": 8141
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2Joint.cpp",
+      "git_blob_sha": "469864a5fce506743d541186c5f2bd64835027df",
+      "source_size": 5361
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2MouseJoint.cpp",
+      "git_blob_sha": "eb1de9d324b7da55ebd0f98e934b0607251b84a6",
+      "source_size": 5690
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2MouseJoint.h",
+      "git_blob_sha": "aba70ec1c623db85b2d2bf523bfa19fb31641965",
+      "source_size": 3817
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2PrismaticJoint.h",
+      "git_blob_sha": "8d0f34229c25ffcc8b02c53140263669bf2e16cf",
+      "source_size": 6097
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2PrismaticJoint.cpp",
+      "git_blob_sha": "171b012fb9a1e716749ffcf035189506e6ab0463",
+      "source_size": 17475
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2PulleyJoint.cpp",
+      "git_blob_sha": "f8b228531db83bbb276cb537f716fc4dc81c53b5",
+      "source_size": 9155
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2MotorJoint.h",
+      "git_blob_sha": "d9c807adb62818151994ab51c6c969331befebc2",
+      "source_size": 3619
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2PulleyJoint.h",
+      "git_blob_sha": "07e7678fb9b1e0b9b7ee0c73399ec4871b7c6617",
+      "source_size": 4592
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2RevoluteJoint.cpp",
+      "git_blob_sha": "d48cae815213ac7a3ea79df1592bf4771d9f01a1",
+      "source_size": 13591
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2RevoluteJoint.h",
+      "git_blob_sha": "e62cdbccdaffbf113bf761498d4c2a359938b6ae",
+      "source_size": 6390
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2WeldJoint.cpp",
+      "git_blob_sha": "e5cddf32c51c7f11c4d84f99fbf81010b63f977f",
+      "source_size": 9005
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2WeldJoint.h",
+      "git_blob_sha": "2adfc26abc951f6852be62594c5f298d0ee97400",
+      "source_size": 3889
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2RopeJoint.h",
+      "git_blob_sha": "30252460c3bc7941271ef423181726b346c36ade",
+      "source_size": 3537
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2WheelJoint.cpp",
+      "git_blob_sha": "74eda6819becb12a632f8f84e89cd38dacea988f",
+      "source_size": 10990
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2RopeJoint.cpp",
+      "git_blob_sha": "107ce1fa5e41cc9507233b5dc8c6de3b9d55214e",
+      "source_size": 6603
+    },
+    {
+      "path": "Box2D/Dynamics/Joints/b2WheelJoint.h",
+      "git_blob_sha": "ebb03698eeff9d1849d55a52ba63fc23d9d1a187",
+      "source_size": 6176
+    },
+    {
+      "path": "Box2D/Dynamics/b2Body.cpp",
+      "git_blob_sha": "b1684cb113d00292735a69b18ce64c0f268b3921",
+      "source_size": 12535
+    },
+    {
+      "path": "Box2D/Dynamics/b2ContactManager.cpp",
+      "git_blob_sha": "d71439ce270b6a32a9a941ae2acd10f7cd7ef229",
+      "source_size": 7360
+    },
+    {
+      "path": "Box2D/Dynamics/b2Fixture.cpp",
+      "git_blob_sha": "d97aa448b6cc7f16ed6f46e69aaad6240815c71d",
+      "source_size": 8554
+    },
+    {
+      "path": "Box2D/Dynamics/b2Body.h",
+      "git_blob_sha": "b94328d2ebd365ee52e9fabcf6c79d8afd24e2df",
+      "source_size": 23587
+    },
+    {
+      "path": "Box2D/Dynamics/b2Fixture.h",
+      "git_blob_sha": "5ebd0c3fd57cd14e8157e973117d2c43cd7071a4",
+      "source_size": 9579
+    },
+    {
+      "path": "Box2D/Dynamics/b2Island.cpp",
+      "git_blob_sha": "0e2129cf8d1808e7f88dc9120b3b22bdb74af930",
+      "source_size": 17156
+    },
+    {
+      "path": "Box2D/Dynamics/b2Island.h",
+      "git_blob_sha": "ef3d9b1df24edf5eadeccea1ce9146bbb0b21f52",
+      "source_size": 2538
+    },
+    {
+      "path": "Box2D/Dynamics/b2Separator.cpp",
+      "git_blob_sha": "b875578c6e4515fcfaa87638d562c027a88e725a",
+      "source_size": 9671
+    },
+    {
+      "path": "Box2D/Dynamics/b2Separator.h",
+      "git_blob_sha": "fa26f72ac445d7e14d1462bb08f0606b1092fe9d",
+      "source_size": 3637
+    },
+    {
+      "path": "Box2D/Dynamics/b2ContactManager.h",
+      "git_blob_sha": "dc1f77fe57c8470d591b63f9fe26a0d69e9ddebd",
+      "source_size": 1588
+    },
+    {
+      "path": "Box2D/Dynamics/b2World.cpp",
+      "git_blob_sha": "dc9180ccd1a3ee2a4fe7db0f70d3a8140f6fa453",
+      "source_size": 31043
+    },
+    {
+      "path": "Box2D/Dynamics/b2TimeStep.h",
+      "git_blob_sha": "abe6fb6e0f4f9eb3ab46099709e838a697f9740f",
+      "source_size": 1806
+    },
+    {
+      "path": "Box2D/Dynamics/b2WorldCallbacks.h",
+      "git_blob_sha": "9b937e81f3579c8b4abc4acf9a72307da680c686",
+      "source_size": 5983
+    },
+    {
+      "path": "Box2D/pybox2d_license_header.txt",
+      "git_blob_sha": "af7cc04cb234205f674625edbb9b9f8046eec348",
+      "source_size": 1008
+    },
+    {
+      "path": "INSTALL",
+      "git_blob_sha": "cd4d1283cb2ef1d7b9109832c758cc8cef12d278",
+      "source_size": 4821
+    },
+    {
+      "path": "Box2D/Dynamics/b2WorldCallbacks.cpp",
+      "git_blob_sha": "82b28cc0526d5a712ea1a81265210735ab2eda00",
+      "source_size": 1633
+    },
+    {
+      "path": "Box2D/Dynamics/b2World.h",
+      "git_blob_sha": "2ab26ebebc7c9c6aba83c8443f9a52ee76eb3981",
+      "source_size": 10830
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "b3912095943dd9932d4986ca104212074aeb1b65",
+      "source_size": 1102
+    },
+    {
+      "path": "library/Box2D/__init__.py",
+      "git_blob_sha": "b71945a77890a9a8028a6c38a34af41aac343a78",
+      "source_size": 1268
+    },
+    {
+      "path": "library/Box2D/b2/__init__.py",
+      "git_blob_sha": "6bf9c4f416196fe4fe83b463fa974172b6920a5d",
+      "source_size": 1754
+    },
+    {
+      "path": "Box2D/Box2D-License.txt",
+      "git_blob_sha": "ed36601779228709a969b2a6eed82d096d5c3e62",
+      "source_size": 886
+    },
+    {
+      "path": "setup.py",
+      "git_blob_sha": "a05ba7b46fa22ec0775e7589d1bdc2f04c590515",
+      "source_size": 7317
+    },
+    {
+      "path": "library/Box2D/Box2D.py",
+      "git_blob_sha": "b2a9f1eec0b9b266f0774a0580c43ae286cb3480",
+      "source_size": 316637
+    }
+  ]
+}

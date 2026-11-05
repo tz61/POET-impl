@@ -1,0 +1,38 @@
+[
+  {
+    "finished_at": "2026-10-22T14:25:59.848983-04:00",
+    "mode": "full",
+    "seed": 24582922,
+    "exit_code": 0
+  },
+  {
+    "finished_at": "2026-10-22T14:27:04.486684-04:00",
+    "mode": "full",
+    "seed": 24582923,
+    "exit_code": 0
+  },
+  {
+    "finished_at": "2026-10-22T14:27:04.486903-04:00",
+    "mode": "full",
+    "seed": 24582924,
+    "exit_code": 0
+  },
+  {
+    "finished_at": "2026-10-22T14:27:30.442513-04:00",
+    "mode": "no_transfer",
+    "seed": 24582922,
+    "exit_code": 0
+  },
+  {
+    "finished_at": "2026-10-22T14:27:30.442763-04:00",
+    "mode": "no_transfer",
+    "seed": 24582923,
+    "exit_code": 0
+  },
+  {
+    "finished_at": "2026-10-22T14:27:30.442872-04:00",
+    "mode": "topk",
+    "seed": 24582923,
+    "exit_code": 0
+  }
+]

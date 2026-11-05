@@ -1,0 +1,29 @@
+/home/tz61/env_isaaclab/lib/python3.12/site-packages/torch/cuda/__init__.py:1007: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:308)
+/home/tz61/IsaacLab/source/isaaclab_newton/isaaclab_newton/physics/newton_manager.py:989: FutureWarning: Newton shape color replacement is enabled; this workaround will be deprecated in a future release.
+  replace_newton_shape_colors(cls._model)
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Warp UserWarning: Kernel cache artifacts from a previous Warp version were found in '/home/tz61/Gatech/8803DRL/poet-reproduction/.cache/warp'. These will be ignored. You can safely delete them.
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 24582922
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.141430 s, Mean: 0.141430 s, Std: 0.000000 s, N: 1
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 2
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.013977 s, Mean: 0.013977 s, Std: 0.000000 s, N: 1
+Initialize solver took: Last: 0.077262 s, Mean: 0.077262 s, Std: 0.000000 s, N: 1
+[INFO]: Time taken for simulation start Last: 0.151083 s, Mean: 0.151083 s, Std: 0.000000 s, N: 1
+[INFO]: Completed setting up the environment...
+{"iteration": 0, "evaluations": 9, "active": 1, "archive": 1, "scores": {"terrain_e0e2068a90": -98.59316161228344}, "requested_episodes": 9, "first_episode_steps": 262, "simulated_world_steps": 376, "wall_seconds": 5.426999216000013, "best_scores": {"terrain_e0e2068a90": -98.59316161228344}}
+{"iteration": 1, "evaluations": 18, "active": 1, "archive": 1, "scores": {"terrain_e0e2068a90": -98.62976562301628}, "requested_episodes": 18, "first_episode_steps": 509, "simulated_world_steps": 666, "wall_seconds": 7.913964093000004, "best_scores": {"terrain_e0e2068a90": -98.59316161228344}}
+{"iteration": 2, "evaluations": 27, "active": 1, "archive": 1, "scores": {"terrain_e0e2068a90": -98.57636717951391}, "requested_episodes": 27, "first_episode_steps": 815, "simulated_world_steps": 1048, "wall_seconds": 11.218089932000112, "best_scores": {"terrain_e0e2068a90": -98.57636717951391}}

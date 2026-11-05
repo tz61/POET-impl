@@ -1,0 +1,3822 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic_analytic_single_transfer_event",
+  "is_physics_or_locomotion_result": false,
+  "description": "Production POET transfer and ES proposals on one-dimensional analytic objectives; no simulation.",
+  "scope": {
+    "active_tasks": 4,
+    "parameter_dimensions": 1,
+    "antithetic_pairs": 32,
+    "top_k": 1,
+    "transfer_events_per_case": 1,
+    "seed_count": 3,
+    "proposal_optimizer_state": "fresh state: production proposal uses its SGD branch",
+    "noise_pairing": "Replay harness keys ES perturbations by seed, target name and donor parameters; production RNG unchanged.",
+    "initial_states": "Hand-constructed policies and analytic tasks; not learned populations."
+  },
+  "provenance": {
+    "core_sha256": "1d2db5fb84195e30912cadb1a2fec7596215d2b78d46ca103e942f19cdef6488",
+    "script_sha256": "11a5a65bfdac251c824a59b059a2ebe3547633b236324b49789a215b0e194a2f",
+    "python_version": "3.12.14",
+    "numpy_version": "2.5.2",
+    "reproduction_command": "~/env_isaaclab/bin/python presentation/evidence/run_mechanism_comparison.py"
+  },
+  "summary": {
+    "policy_evaluations_per_event": {
+      "full": 792,
+      "topk": 272,
+      "no_transfer": 0
+    },
+    "evaluator_calls_per_event": {
+      "full": 36,
+      "topk": 20,
+      "no_transfer": 0
+    },
+    "full_to_topk_event_evaluation_reduction_fraction": 0.6565656565656566,
+    "counterexample_target_zero_return_gaps": [
+      0.9698844839488516,
+      0.9394886467839907,
+      0.755668145973148
+    ],
+    "claims_supported": [
+      "Top-K reduces the number of production ES proposals in this controlled transfer event.",
+      "All direct donor evaluations are retained.",
+      "Direct-score screening can miss a donor whose one-step adaptation is better."
+    ],
+    "claims_not_supported": [
+      "Robot locomotion quality, success rate, physical robustness or GA/GPU validation.",
+      "End-to-end POET training speedup, learning superiority, or multi-seed physical performance.",
+      "A fair fixed-budget training comparison: this script replays only one transfer event."
+    ]
+  },
+  "scenarios": [
+    {
+      "scenario": "smooth_quadratic",
+      "formula": "10 - (x - (0.5 + task_index * 0.1))^2",
+      "seed": 7,
+      "modes": {
+        "full": {
+          "mode": "full",
+          "settings": {
+            "seed": 7,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            9.947261080243392,
+            9.64,
+            9.831218987602936,
+            9.738375786062708
+          ],
+          "after_policies": [
+            [
+              0.2703504414186516
+            ],
+            [
+              0.0
+            ],
+            [
+              0.2891703365175977
+            ],
+            [
+              0.28850785544908764
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 792,
+          "transfer_evaluator_calls": 36,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 3,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.75,
+              "proposal_score": 9.947261080243392,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 5.59,
+              "proposal_score": 6.940053350901165,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.75,
+              "proposal_score": 8.541525192443437,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 3.2399999999999993,
+              "proposal_score": 4.584406976091403,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.0,
+              "proposal_score": 6.9666582586366985,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.4399999999999995,
+              "proposal_score": 8.154839451129744,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.709999999999999,
+              "proposal_score": 4.062651854280016,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.51,
+              "proposal_score": 9.831218987602936,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.11,
+              "proposal_score": 7.957186242599592,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.160000000000001,
+              "proposal_score": 3.623379213277091,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.36,
+              "proposal_score": 9.738375786062708,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.76,
+              "proposal_score": 7.853011313000591,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 3.75,
+              "after": 9.947261080243392
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.39,
+              "after": 9.831218987602936
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.76,
+              "after": 9.738375786062708
+            }
+          ]
+        },
+        "topk": {
+          "mode": "topk",
+          "settings": {
+            "seed": 7,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "topk",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            9.947261080243392,
+            9.64,
+            9.831218987602936,
+            9.738375786062708
+          ],
+          "after_policies": [
+            [
+              0.2703504414186516
+            ],
+            [
+              0.0
+            ],
+            [
+              0.2891703365175977
+            ],
+            [
+              0.28850785544908764
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 272,
+          "transfer_evaluator_calls": 20,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 3,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.75,
+              "proposal_score": 9.947261080243392,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 5.59,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.75,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 3.2399999999999993,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.0,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.4399999999999995,
+              "proposal_score": 8.154839451129744,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.709999999999999,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.51,
+              "proposal_score": 9.831218987602936,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.11,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.160000000000001,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.36,
+              "proposal_score": 9.738375786062708,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.76,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 3.75,
+              "after": 9.947261080243392
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.39,
+              "after": 9.831218987602936
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.76,
+              "after": 9.738375786062708
+            }
+          ]
+        },
+        "no_transfer": {
+          "mode": "no_transfer",
+          "settings": {
+            "seed": 7,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": false,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 0,
+          "transfer_evaluator_calls": 0,
+          "transfer_evaluator_batch_sizes": [],
+          "direct_evaluations": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "events": []
+        }
+      },
+      "full_minus_topk_after_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screening_lost_return_on_target_zero": 0.0
+    },
+    {
+      "scenario": "smooth_quadratic",
+      "formula": "10 - (x - (0.5 + task_index * 0.1))^2",
+      "seed": 81,
+      "modes": {
+        "full": {
+          "mode": "full",
+          "settings": {
+            "seed": 81,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            9.950706464257722,
+            9.64,
+            9.839731723017593,
+            9.800739485880774
+          ],
+          "after_policies": [
+            [
+              0.27797852414174357
+            ],
+            [
+              0.0
+            ],
+            [
+              0.2996647942256298
+            ],
+            [
+              0.35361394049631656
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 792,
+          "transfer_evaluator_calls": 36,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 3,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.75,
+              "proposal_score": 9.950706464257722,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 5.59,
+              "proposal_score": 6.8667045255710235,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.75,
+              "proposal_score": 8.510217812091105,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 3.2399999999999993,
+              "proposal_score": 4.647405427313529,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.0,
+              "proposal_score": 7.311628392584883,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.4399999999999995,
+              "proposal_score": 8.191846037640525,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.709999999999999,
+              "proposal_score": 4.0055233281449665,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.51,
+              "proposal_score": 9.839731723017593,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.11,
+              "proposal_score": 8.10895184615813,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.160000000000001,
+              "proposal_score": 3.808681079818448,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.36,
+              "proposal_score": 9.800739485880774,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.76,
+              "proposal_score": 7.535323126676189,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 3.75,
+              "after": 9.950706464257722
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.39,
+              "after": 9.839731723017593
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.76,
+              "after": 9.800739485880774
+            }
+          ]
+        },
+        "topk": {
+          "mode": "topk",
+          "settings": {
+            "seed": 81,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "topk",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            9.950706464257722,
+            9.64,
+            9.839731723017593,
+            9.800739485880774
+          ],
+          "after_policies": [
+            [
+              0.27797852414174357
+            ],
+            [
+              0.0
+            ],
+            [
+              0.2996647942256298
+            ],
+            [
+              0.35361394049631656
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 272,
+          "transfer_evaluator_calls": 20,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 3,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.75,
+              "proposal_score": 9.950706464257722,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 5.59,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.75,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 3.2399999999999993,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.0,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.4399999999999995,
+              "proposal_score": 8.191846037640525,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.709999999999999,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.51,
+              "proposal_score": 9.839731723017593,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.11,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.160000000000001,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.36,
+              "proposal_score": 9.800739485880774,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.76,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 3.75,
+              "after": 9.950706464257722
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.39,
+              "after": 9.839731723017593
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.76,
+              "after": 9.800739485880774
+            }
+          ]
+        },
+        "no_transfer": {
+          "mode": "no_transfer",
+          "settings": {
+            "seed": 81,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": false,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 0,
+          "transfer_evaluator_calls": 0,
+          "transfer_evaluator_batch_sizes": [],
+          "direct_evaluations": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "events": []
+        }
+      },
+      "full_minus_topk_after_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screening_lost_return_on_target_zero": 0.0
+    },
+    {
+      "scenario": "smooth_quadratic",
+      "formula": "10 - (x - (0.5 + task_index * 0.1))^2",
+      "seed": 123,
+      "modes": {
+        "full": {
+          "mode": "full",
+          "settings": {
+            "seed": 123,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            9.928231944215725,
+            9.64,
+            9.821126693706466,
+            9.757893948120856
+          ],
+          "after_policies": [
+            [
+              0.23210439386903944
+            ],
+            [
+              0.0
+            ],
+            [
+              0.2770658369278575
+            ],
+            [
+              0.30795726620633446
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 792,
+          "transfer_evaluator_calls": 36,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 3,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.75,
+              "proposal_score": 9.928231944215725,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 5.59,
+              "proposal_score": 6.598236287490986,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.75,
+              "proposal_score": 8.551021523819355,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 3.2399999999999993,
+              "proposal_score": 4.591273922034407,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.0,
+              "proposal_score": 6.971431450080704,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.4399999999999995,
+              "proposal_score": 8.33879379665459,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.709999999999999,
+              "proposal_score": 4.320270928096044,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.51,
+              "proposal_score": 9.821126693706466,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.11,
+              "proposal_score": 7.773598357719456,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.160000000000001,
+              "proposal_score": 3.2053003090914567,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.36,
+              "proposal_score": 9.757893948120856,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.76,
+              "proposal_score": 7.811309381710835,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 3.75,
+              "after": 9.928231944215725
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.39,
+              "after": 9.821126693706466
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.76,
+              "after": 9.757893948120856
+            }
+          ]
+        },
+        "topk": {
+          "mode": "topk",
+          "settings": {
+            "seed": 123,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "topk",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            9.928231944215725,
+            9.64,
+            9.821126693706466,
+            9.757893948120856
+          ],
+          "after_policies": [
+            [
+              0.23210439386903944
+            ],
+            [
+              0.0
+            ],
+            [
+              0.2770658369278575
+            ],
+            [
+              0.30795726620633446
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 272,
+          "transfer_evaluator_calls": 20,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 3,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.75,
+              "proposal_score": 9.928231944215725,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 5.59,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.75,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 3.2399999999999993,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.0,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.4399999999999995,
+              "proposal_score": 8.33879379665459,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.709999999999999,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.51,
+              "proposal_score": 9.821126693706466,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 7.11,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 2.160000000000001,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 9.36,
+              "proposal_score": 9.757893948120856,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 6.76,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 3.75,
+              "after": 9.928231944215725
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.39,
+              "after": 9.821126693706466
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a:proposal",
+              "before": 6.76,
+              "after": 9.757893948120856
+            }
+          ]
+        },
+        "no_transfer": {
+          "mode": "no_transfer",
+          "settings": {
+            "seed": 123,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": false,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_scores": [
+            3.75,
+            9.64,
+            6.39,
+            6.76
+          ],
+          "after_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 0,
+          "transfer_evaluator_calls": 0,
+          "transfer_evaluator_batch_sizes": [],
+          "direct_evaluations": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "events": []
+        }
+      },
+      "full_minus_topk_after_scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screening_lost_return_on_target_zero": 0.0
+    },
+    {
+      "scenario": "two_peak_ranking_counterexample",
+      "formula": "exp(-(x/0.5)^2) + 2*exp(-((x-3)/0.4)^2)",
+      "seed": 7,
+      "modes": {
+        "full": {
+          "mode": "full",
+          "settings": {
+            "seed": 7,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.9698844839488516,
+            1.7642826555079276,
+            1.0,
+            1.9474654377133105
+          ],
+          "after_policies": [
+            [
+              2.950729680952988
+            ],
+            [
+              2.8583508558371173
+            ],
+            [
+              0.0
+            ],
+            [
+              2.934739379154886
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 792,
+          "transfer_evaluator_calls": 36,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 4,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999992632065091,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.9698844839488516,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.13490209080836868,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 6.575977894772459e-06,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.7642826555079276,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.10021060799865143,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 5.7629849536231135e-06,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999999566416216,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.1191537000074871,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 6.755043080298197e-06,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999993757495712,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.9474654377133105,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.1253517471925912e-07,
+              "after": 1.9698844839488516
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.0,
+              "after": 1.7642826555079276
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.7357588823446908,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 0.01831563888873418,
+              "after": 1.9474654377133105
+            }
+          ]
+        },
+        "topk": {
+          "mode": "topk",
+          "settings": {
+            "seed": 7,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "topk",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.0,
+            1.7642826555079276,
+            1.0,
+            1.0
+          ],
+          "after_policies": [
+            [
+              0.0
+            ],
+            [
+              2.8583508558371173
+            ],
+            [
+              0.0
+            ],
+            [
+              0.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 272,
+          "transfer_evaluator_calls": 20,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 4,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999992632065091,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.7642826555079276,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999999566416216,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999993757495712,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "before": 1.1253517471925912e-07,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.0,
+              "after": 1.7642826555079276
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.7357588823446908,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.01831563888873418,
+              "after": 1.0
+            }
+          ]
+        },
+        "no_transfer": {
+          "mode": "no_transfer",
+          "settings": {
+            "seed": 7,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": false,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 0,
+          "transfer_evaluator_calls": 0,
+          "transfer_evaluator_batch_sizes": [],
+          "direct_evaluations": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "events": []
+        }
+      },
+      "full_minus_topk_after_scores": [
+        0.9698844839488516,
+        0.0,
+        0.0,
+        0.9474654377133105
+      ],
+      "screening_lost_return_on_target_zero": 0.9698844839488516
+    },
+    {
+      "scenario": "two_peak_ranking_counterexample",
+      "formula": "exp(-(x/0.5)^2) + 2*exp(-((x-3)/0.4)^2)",
+      "seed": 81,
+      "modes": {
+        "full": {
+          "mode": "full",
+          "settings": {
+            "seed": 81,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.9394886467839907,
+            1.9804687915707404,
+            1.0,
+            1.669748729532231
+          ],
+          "after_policies": [
+            [
+              2.92988828758494
+            ],
+            [
+              2.9603745527056744
+            ],
+            [
+              0.0
+            ],
+            [
+              2.830071061059192
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 792,
+          "transfer_evaluator_calls": 36,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 4,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999955573049591,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.9394886467839907,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.1253226840419418,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 7.926854214538707e-06,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.9804687915707404,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.10880801233520274,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 4.896062381618667e-06,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999906800966265,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.16148694613343473,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 1.1189165643989706e-05,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999292422248449,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.669748729532231,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.1253517471925912e-07,
+              "after": 1.9394886467839907
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.0,
+              "after": 1.9804687915707404
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.7357588823446908,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 0.01831563888873418,
+              "after": 1.669748729532231
+            }
+          ]
+        },
+        "topk": {
+          "mode": "topk",
+          "settings": {
+            "seed": 81,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "topk",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.0,
+            1.9804687915707404,
+            1.0,
+            1.0
+          ],
+          "after_policies": [
+            [
+              0.0
+            ],
+            [
+              2.9603745527056744
+            ],
+            [
+              0.0
+            ],
+            [
+              0.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 272,
+          "transfer_evaluator_calls": 20,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 4,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999955573049591,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.9804687915707404,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999906800966265,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999292422248449,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "before": 1.1253517471925912e-07,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.0,
+              "after": 1.9804687915707404
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.7357588823446908,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.01831563888873418,
+              "after": 1.0
+            }
+          ]
+        },
+        "no_transfer": {
+          "mode": "no_transfer",
+          "settings": {
+            "seed": 81,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": false,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 0,
+          "transfer_evaluator_calls": 0,
+          "transfer_evaluator_batch_sizes": [],
+          "direct_evaluations": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "events": []
+        }
+      },
+      "full_minus_topk_after_scores": [
+        0.9394886467839907,
+        0.0,
+        0.0,
+        0.6697487295322311
+      ],
+      "screening_lost_return_on_target_zero": 0.9394886467839907
+    },
+    {
+      "scenario": "two_peak_ranking_counterexample",
+      "formula": "exp(-(x/0.5)^2) + 2*exp(-((x-3)/0.4)^2)",
+      "seed": 123,
+      "modes": {
+        "full": {
+          "mode": "full",
+          "settings": {
+            "seed": 123,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.755668145973148,
+            1.7685494260885073,
+            1.0,
+            1.9226851062744588
+          ],
+          "after_policies": [
+            [
+              2.855612916844999
+            ],
+            [
+              2.859721703313147
+            ],
+            [
+              0.0
+            ],
+            [
+              2.9205776065338322
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 792,
+          "transfer_evaluator_calls": 36,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            64,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 4,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999994347566787,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.755668145973148,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.13793495702359984,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 6.711395482128919e-06,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.7685494260885073,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.14983644241310373,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 1.1972547108742814e-05,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999829099874962,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": 0.08128669344257797,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": 2.136917652222937e-06,
+              "proposal_selected": true,
+              "direct_rank": 3,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999948123201825,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.9226851062744588,
+              "proposal_selected": true,
+              "direct_rank": 2,
+              "mode": "full"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.1253517471925912e-07,
+              "after": 1.755668145973148
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.0,
+              "after": 1.7685494260885073
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.7357588823446908,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 0.01831563888873418,
+              "after": 1.9226851062744588
+            }
+          ]
+        },
+        "topk": {
+          "mode": "topk",
+          "settings": {
+            "seed": 123,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": true,
+            "periodic_transfer_mode": "topk",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.0,
+            1.7685494260885073,
+            1.0,
+            1.0
+          ],
+          "after_policies": [
+            [
+              0.0
+            ],
+            [
+              2.859721703313147
+            ],
+            [
+              0.0
+            ],
+            [
+              0.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 272,
+          "transfer_evaluator_calls": 20,
+          "transfer_evaluator_batch_sizes": [
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1,
+            1,
+            1,
+            1,
+            64,
+            1
+          ],
+          "direct_evaluations": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 4,
+          "events": [
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999994347566787,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": 1.7685494260885073,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999829099874962,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_f9275f3951",
+              "direct_score": 0.01831563888873418,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_43106ca212",
+              "direct_score": 1.1253517471925912e-07,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 3,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "direct_score": 1.0,
+              "proposal_score": 0.9999948123201825,
+              "proposal_selected": true,
+              "direct_rank": 1,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_attempt",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_1e0d2971dc",
+              "direct_score": 0.7357588823446908,
+              "proposal_score": null,
+              "proposal_selected": false,
+              "direct_rank": 2,
+              "mode": "topk"
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_43106ca212",
+              "donor": "terrain_b6ef7a651a",
+              "before": 1.1253517471925912e-07,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_b6ef7a651a",
+              "donor": "terrain_1e0d2971dc:proposal",
+              "before": 1.0,
+              "after": 1.7685494260885073
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_1e0d2971dc",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.7357588823446908,
+              "after": 1.0
+            },
+            {
+              "event": "transfer_accepted",
+              "iteration": 0,
+              "target": "terrain_f9275f3951",
+              "donor": "terrain_b6ef7a651a",
+              "before": 0.01831563888873418,
+              "after": 1.0
+            }
+          ]
+        },
+        "no_transfer": {
+          "mode": "no_transfer",
+          "settings": {
+            "seed": 123,
+            "pairs": 32,
+            "learning_rate": 0.05,
+            "lr_decay": 0.9999,
+            "lr_limit": 0.001,
+            "noise": 0.1,
+            "noise_decay": 0.999,
+            "noise_limit": 0.01,
+            "l2": 0.0,
+            "transfer_interval": 25,
+            "mutation_interval": 200,
+            "max_active": 4,
+            "children": 8,
+            "mc_lower": 50.0,
+            "mc_upper": 300.0,
+            "reproduce_score": 200.0,
+            "transfers": false,
+            "periodic_transfer_mode": "full",
+            "transfer_top_k": 1
+          },
+          "target_names": [
+            "terrain_43106ca212",
+            "terrain_b6ef7a651a",
+            "terrain_1e0d2971dc",
+            "terrain_f9275f3951"
+          ],
+          "initial_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "before_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_scores": [
+            1.1253517471925912e-07,
+            1.0,
+            0.7357588823446908,
+            0.01831563888873418
+          ],
+          "after_policies": [
+            [
+              -2.0
+            ],
+            [
+              0.0
+            ],
+            [
+              2.6
+            ],
+            [
+              -1.0
+            ]
+          ],
+          "setup_policy_evaluations": 4,
+          "transfer_policy_evaluations": 0,
+          "transfer_evaluator_calls": 0,
+          "transfer_evaluator_batch_sizes": [],
+          "direct_evaluations": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "events": []
+        }
+      },
+      "full_minus_topk_after_scores": [
+        0.755668145973148,
+        0.0,
+        0.0,
+        0.9226851062744588
+      ],
+      "screening_lost_return_on_target_zero": 0.755668145973148
+    }
+  ]
+}

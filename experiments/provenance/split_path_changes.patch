@@ -1,0 +1,76 @@
+--- a/experiments/run_physics_comparison.py
++++ b/experiments/run_physics_comparison.py
+@@ -17,8 +17,7 @@
+ import time
+ import traceback
+ 
+-WORKSPACE = Path(__file__).resolve().parents[2]
+-PROJECT = WORKSPACE / "poet-reproduction"
++PROJECT = Path(__file__).resolve().parents[1]
+ sys.path.insert(0, str(PROJECT))
+ sys.dont_write_bytecode = True
+ os.environ.setdefault("OMP_NUM_THREADS", "1")
+@@ -294,7 +293,7 @@
+         write_json(args.output / "environment.json", environment)
+         training_tasks = [Terrain(seed=910001), Terrain(roughness=.06, seed=910002),
+                           Terrain(stump_height=.1, seed=910003), Terrain(gap_width=.4, seed=910004)]
+-        bank_path = WORKSPACE / "presentation" / "experiments" / "heldout_terrains.json"
++        bank_path = Path(__file__).with_name("heldout_terrains.json")
+         bank = json.loads(bank_path.read_text())
+         chosen = ("rough_low", "stump_low", "gap_mid", "mixed_low")
+         heldout = [(item["id"], Terrain(**item["terrain"])) for item in bank["terrains"] if item["id"] in chosen]
+--- a/experiments/prepare_experiments.py
++++ b/experiments/prepare_experiments.py
+@@ -19,8 +19,7 @@
+ 
+ import numpy as np
+ 
+-WORKSPACE = Path(__file__).resolve().parents[2]
+-PROJECT = WORKSPACE / "poet-reproduction"
++PROJECT = Path(__file__).resolve().parents[1]
+ TASK_SOURCE = PROJECT / "isaaclab_port" / "env.py"
+ COURSE = {"course_length": 30.0, "tile_length": 0.4, "flat_margin": 4.0}
+ 
+--- a/experiments/extract_physics_replay.py
++++ b/experiments/extract_physics_replay.py
+@@ -14,8 +14,7 @@
+ import sys
+ import xml.etree.ElementTree as ET
+ 
+-WORKSPACE = Path(__file__).resolve().parents[2]
+-PROJECT = WORKSPACE / "poet-reproduction"
++PROJECT = Path(__file__).resolve().parents[1]
+ sys.path.insert(0, str(PROJECT))
+ sys.dont_write_bytecode = True
+ os.environ.setdefault("OMP_NUM_THREADS", "1")
+--- a/experiments/audit_physics_independent.py
++++ b/experiments/audit_physics_independent.py
+@@ -40,7 +40,7 @@
+     if frozen_protocol is not None:
+         check(all(protocol[key] == value for key, value in frozen_protocol.items()),
+               "batch protocol differs from frozen task fingerprint")
+-    project = Path(__file__).resolve().parents[2] / "poet-reproduction" / "isaaclab_port"
++    project = Path(__file__).resolve().parents[1] / "isaaclab_port"
+     source_paths = {"algorithm": project / "core.py", "evaluator": project / "runtime.py",
+                     "task": project / "env.py", "robot_usd": project / "assets/planar_biped.usda"}
+     for name, source in source_paths.items():
+--- a/evidence/run_mechanism_comparison.py
++++ b/evidence/run_mechanism_comparison.py
+@@ -17,7 +17,7 @@
+ 
+ import numpy as np
+ 
+-ROOT = Path(__file__).resolve().parents[2] / "poet-reproduction"
++ROOT = Path(__file__).resolve().parents[1]
+ if str(ROOT) not in sys.path:
+     sys.path.insert(0, str(ROOT))
+ from isaaclab_port.core import POET, Settings, Terrain
+@@ -148,7 +148,7 @@
+             "core_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+             "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+             "python_version": sys.version.split()[0], "numpy_version": np.__version__,
+-            "reproduction_command": "~/env_isaaclab/bin/python presentation/evidence/run_mechanism_comparison.py",
++            "reproduction_command": "~/env_isaaclab/bin/python evidence/run_mechanism_comparison.py --output NEW_PATH.json",
+         },
+         "summary": {
+             "policy_evaluations_per_event": {"full": 792, "topk": 272, "no_transfer": 0},

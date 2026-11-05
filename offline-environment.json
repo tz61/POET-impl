@@ -1,0 +1,239 @@
+{
+  "method": "Offline copy of existing cached wheel contents into isolated venv; no global installs or network package installation.",
+  "python": "/home/tz61/Gatech/8803DRL/poet-reproduction/.venv/bin/python",
+  "site_packages": "/home/tz61/Gatech/8803DRL/poet-reproduction/.venv/lib/python3.10/site-packages",
+  "packages": [
+    {
+      "name": "numpy",
+      "version": "1.23.5",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/U8qLN0zarbCCW-RZ",
+      "wheel_tags": [
+        "cp310-cp310-manylinux_2_17_x86_64",
+        "cp310-cp310-manylinux2014_x86_64"
+      ],
+      "metadata_sha256": "1dd9add64280d256885e58fc129daa201ea0cd362f7bd595ad1dc85af3be3788",
+      "copied_entries": [
+        "numpy-1.23.5.dist-info",
+        "numpy.libs",
+        "numpy"
+      ]
+    },
+    {
+      "name": "scipy",
+      "version": "1.13.1",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/9OAu8dKYVXnAWfXv",
+      "wheel_tags": [
+        "cp310-cp310-manylinux_2_17_x86_64",
+        "cp310-cp310-manylinux2014_x86_64"
+      ],
+      "metadata_sha256": "12ebd0d48d2cf2d3c2e719e3209fe71d5cd48459733506223be8104921a7e52c",
+      "copied_entries": [
+        "scipy",
+        "scipy.libs",
+        "scipy-1.13.1.dist-info"
+      ]
+    },
+    {
+      "name": "gym",
+      "version": "0.23.1",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/qqRYNAAGYZPhcZ40",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "95e4b6b5c5827125f6c7157be85f2590038212924d449fd7484922a378736147",
+      "copied_entries": [
+        "gym-0.23.1.dist-info",
+        "gym"
+      ]
+    },
+    {
+      "name": "cloudpickle",
+      "version": "2.1.0",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/mXurOAhOB9B3a8Ic",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "fca9d76365b3bed4b1e1ce93654f71a0053c2d11138be770f6ad9bef8505f3ab",
+      "copied_entries": [
+        "cloudpickle",
+        "cloudpickle-2.1.0.dist-info"
+      ]
+    },
+    {
+      "name": "gym_notices",
+      "version": "0.1.0",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/xkC2bjZRX5fgi-UN",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "eaa47c3ee8340060344b13c2183cb30a9b085da42f6c862412a2d319da51ba59",
+      "copied_entries": [
+        "gym_notices",
+        "gym_notices-0.1.0.dist-info"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "78.1.0",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/kAO37d0T-rNuGq9e",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "4444a6b549a8ebb02e1739f4375af7756c841f96f0c31077a183273c7462bd10",
+      "copied_entries": [
+        "setuptools-78.1.0.dist-info",
+        "distutils-precedence.pth",
+        "pkg_resources",
+        "_distutils_hack",
+        "setuptools"
+      ]
+    },
+    {
+      "name": "wheel",
+      "version": "0.48.0",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/GVrG7e7mMdFAIQkE",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "e702fede719fefbb8accad64c01c78efe8d7efea27a7dcef3423f83ffaadfc48",
+      "copied_entries": [
+        "wheel-0.48.0.dist-info",
+        "wheel"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "24.1",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/T7Og8B0puWMsNm1v",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "5f7a283b75a709fccd481aea42379f083d4f3801753365922e6b0732042515d9",
+      "copied_entries": [
+        "packaging",
+        "packaging-24.1.dist-info"
+      ]
+    },
+    {
+      "name": "Pillow",
+      "version": "12.1.1",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/2GB5Dl2LtHRGxNKl",
+      "wheel_tags": [
+        "cp310-cp310-manylinux_2_27_x86_64",
+        "cp310-cp310-manylinux_2_28_x86_64"
+      ],
+      "metadata_sha256": "17ff1f2d2adbc1ee618e97f149a81caaf4c3293d5a687227b6289199e70f2d17",
+      "copied_entries": [
+        "pillow.libs",
+        "pillow-12.1.1.dist-info",
+        "PIL"
+      ]
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.5.3",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/wkFUa55TzvNTO6SZ",
+      "wheel_tags": [
+        "cp310-cp310-manylinux_2_17_x86_64",
+        "cp310-cp310-manylinux2014_x86_64"
+      ],
+      "metadata_sha256": "8c1ece4165f154c6d1461e13cec406c7bc69c86594426cb81ace68a12c13d0b4",
+      "copied_entries": [
+        "matplotlib-3.5.3.dist-info",
+        "mpl_toolkits",
+        "matplotlib-3.5.3-py3.10-nspkg.pth",
+        "matplotlib",
+        "pylab.py"
+      ]
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/M4QW-3IxYDL8GiCq",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "23289e19b76f1e01394227696e6af2b6cd1ce79e89731209bf9195148b18ed36",
+      "copied_entries": [
+        "cycler",
+        "cycler-0.12.1.dist-info"
+      ]
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/09zEH0TB6O67f8XI",
+      "wheel_tags": [
+        "cp310-cp310-manylinux_2_12_x86_64",
+        "cp310-cp310-manylinux2010_x86_64"
+      ],
+      "metadata_sha256": "f07b7b6c0c9c2a624c8a31f931e16712f2cf3490e7dfd51643d68e9d42d4b2c9",
+      "copied_entries": [
+        "kiwisolver.libs",
+        "kiwisolver-1.5.1.dist-info",
+        "kiwisolver"
+      ]
+    },
+    {
+      "name": "fonttools",
+      "version": "4.65.0",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/TpjLYVK1oBF1NhLE",
+      "wheel_tags": [
+        "cp310-cp310-manylinux_2_17_x86_64",
+        "cp310-cp310-manylinux2014_x86_64"
+      ],
+      "metadata_sha256": "767c772df5fec424631e48baa13cfa55498f4d7be9b41d1071b34bf52cc28fa8",
+      "copied_entries": [
+        "fonttools-4.65.0.data",
+        "fontTools",
+        "fonttools-4.65.0.dist-info"
+      ]
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.2",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/7sIW_Tr4JyxIXB-O",
+      "wheel_tags": [
+        "py3-none-any"
+      ],
+      "metadata_sha256": "3311a8b949d70f71a2b9788a9327f11d9d5a6a8012d6c046ca254ad2de877f45",
+      "copied_entries": [
+        "pyparsing-3.3.2.dist-info",
+        "pyparsing"
+      ]
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/zLXJ96lhtLwU3-PB",
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ],
+      "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+      "copied_entries": [
+        "python_dateutil-2.9.0.post0.dist-info",
+        "dateutil"
+      ]
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "source_cache": "/home/tz61/.cache/uv/archive-v0/ytS5Ex0UjMI9WzKD",
+      "wheel_tags": [
+        "py2-none-any",
+        "py3-none-any"
+      ],
+      "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+      "copied_entries": [
+        "six-1.17.0.dist-info",
+        "six.py"
+      ]
+    }
+  ],
+  "missing_at_creation": [
+    "Box2D",
+    "fiber"
+  ],
+  "gpu_required": false
+}

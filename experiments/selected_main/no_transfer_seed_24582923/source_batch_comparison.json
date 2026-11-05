@@ -1,0 +1,1924 @@
+{
+  "status": "completed",
+  "scope": "Actual IsaacLab Beta CPU physics; controlled fixed-task population, not full open-ended POET.",
+  "pilot": false,
+  "runs": [
+    {
+      "status": "completed",
+      "scope": "Actual IsaacLab Beta CPU physics; controlled fixed-task population, not full open-ended POET.",
+      "seed": 24582923,
+      "mode": "no_transfer",
+      "initial_policy_sha256": "5e23763149057b1a52ea621bb05bfac8eece286830ce0ae255a44517138f3133",
+      "iterations_completed": 14,
+      "algorithm_policy_evaluations": 508,
+      "active_tasks": 4,
+      "archive_size": 4,
+      "reproduction_enabled": false,
+      "stop_reason": "soft_wall_budget_at_iteration_boundary",
+      "target_training_world_steps": 0,
+      "training_world_step_overshoot": 0,
+      "train_metrics": {
+        "requested_episodes": 508,
+        "first_episode_steps": 44376,
+        "simulated_world_steps": 125716,
+        "evaluation_wall_seconds": 882.7548241389959,
+        "evaluator_calls": 116
+      },
+      "eval_metrics": {
+        "requested_episodes": 64,
+        "first_episode_steps": 4356,
+        "simulated_world_steps": 11968,
+        "evaluation_wall_seconds": 81.53056664300038,
+        "evaluator_calls": 16
+      },
+      "wall_seconds": 964.3810940470003,
+      "transfer_summary": {
+        "direct_attempts": 0,
+        "adaptation_proposals": 0,
+        "accepted_targets": 0,
+        "target_events_with_direct_score_ties": 0
+      },
+      "initial_evaluation": {
+        "policy_rule": "all four current theta; test-time oracle best-of-library, no adaptation",
+        "policy_matrix_sha256": "5e23763149057b1a52ea621bb05bfac8eece286830ce0ae255a44517138f3133",
+        "tasks": [
+          {
+            "task_id": "rough_low",
+            "terrain": {
+              "roughness": 0.12,
+              "stump_height": 0.0,
+              "gap_width": 0.0,
+              "seed": 4000000001
+            },
+            "returns_by_policy": [
+              -110.43234944302822,
+              -99.43761277350131,
+              -100.73491368070245,
+              -100.4189394870773
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              74,
+              71,
+              30,
+              29
+            ],
+            "terminal_x_by_policy": [
+              1.0518718957901,
+              2.1276140213012695,
+              1.940242886543274,
+              1.9854867458343506
+            ],
+            "max_x_by_policy": [
+              2.0,
+              2.1276140213012695,
+              2.100412607192993,
+              2.0
+            ],
+            "best_library_return": -99.43761277350131,
+            "any_policy_reached_goal": false
+          },
+          {
+            "task_id": "stump_low",
+            "terrain": {
+              "roughness": 0.0,
+              "stump_height": 0.2,
+              "gap_width": 0.0,
+              "seed": 4000000004
+            },
+            "returns_by_policy": [
+              -110.38004969060421,
+              -99.50967681733891,
+              -100.71152488701046,
+              -100.60723509523086
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              72,
+              66,
+              30,
+              30
+            ],
+            "terminal_x_by_policy": [
+              1.0528148412704468,
+              2.113950490951538,
+              1.9416649341583252,
+              1.9600436687469482
+            ],
+            "max_x_by_policy": [
+              2.0,
+              2.113950490951538,
+              2.095546245574951,
+              2.0
+            ],
+            "best_library_return": -99.50967681733891,
+            "any_policy_reached_goal": false
+          },
+          {
+            "task_id": "gap_mid",
+            "terrain": {
+              "roughness": 0.0,
+              "stump_height": 0.0,
+              "gap_width": 0.8,
+              "seed": 4000000008
+            },
+            "returns_by_policy": [
+              -110.5854611886898,
+              -99.36239493591711,
+              -100.69038955494761,
+              -100.38231989764608
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              80,
+              72,
+              30,
+              29
+            ],
+            "terminal_x_by_policy": [
+              1.0437778234481812,
+              2.1360108852386475,
+              1.947155475616455,
+              1.9902724027633667
+            ],
+            "max_x_by_policy": [
+              2.0,
+              2.1360108852386475,
+              2.1024954319000244,
+              2.0
+            ],
+            "best_library_return": -99.36239493591711,
+            "any_policy_reached_goal": false
+          },
+          {
+            "task_id": "mixed_low",
+            "terrain": {
+              "roughness": 0.12,
+              "stump_height": 0.2,
+              "gap_width": 0.4,
+              "seed": 4000000010
+            },
+            "returns_by_policy": [
+              -110.867198292166,
+              -99.36441973946057,
+              -100.71970453672111,
+              -100.40790738142096
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              75,
+              78,
+              30,
+              30
+            ],
+            "terminal_x_by_policy": [
+              0.9941524863243103,
+              2.1414105892181396,
+              1.942265510559082,
+              1.9804643392562866
+            ],
+            "max_x_by_policy": [
+              2.0,
+              2.1414105892181396,
+              2.0946202278137207,
+              2.0
+            ],
+            "best_library_return": -99.36441973946057,
+            "any_policy_reached_goal": false
+          }
+        ],
+        "mean_best_library_return": -99.41852606655448,
+        "tasks_reached_goal": 0,
+        "task_count": 4
+      },
+      "final_evaluation": {
+        "policy_rule": "all four current theta; test-time oracle best-of-library, no adaptation",
+        "policy_matrix_sha256": "4beaa2bfc621c018174eec35d3856ba81fb208b49b7a1f607abf0db197b32167",
+        "tasks": [
+          {
+            "task_id": "rough_low",
+            "terrain": {
+              "roughness": 0.12,
+              "stump_height": 0.0,
+              "gap_width": 0.0,
+              "seed": 4000000001
+            },
+            "returns_by_policy": [
+              -1.605824549566023,
+              -98.94139585993253,
+              -99.27841099072248,
+              -99.80179953854531
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              600,
+              29,
+              28,
+              24
+            ],
+            "terminal_x_by_policy": [
+              2.227435827255249,
+              2.1129720211029053,
+              2.0934031009674072,
+              2.0342023372650146
+            ],
+            "max_x_by_policy": [
+              2.2724432945251465,
+              2.1129720211029053,
+              2.0934031009674072,
+              2.0342023372650146
+            ],
+            "best_library_return": -1.605824549566023,
+            "any_policy_reached_goal": false
+          },
+          {
+            "task_id": "stump_low",
+            "terrain": {
+              "roughness": 0.0,
+              "stump_height": 0.2,
+              "gap_width": 0.0,
+              "seed": 4000000004
+            },
+            "returns_by_policy": [
+              -3.2261849341448396,
+              -99.19132137997076,
+              -98.84063389559742,
+              -99.8481828616932
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              600,
+              30,
+              27,
+              24
+            ],
+            "terminal_x_by_policy": [
+              2.187387466430664,
+              2.0893824100494385,
+              2.1345977783203125,
+              2.0340259075164795
+            ],
+            "max_x_by_policy": [
+              2.2583305835723877,
+              2.0898470878601074,
+              2.1345977783203125,
+              2.0340259075164795
+            ],
+            "best_library_return": -3.2261849341448396,
+            "any_policy_reached_goal": false
+          },
+          {
+            "task_id": "gap_mid",
+            "terrain": {
+              "roughness": 0.0,
+              "stump_height": 0.0,
+              "gap_width": 0.8,
+              "seed": 4000000008
+            },
+            "returns_by_policy": [
+              -1.9126336806220934,
+              -99.11418057605624,
+              -99.39472588454373,
+              -99.79120542434976
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              600,
+              30,
+              25,
+              27
+            ],
+            "terminal_x_by_policy": [
+              2.2183032035827637,
+              2.096709728240967,
+              2.076965808868408,
+              2.021366834640503
+            ],
+            "max_x_by_policy": [
+              2.224808931350708,
+              2.096709728240967,
+              2.076965808868408,
+              2.033914566040039
+            ],
+            "best_library_return": -1.9126336806220934,
+            "any_policy_reached_goal": false
+          },
+          {
+            "task_id": "mixed_low",
+            "terrain": {
+              "roughness": 0.12,
+              "stump_height": 0.2,
+              "gap_width": 0.4,
+              "seed": 4000000010
+            },
+            "returns_by_policy": [
+              -2.046336599974893,
+              -99.03204548405483,
+              -98.94345432566479,
+              -99.84269923623651
+            ],
+            "goal_successes_by_policy": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "episode_lengths_by_policy": [
+              600,
+              30,
+              27,
+              24
+            ],
+            "terminal_x_by_policy": [
+              2.224658250808716,
+              2.104684829711914,
+              2.128279447555542,
+              2.0385115146636963
+            ],
+            "max_x_by_policy": [
+              2.2248690128326416,
+              2.104684829711914,
+              2.128279447555542,
+              2.0385115146636963
+            ],
+            "best_library_return": -2.046336599974893,
+            "any_policy_reached_goal": false
+          }
+        ],
+        "mean_best_library_return": -2.1977449410769623,
+        "tasks_reached_goal": 0,
+        "task_count": 4
+      },
+      "checkpoints": [
+        {
+          "iteration": 0,
+          "checkpoint": "checkpoint_000.json",
+          "train_metrics": {
+            "requested_episodes": 4,
+            "first_episode_steps": 212,
+            "simulated_world_steps": 848,
+            "evaluation_wall_seconds": 10.762804423000489,
+            "evaluator_calls": 4
+          },
+          "eval_metrics": {
+            "requested_episodes": 16,
+            "first_episode_steps": 826,
+            "simulated_world_steps": 1216,
+            "evaluation_wall_seconds": 11.82774572100061,
+            "evaluator_calls": 4
+          },
+          "wall_seconds": 22.60285432300043,
+          "evaluation": {
+            "policy_rule": "all four current theta; test-time oracle best-of-library, no adaptation",
+            "policy_matrix_sha256": "5e23763149057b1a52ea621bb05bfac8eece286830ce0ae255a44517138f3133",
+            "tasks": [
+              {
+                "task_id": "rough_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.0,
+                  "gap_width": 0.0,
+                  "seed": 4000000001
+                },
+                "returns_by_policy": [
+                  -110.43234944302822,
+                  -99.43761277350131,
+                  -100.73491368070245,
+                  -100.4189394870773
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  74,
+                  71,
+                  30,
+                  29
+                ],
+                "terminal_x_by_policy": [
+                  1.0518718957901,
+                  2.1276140213012695,
+                  1.940242886543274,
+                  1.9854867458343506
+                ],
+                "max_x_by_policy": [
+                  2.0,
+                  2.1276140213012695,
+                  2.100412607192993,
+                  2.0
+                ],
+                "best_library_return": -99.43761277350131,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "stump_low",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.2,
+                  "gap_width": 0.0,
+                  "seed": 4000000004
+                },
+                "returns_by_policy": [
+                  -110.38004969060421,
+                  -99.50967681733891,
+                  -100.71152488701046,
+                  -100.60723509523086
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  72,
+                  66,
+                  30,
+                  30
+                ],
+                "terminal_x_by_policy": [
+                  1.0528148412704468,
+                  2.113950490951538,
+                  1.9416649341583252,
+                  1.9600436687469482
+                ],
+                "max_x_by_policy": [
+                  2.0,
+                  2.113950490951538,
+                  2.095546245574951,
+                  2.0
+                ],
+                "best_library_return": -99.50967681733891,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "gap_mid",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.0,
+                  "gap_width": 0.8,
+                  "seed": 4000000008
+                },
+                "returns_by_policy": [
+                  -110.5854611886898,
+                  -99.36239493591711,
+                  -100.69038955494761,
+                  -100.38231989764608
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  80,
+                  72,
+                  30,
+                  29
+                ],
+                "terminal_x_by_policy": [
+                  1.0437778234481812,
+                  2.1360108852386475,
+                  1.947155475616455,
+                  1.9902724027633667
+                ],
+                "max_x_by_policy": [
+                  2.0,
+                  2.1360108852386475,
+                  2.1024954319000244,
+                  2.0
+                ],
+                "best_library_return": -99.36239493591711,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "mixed_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.2,
+                  "gap_width": 0.4,
+                  "seed": 4000000010
+                },
+                "returns_by_policy": [
+                  -110.867198292166,
+                  -99.36441973946057,
+                  -100.71970453672111,
+                  -100.40790738142096
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  75,
+                  78,
+                  30,
+                  30
+                ],
+                "terminal_x_by_policy": [
+                  0.9941524863243103,
+                  2.1414105892181396,
+                  1.942265510559082,
+                  1.9804643392562866
+                ],
+                "max_x_by_policy": [
+                  2.0,
+                  2.1414105892181396,
+                  2.0946202278137207,
+                  2.0
+                ],
+                "best_library_return": -99.36441973946057,
+                "any_policy_reached_goal": false
+              }
+            ],
+            "mean_best_library_return": -99.41852606655448,
+            "tasks_reached_goal": 0,
+            "task_count": 4
+          }
+        },
+        {
+          "iteration": 5,
+          "checkpoint": "checkpoint_005.json",
+          "train_metrics": {
+            "requested_episodes": 184,
+            "first_episode_steps": 13908,
+            "simulated_world_steps": 36532,
+            "evaluation_wall_seconds": 310.4634808679966,
+            "evaluator_calls": 44
+          },
+          "eval_metrics": {
+            "requested_episodes": 32,
+            "first_episode_steps": 1174,
+            "simulated_world_steps": 1704,
+            "evaluation_wall_seconds": 18.52989165100007,
+            "evaluator_calls": 8
+          },
+          "wall_seconds": 329.0369994749999,
+          "evaluation": {
+            "policy_rule": "all four current theta; test-time oracle best-of-library, no adaptation",
+            "policy_matrix_sha256": "684059a97f52c64397d3b2e4dbaff7ad408acc0feb47b8e7f0b82032be1abcca",
+            "tasks": [
+              {
+                "task_id": "rough_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.0,
+                  "gap_width": 0.0,
+                  "seed": 4000000001
+                },
+                "returns_by_policy": [
+                  -98.95525034330785,
+                  -99.38333787070587,
+                  -98.99841494858265,
+                  -99.52994166500866
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  17,
+                  25,
+                  16,
+                  31
+                ],
+                "terminal_x_by_policy": [
+                  2.1144051551818848,
+                  2.0590758323669434,
+                  2.097343921661377,
+                  2.0598690509796143
+                ],
+                "max_x_by_policy": [
+                  2.1144051551818848,
+                  2.0870468616485596,
+                  2.125199556350708,
+                  2.0598690509796143
+                ],
+                "best_library_return": -98.95525034330785,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "stump_low",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.2,
+                  "gap_width": 0.0,
+                  "seed": 4000000004
+                },
+                "returns_by_policy": [
+                  -99.14170401729643,
+                  -99.30800617253408,
+                  -98.98164460156113,
+                  -99.46569122932851
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  16,
+                  24,
+                  16,
+                  30
+                ],
+                "terminal_x_by_policy": [
+                  2.1134040355682373,
+                  2.066739797592163,
+                  2.0983097553253174,
+                  2.0647037029266357
+                ],
+                "max_x_by_policy": [
+                  2.1134040355682373,
+                  2.090155839920044,
+                  2.121107578277588,
+                  2.0647037029266357
+                ],
+                "best_library_return": -98.98164460156113,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "gap_mid",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.0,
+                  "gap_width": 0.8,
+                  "seed": 4000000008
+                },
+                "returns_by_policy": [
+                  -98.97316799033433,
+                  -99.26981081487611,
+                  -98.9197787437588,
+                  -99.53565583925229
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  17,
+                  24,
+                  15,
+                  31
+                ],
+                "terminal_x_by_policy": [
+                  2.1137185096740723,
+                  2.0702497959136963,
+                  2.103804111480713,
+                  2.0588793754577637
+                ],
+                "max_x_by_policy": [
+                  2.1137185096740723,
+                  2.0926527976989746,
+                  2.125399351119995,
+                  2.0588793754577637
+                ],
+                "best_library_return": -98.9197787437588,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "mixed_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.2,
+                  "gap_width": 0.4,
+                  "seed": 4000000010
+                },
+                "returns_by_policy": [
+                  -99.16360141895711,
+                  -99.28607373638079,
+                  -98.98773774690926,
+                  -99.28897905349731
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  16,
+                  24,
+                  16,
+                  30
+                ],
+                "terminal_x_by_policy": [
+                  2.1110117435455322,
+                  2.0693283081054688,
+                  2.0979340076446533,
+                  2.0849714279174805
+                ],
+                "max_x_by_policy": [
+                  2.1110117435455322,
+                  2.094557285308838,
+                  2.1234846115112305,
+                  2.0849714279174805
+                ],
+                "best_library_return": -98.98773774690926,
+                "any_policy_reached_goal": false
+              }
+            ],
+            "mean_best_library_return": -98.96110285888426,
+            "tasks_reached_goal": 0,
+            "task_count": 4
+          }
+        },
+        {
+          "iteration": 10,
+          "checkpoint": "checkpoint_010.json",
+          "train_metrics": {
+            "requested_episodes": 364,
+            "first_episode_steps": 29152,
+            "simulated_world_steps": 77980,
+            "evaluation_wall_seconds": 595.2627620139947,
+            "evaluator_calls": 84
+          },
+          "eval_metrics": {
+            "requested_episodes": 48,
+            "first_episode_steps": 1631,
+            "simulated_world_steps": 2368,
+            "evaluation_wall_seconds": 25.104922937000993,
+            "evaluator_calls": 12
+          },
+          "wall_seconds": 620.4410843269998,
+          "evaluation": {
+            "policy_rule": "all four current theta; test-time oracle best-of-library, no adaptation",
+            "policy_matrix_sha256": "cc9c8673740fa620744f0e589ad6eb6ca4552c052c316e050c8e716a02efece9",
+            "tasks": [
+              {
+                "task_id": "rough_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.0,
+                  "gap_width": 0.0,
+                  "seed": 4000000001
+                },
+                "returns_by_policy": [
+                  -99.0753691662103,
+                  -99.07042583625298,
+                  -99.29866810364183,
+                  -99.40528466179967
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  16,
+                  40,
+                  22,
+                  27
+                ],
+                "terminal_x_by_policy": [
+                  2.1063923835754395,
+                  2.102703094482422,
+                  2.0776939392089844,
+                  2.0733795166015625
+                ],
+                "max_x_by_policy": [
+                  2.1063923835754395,
+                  2.102703094482422,
+                  2.0857479572296143,
+                  2.0733795166015625
+                ],
+                "best_library_return": -99.07042583625298,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "stump_low",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.2,
+                  "gap_width": 0.0,
+                  "seed": 4000000004
+                },
+                "returns_by_policy": [
+                  -99.33202985301614,
+                  -98.8995333291823,
+                  -99.34127672202885,
+                  -99.39858463034034
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  22,
+                  39,
+                  23,
+                  27
+                ],
+                "terminal_x_by_policy": [
+                  2.081709384918213,
+                  2.118941068649292,
+                  2.0707428455352783,
+                  2.0723495483398438
+                ],
+                "max_x_by_policy": [
+                  2.0989460945129395,
+                  2.118941068649292,
+                  2.0796666145324707,
+                  2.0723495483398438
+                ],
+                "best_library_return": -98.8995333291823,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "gap_mid",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.0,
+                  "gap_width": 0.8,
+                  "seed": 4000000008
+                },
+                "returns_by_policy": [
+                  -99.30600265786052,
+                  -98.98958152567502,
+                  -99.31389333354309,
+                  -99.83552838303149
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  21,
+                  41,
+                  21,
+                  24
+                ],
+                "terminal_x_by_policy": [
+                  2.0780279636383057,
+                  2.1105480194091797,
+                  2.074583053588867,
+                  2.0396158695220947
+                ],
+                "max_x_by_policy": [
+                  2.102830648422241,
+                  2.1105480194091797,
+                  2.085860252380371,
+                  2.0396158695220947
+                ],
+                "best_library_return": -98.98958152567502,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "mixed_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.2,
+                  "gap_width": 0.4,
+                  "seed": 4000000010
+                },
+                "returns_by_policy": [
+                  -99.24053486809134,
+                  -98.98664858523989,
+                  -101.62248366139829,
+                  -99.45603688061237
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  22,
+                  39,
+                  46,
+                  27
+                ],
+                "terminal_x_by_policy": [
+                  2.08962082862854,
+                  2.110234022140503,
+                  1.8795720338821411,
+                  2.0683257579803467
+                ],
+                "max_x_by_policy": [
+                  2.102215051651001,
+                  2.110234022140503,
+                  2.0773677825927734,
+                  2.0683257579803467
+                ],
+                "best_library_return": -98.98664858523989,
+                "any_policy_reached_goal": false
+              }
+            ],
+            "mean_best_library_return": -98.98654731908755,
+            "tasks_reached_goal": 0,
+            "task_count": 4
+          }
+        },
+        {
+          "iteration": 14,
+          "checkpoint": "checkpoint_014.json",
+          "train_metrics": {
+            "requested_episodes": 508,
+            "first_episode_steps": 44376,
+            "simulated_world_steps": 125716,
+            "evaluation_wall_seconds": 882.7548241389959,
+            "evaluator_calls": 116
+          },
+          "eval_metrics": {
+            "requested_episodes": 64,
+            "first_episode_steps": 4356,
+            "simulated_world_steps": 11968,
+            "evaluation_wall_seconds": 81.53056664300038,
+            "evaluator_calls": 16
+          },
+          "wall_seconds": 964.3807288159996,
+          "evaluation": {
+            "policy_rule": "all four current theta; test-time oracle best-of-library, no adaptation",
+            "policy_matrix_sha256": "4beaa2bfc621c018174eec35d3856ba81fb208b49b7a1f607abf0db197b32167",
+            "tasks": [
+              {
+                "task_id": "rough_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.0,
+                  "gap_width": 0.0,
+                  "seed": 4000000001
+                },
+                "returns_by_policy": [
+                  -1.605824549566023,
+                  -98.94139585993253,
+                  -99.27841099072248,
+                  -99.80179953854531
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  600,
+                  29,
+                  28,
+                  24
+                ],
+                "terminal_x_by_policy": [
+                  2.227435827255249,
+                  2.1129720211029053,
+                  2.0934031009674072,
+                  2.0342023372650146
+                ],
+                "max_x_by_policy": [
+                  2.2724432945251465,
+                  2.1129720211029053,
+                  2.0934031009674072,
+                  2.0342023372650146
+                ],
+                "best_library_return": -1.605824549566023,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "stump_low",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.2,
+                  "gap_width": 0.0,
+                  "seed": 4000000004
+                },
+                "returns_by_policy": [
+                  -3.2261849341448396,
+                  -99.19132137997076,
+                  -98.84063389559742,
+                  -99.8481828616932
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  600,
+                  30,
+                  27,
+                  24
+                ],
+                "terminal_x_by_policy": [
+                  2.187387466430664,
+                  2.0893824100494385,
+                  2.1345977783203125,
+                  2.0340259075164795
+                ],
+                "max_x_by_policy": [
+                  2.2583305835723877,
+                  2.0898470878601074,
+                  2.1345977783203125,
+                  2.0340259075164795
+                ],
+                "best_library_return": -3.2261849341448396,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "gap_mid",
+                "terrain": {
+                  "roughness": 0.0,
+                  "stump_height": 0.0,
+                  "gap_width": 0.8,
+                  "seed": 4000000008
+                },
+                "returns_by_policy": [
+                  -1.9126336806220934,
+                  -99.11418057605624,
+                  -99.39472588454373,
+                  -99.79120542434976
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  600,
+                  30,
+                  25,
+                  27
+                ],
+                "terminal_x_by_policy": [
+                  2.2183032035827637,
+                  2.096709728240967,
+                  2.076965808868408,
+                  2.021366834640503
+                ],
+                "max_x_by_policy": [
+                  2.224808931350708,
+                  2.096709728240967,
+                  2.076965808868408,
+                  2.033914566040039
+                ],
+                "best_library_return": -1.9126336806220934,
+                "any_policy_reached_goal": false
+              },
+              {
+                "task_id": "mixed_low",
+                "terrain": {
+                  "roughness": 0.12,
+                  "stump_height": 0.2,
+                  "gap_width": 0.4,
+                  "seed": 4000000010
+                },
+                "returns_by_policy": [
+                  -2.046336599974893,
+                  -99.03204548405483,
+                  -98.94345432566479,
+                  -99.84269923623651
+                ],
+                "goal_successes_by_policy": [
+                  false,
+                  false,
+                  false,
+                  false
+                ],
+                "episode_lengths_by_policy": [
+                  600,
+                  30,
+                  27,
+                  24
+                ],
+                "terminal_x_by_policy": [
+                  2.224658250808716,
+                  2.104684829711914,
+                  2.128279447555542,
+                  2.0385115146636963
+                ],
+                "max_x_by_policy": [
+                  2.2248690128326416,
+                  2.104684829711914,
+                  2.128279447555542,
+                  2.0385115146636963
+                ],
+                "best_library_return": -2.046336599974893,
+                "any_policy_reached_goal": false
+              }
+            ],
+            "mean_best_library_return": -2.1977449410769623,
+            "tasks_reached_goal": 0,
+            "task_count": 4
+          }
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "executable": "/home/tz61/env_isaaclab/bin/python",
+    "target_isaaclab": "v3.0.0",
+    "target_commit": "e3f7d9ff1f5d7f8280de3ece9000b7117f66bcf4",
+    "packages": {
+      "isaaclab": "6.1.14",
+      "isaaclab-assets": "0.3.4",
+      "isaaclab-tasks": "1.10.9",
+      "isaaclab-newton": "0.13.6",
+      "isaacsim": "6.0.0.1",
+      "torch": "2.10.0+cu128",
+      "warp-lang": "1.13.0",
+      "newton": "1.2.1",
+      "gymnasium": "1.2.1",
+      "numpy": "2.5.2"
+    },
+    "source_url": "file:///home/tz61/IsaacLab/source/isaaclab",
+    "source_commit": "ffff603eafc6b74264a5261cc0183d6a65390d78",
+    "source_dirty": false,
+    "cuda_available": true,
+    "cuda_device_count": 1,
+    "ga_source_confirmed": false,
+    "ga_dependency_mismatches": {
+      "torch": {
+        "expected": "2.11.0",
+        "installed": "2.10.0+cu128"
+      },
+      "warp-lang": {
+        "expected": "1.17.0",
+        "installed": "1.13.0"
+      },
+      "newton": {
+        "expected": "1.6.1",
+        "installed": "1.2.1"
+      }
+    },
+    "ga_environment_confirmed": false
+  },
+  "protocol": {
+    "scope": "Actual IsaacLab Beta CPU physics; controlled fixed-task population, not full open-ended POET.",
+    "arguments": {
+      "output": "/home/tz61/Gatech/8803DRL/presentation_v2/experiments/retry01_no_transfer_seed_24582923",
+      "pilot": false,
+      "seeds": [
+        24582923
+      ],
+      "modes": [
+        "no_transfer"
+      ],
+      "iterations": 20,
+      "pairs": 4,
+      "num_envs": 4,
+      "episode_steps": 600,
+      "substeps": 16,
+      "world_step_budget": 0,
+      "max_seconds": 900.0
+    },
+    "training_tasks": [
+      {
+        "terrain": {
+          "roughness": 0.0,
+          "stump_height": 0.0,
+          "gap_width": 0.0,
+          "seed": 910001
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "a1e87e31db5fc0eda4b15388f966304e030379c81fa5fb2d81986289f686aa00"
+      },
+      {
+        "terrain": {
+          "roughness": 0.06,
+          "stump_height": 0.0,
+          "gap_width": 0.0,
+          "seed": 910002
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.004155589733272791,
+          0.0022305024322122335,
+          0.0,
+          0.0,
+          0.0,
+          0.010986479930579662,
+          0.004345327150076628,
+          0.0,
+          0.005834443494677544,
+          0.018412413075566292,
+          0.013067366555333138,
+          0.009533253498375416,
+          0.01607241854071617,
+          0.019494453445076942,
+          0.005696393083781004,
+          0.018550600856542587,
+          0.020627204328775406,
+          0.00967517402023077,
+          0.0,
+          0.0,
+          0.011345013044774532,
+          0.009085385128855705,
+          0.01791437715291977,
+          0.027753520756959915,
+          0.039687227457761765,
+          0.029795298352837563,
+          0.03615044057369232,
+          0.03088345378637314,
+          0.027240650728344917,
+          0.03274381905794144,
+          0.025354837998747826,
+          0.01613462157547474,
+          0.0088721988722682,
+          0.0008221552707254887,
+          0.0,
+          0.00807939749211073,
+          0.0032917268108576536,
+          0.013824202120304108,
+          0.017761623486876488,
+          0.032090410590171814,
+          0.020404696464538574,
+          0.02886371500790119,
+          0.016612377017736435,
+          0.00942224357277155,
+          0.0012044295435771346,
+          0.0035485972184687853,
+          0.002090136054903269,
+          0.0028020874597132206,
+          0.0007439597975462675,
+          0.009178228676319122,
+          8.933674689615145e-05,
+          0.01144097838550806,
+          0.0016484038205817342,
+          0.0011143960291519761,
+          0.002639375627040863,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "c16afea4f24259713adb2bcb28f218be57096df5f49ae20fb573911010d70e10"
+      },
+      {
+        "terrain": {
+          "roughness": 0.0,
+          "stump_height": 0.1,
+          "gap_width": 0.0,
+          "seed": 910003
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.08038707077503204,
+          0.08038707077503204,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.08599065989255905,
+          0.08599065989255905,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07574495673179626,
+          0.07574495673179626,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "18621c94dc16d7892015882349eacd97782f8b833450de8f0e26f5e669cd8c64"
+      },
+      {
+        "terrain": {
+          "roughness": 0.0,
+          "stump_height": 0.0,
+          "gap_width": 0.4,
+          "seed": 910004
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "a04c36d8cbc99eee6fe848aa8ae896a3ab24db9d75037df10d30fd5d25007374"
+      }
+    ],
+    "heldout_tasks": [
+      {
+        "task_id": "rough_low",
+        "terrain": {
+          "roughness": 0.12,
+          "stump_height": 0.0,
+          "gap_width": 0.0,
+          "seed": 4000000001
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.003433294827118516,
+          0.004138605203479528,
+          0.017704956233501434,
+          0.0,
+          0.0,
+          0.028975307941436768,
+          0.048172477632761,
+          0.04645038768649101,
+          0.05774650722742081,
+          0.05551888793706894,
+          0.05715123191475868,
+          0.028621187433600426,
+          0.017371252179145813,
+          0.010291142389178276,
+          0.0,
+          0.006868946831673384,
+          0.03237788751721382,
+          0.02084488235414028,
+          0.033533450216054916,
+          0.04445575177669525,
+          0.05967394635081291,
+          0.0547216571867466,
+          0.07721119374036789,
+          0.10245347768068314,
+          0.09212930500507355,
+          0.11312445998191833,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11398275196552277,
+          0.09075146168470383,
+          0.10714387148618698,
+          0.11999999731779099,
+          0.09874729812145233,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11464672535657883,
+          0.10138621926307678,
+          0.11999999731779099,
+          0.1042545959353447,
+          0.10754118859767914,
+          0.10030695796012878,
+          0.11233100295066833,
+          0.0968368798494339,
+          0.09048916399478912,
+          0.10753171145915985,
+          0.07959175854921341,
+          0.09540741890668869,
+          0.11999999731779099,
+          0.1141917034983635,
+          0.11999999731779099,
+          0.09693954139947891,
+          0.11980937421321869,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "2793d7e34fb2636222655da8d235f7fbb50a5f96d5039cc8471a468f95df0915",
+        "geometry_overlaps_training": false
+      },
+      {
+        "task_id": "stump_low",
+        "terrain": {
+          "roughness": 0.0,
+          "stump_height": 0.2,
+          "gap_width": 0.0,
+          "seed": 4000000004
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.18347959220409393,
+          0.18347959220409393,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1954217106103897,
+          0.1954217106103897,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1254158616065979,
+          0.1254158616065979,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "ff0f326f394b0984f295ad21bb4b8900e4e43036c5b8faa20a19f9e0b186a53e",
+        "geometry_overlaps_training": false
+      },
+      {
+        "task_id": "gap_mid",
+        "terrain": {
+          "roughness": 0.0,
+          "stump_height": 0.0,
+          "gap_width": 0.8,
+          "seed": 4000000008
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          null,
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          null,
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "713d9b48d6adcef6837e5bf2bf83b1671f3b10c2106c9f80a27ebc9aaf66a886",
+        "geometry_overlaps_training": false
+      },
+      {
+        "task_id": "mixed_low",
+        "terrain": {
+          "roughness": 0.12,
+          "stump_height": 0.2,
+          "gap_width": 0.4,
+          "seed": 4000000010
+        },
+        "tile_top_heights_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0025290504563599825,
+          0.0,
+          0.014894303865730762,
+          0.0,
+          0.11354706436395645,
+          0.12679296731948853,
+          0.011542716063559055,
+          0.008992359973490238,
+          0.020806698128581047,
+          0.007873307913541794,
+          0.0,
+          null,
+          0.0,
+          0.01710209995508194,
+          0.026890750974416733,
+          0.0,
+          0.0,
+          0.008337459526956081,
+          0.021259941160678864,
+          0.04307960346341133,
+          0.014142564497888088,
+          0.1842353343963623,
+          0.17984744906425476,
+          0.01832701452076435,
+          0.012492295354604721,
+          0.0007275749230757356,
+          0.0,
+          0.024659546092152596,
+          0.0,
+          0.0,
+          0.0021276192273944616,
+          0.0,
+          0.0,
+          0.02700793743133545,
+          null,
+          0.02079715207219124,
+          0.03016391396522522,
+          0.04144103080034256,
+          0.15070897340774536,
+          0.17002564668655396,
+          0.06881469488143921,
+          0.05780167877674103,
+          0.04737954959273338,
+          0.030073130503296852,
+          0.03849481791257858,
+          0.035572346299886703,
+          0.03076813742518425,
+          0.020800596103072166,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.014987219125032425,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "profile_sha256": "a2a6b19fbea84a87970f7a85d5b097bfa62db83e6d20e8e7b96f1a99cab7e31d",
+        "geometry_overlaps_training": false
+      }
+    ],
+    "heldout_source_sha256": "84c13204027e52865be3d54e471d9aa019af30568bdfd3439676cf9b3e61c7d9",
+    "warning": "Evaluation geometries are disjoint from the four fixed training geometries, not a representative sample of possible tasks.",
+    "transfer_iterations": "5, 10, 15, 20 after optimization; no iteration-zero transfer",
+    "success_definition": "reaches x>=30m without falling; no paper 230-point criterion",
+    "policy_evaluation_rule": "all four current theta, best-of-library oracle; no heldout adaptation"
+  },
+  "total_wall_seconds": 964.8432241029996
+}

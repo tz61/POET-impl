@@ -1,0 +1,37 @@
+{
+  "payload": {
+    "episode_steps": 2000,
+    "simulation_versions": {
+      "gymnasium": "1.2.1",
+      "isaaclab": "6.1.14",
+      "isaaclab-assets": "0.3.4",
+      "isaaclab-newton": "0.13.6",
+      "isaaclab-tasks": "1.10.9",
+      "isaacsim": "6.0.0.1",
+      "newton": "1.2.1",
+      "numpy": "2.5.2",
+      "source_commit": "ffff603eafc6b74264a5261cc0183d6a65390d78",
+      "torch": "2.10.0+cu128",
+      "warp-lang": "1.13.0"
+    },
+    "solver": "mjwarp",
+    "source_sha256": {
+      "algorithm": "1d2db5fb84195e30912cadb1a2fec7596215d2b78d46ca103e942f19cdef6488",
+      "evaluator": "a12d4a4516e37c9092bf56ea83e965d6d5725aa9341c39c9b37531cc6a659f1f",
+      "robot_usd": "14abee59d802b0f3d84ee85da5be3d72f5de44d564dbdff2396a4609f0fe7b5f",
+      "task": "86283de0d9805fed894e0673cb820e1825942a8cf44c996cfc77378f16d92d09"
+    },
+    "substeps": 1,
+    "task_config": {
+      "course_length": 30.0,
+      "decimation": 2,
+      "device_family": "cuda",
+      "physics_dt": 0.008333333333333333,
+      "torque_scale": 40.0,
+      "use_cuda_graph": true
+    },
+    "task_name": "poet_planar_biped_isaaclab3"
+  },
+  "schema_version": 1,
+  "sha256": "a4d9830ad6dfdd67e6bc77811b7542cac7bdca9973e56c303d3ea76001cd2263"
+}

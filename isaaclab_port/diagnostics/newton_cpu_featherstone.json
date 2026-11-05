@@ -1,0 +1,37 @@
+{
+  "solver": "featherstone",
+  "device": "cpu",
+  "steps": 24,
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "phase": "complete",
+  "ok": true,
+  "versions": {
+    "isaaclab": "6.1.14",
+    "isaaclab_newton": "0.13.6",
+    "newton": "1.2.1",
+    "warp-lang": "1.13.0",
+    "torch": "2.10.0+cu128"
+  },
+  "initial_position": [
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "final_position": [
+    [
+      0.0,
+      0.0,
+      0.9489062428474426
+    ]
+  ],
+  "elapsed_sim_seconds": 0.1,
+  "continuous_freefall_expected_z": 0.95095,
+  "isaaclab_source": {
+    "path": "/home/tz61/IsaacLab",
+    "product_version": "3.0.0",
+    "commit": "ffff603eafc6b74264a5261cc0183d6a65390d78"
+  },
+  "scope": "Local procedural cube only; no claim of paper reproduction, learned locomotion, or GPU execution."
+}

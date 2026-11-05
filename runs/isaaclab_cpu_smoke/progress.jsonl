@@ -1,0 +1,3 @@
+{"iteration": 0, "evaluations": 3, "active": 1, "archive": 1, "scores": {"terrain_e0e2068a90": 53.193687595427036}, "requested_episodes": 3, "first_episode_steps": 10, "simulated_world_steps": 16, "wall_seconds": 2.1876530800000182}
+{"iteration": 1, "evaluations": 6, "active": 1, "archive": 1, "scores": {"terrain_e0e2068a90": -99.18641330301762}, "requested_episodes": 6, "first_episode_steps": 20, "simulated_world_steps": 32, "wall_seconds": 2.215409511000189}
+{"iteration": 2, "evaluations": 9, "active": 1, "archive": 1, "scores": {"terrain_e0e2068a90": -100.4926230981946}, "requested_episodes": 9, "first_episode_steps": 31, "simulated_world_steps": 46, "wall_seconds": 2.2399491450000824}

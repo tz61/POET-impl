@@ -1,0 +1,29 @@
+{
+  "scope": "Actual IsaacLab Beta CPU physics; controlled fixed-task population, not full open-ended POET.",
+  "settings": {
+    "seed": 24582923,
+    "pairs": 4,
+    "learning_rate": 0.01,
+    "lr_decay": 0.9999,
+    "lr_limit": 0.001,
+    "noise": 0.1,
+    "noise_decay": 0.999,
+    "noise_limit": 0.01,
+    "l2": 0.01,
+    "transfer_interval": 5,
+    "mutation_interval": 200,
+    "max_active": 4,
+    "children": 8,
+    "mc_lower": 50.0,
+    "mc_upper": 300.0,
+    "reproduce_score": 200.0,
+    "transfers": true,
+    "periodic_transfer_mode": "full",
+    "transfer_top_k": 1
+  },
+  "episode_steps": 600,
+  "num_envs": 4,
+  "target_training_world_steps": 0,
+  "soft_wall_seconds": 900.0,
+  "initial_policy_sha256": "5e23763149057b1a52ea621bb05bfac8eece286830ce0ae255a44517138f3133"
+}

@@ -1,0 +1,235 @@
+{
+  "output": "presentation/experiments/verification/reaggregated_physics_comparison.json",
+  "run_count": 9,
+  "complete": true,
+  "groups": {
+    "full": {
+      "training_seeds": [
+        24582922,
+        24582923,
+        24582924
+      ],
+      "n_independent_seeds": 3,
+      "initial_mean_best_library_return": -96.13897021112886,
+      "final_mean_best_library_return": -73.59990328111842,
+      "final_seed_sample_std": 43.558276840969114,
+      "final_returns_by_seed": [
+        -98.59262493258575,
+        -98.90362684277352,
+        -23.30345806799596
+      ],
+      "iterations_by_seed": [
+        5,
+        5,
+        5
+      ],
+      "actual_terminal_iterations_by_seed": [
+        15,
+        10,
+        9
+      ],
+      "goal_tasks_by_seed": [
+        0,
+        0,
+        0
+      ],
+      "training_world_steps_by_seed": [
+        74440,
+        56428,
+        89292
+      ],
+      "evaluation_world_steps_by_seed": [
+        1552,
+        1480,
+        9992
+      ],
+      "wall_seconds_by_seed": [
+        532.6658872510006,
+        440.41389575999983,
+        669.612454225
+      ],
+      "budget_overshoot_by_seed": [
+        0,
+        0,
+        0
+      ],
+      "max_recorded_x_by_seed": [
+        2.1436028480529785,
+        2.125399351119995,
+        3.731158971786499
+      ],
+      "transfer_summaries_by_seed": [
+        {
+          "direct_attempts": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 3,
+          "target_events_with_direct_score_ties": 0
+        },
+        {
+          "direct_attempts": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 4,
+          "target_events_with_direct_score_ties": 0
+        },
+        {
+          "direct_attempts": 12,
+          "adaptation_proposals": 12,
+          "accepted_targets": 3,
+          "target_events_with_direct_score_ties": 0
+        }
+      ]
+    },
+    "topk": {
+      "training_seeds": [
+        24582922,
+        24582923,
+        24582924
+      ],
+      "n_independent_seeds": 3,
+      "initial_mean_best_library_return": -96.13897021112886,
+      "final_mean_best_library_return": -74.8554560529398,
+      "final_seed_sample_std": 41.41363743100812,
+      "final_returns_by_seed": [
+        -98.58538141549798,
+        -98.94542831782019,
+        -27.035558425501222
+      ],
+      "iterations_by_seed": [
+        5,
+        5,
+        5
+      ],
+      "actual_terminal_iterations_by_seed": [
+        20,
+        15,
+        9
+      ],
+      "goal_tasks_by_seed": [
+        0,
+        0,
+        0
+      ],
+      "training_world_steps_by_seed": [
+        48552,
+        42764,
+        69180
+      ],
+      "evaluation_world_steps_by_seed": [
+        1556,
+        1480,
+        9564
+      ],
+      "wall_seconds_by_seed": [
+        366.51228807999996,
+        344.7119208899994,
+        533.6164328289997
+      ],
+      "budget_overshoot_by_seed": [
+        0,
+        0,
+        0
+      ],
+      "max_recorded_x_by_seed": [
+        2.144399404525757,
+        2.126145601272583,
+        3.1309926509857178
+      ],
+      "transfer_summaries_by_seed": [
+        {
+          "direct_attempts": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 3,
+          "target_events_with_direct_score_ties": 0
+        },
+        {
+          "direct_attempts": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 4,
+          "target_events_with_direct_score_ties": 0
+        },
+        {
+          "direct_attempts": 12,
+          "adaptation_proposals": 4,
+          "accepted_targets": 3,
+          "target_events_with_direct_score_ties": 0
+        }
+      ]
+    },
+    "no_transfer": {
+      "training_seeds": [
+        24582922,
+        24582923,
+        24582924
+      ],
+      "n_independent_seeds": 3,
+      "initial_mean_best_library_return": -96.13897021112886,
+      "final_mean_best_library_return": -74.89808513216364,
+      "final_seed_sample_std": 41.359668394636614,
+      "final_returns_by_seed": [
+        -98.59262493258575,
+        -98.96110285888426,
+        -27.140527605020907
+      ],
+      "iterations_by_seed": [
+        5,
+        5,
+        5
+      ],
+      "actual_terminal_iterations_by_seed": [
+        15,
+        14,
+        10
+      ],
+      "goal_tasks_by_seed": [
+        0,
+        0,
+        0
+      ],
+      "training_world_steps_by_seed": [
+        43976,
+        36532,
+        54932
+      ],
+      "evaluation_world_steps_by_seed": [
+        2548,
+        1704,
+        9544
+      ],
+      "wall_seconds_by_seed": [
+        350.0523098849999,
+        329.0369994749999,
+        424.9855608859998
+      ],
+      "budget_overshoot_by_seed": [
+        0,
+        0,
+        0
+      ],
+      "max_recorded_x_by_seed": [
+        2.1436028480529785,
+        2.125399351119995,
+        2.2490077018737793
+      ],
+      "transfer_summaries_by_seed": [
+        {
+          "direct_attempts": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "target_events_with_direct_score_ties": 0
+        },
+        {
+          "direct_attempts": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "target_events_with_direct_score_ties": 0
+        },
+        {
+          "direct_attempts": 0,
+          "adaptation_proposals": 0,
+          "accepted_targets": 0,
+          "target_events_with_direct_score_ties": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1136 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:308)
+Warp UserWarning: Kernel cache artifacts from a previous Warp version were found in '/home/tz61/Gatech/8803DRL/poet-reproduction/.cache/warp'. These will be ignored. You can safely delete them.
+/home/tz61/env_isaaclab/lib/python3.12/site-packages/torch/cuda/__init__.py:1007: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.252151 s, Mean: 0.252151 s, Std: 0.000000 s, N: 1
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+/home/tz61/IsaacLab/source/isaaclab_newton/isaaclab_newton/physics/newton_manager.py:989: FutureWarning: Newton shape color replacement is enabled; this workaround will be deprecated in a future release.
+  replace_newton_shape_colors(cls._model)
+Finalize builder took: Last: 0.052194 s, Mean: 0.052194 s, Std: 0.000000 s, N: 1
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.084848 s, Mean: 0.084848 s, Std: 0.000000 s, N: 1
+[INFO]: Time taken for simulation start Last: 0.246584 s, Mean: 0.246584 s, Std: 0.000000 s, N: 1
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.075471 s, Mean: 0.163811 s, Std: 0.124931 s, N: 2
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018323 s, Mean: 0.035258 s, Std: 0.023950 s, N: 2
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.062796 s, Mean: 0.073822 s, Std: 0.015593 s, N: 2
+[INFO]: Time taken for simulation start Last: 0.086447 s, Mean: 0.166516 s, Std: 0.113234 s, N: 2
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.108485 s, Mean: 0.145369 s, Std: 0.093937 s, N: 3
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018799 s, Mean: 0.029772 s, Std: 0.019419 s, N: 3
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.060869 s, Mean: 0.069504 s, Std: 0.013323 s, N: 3
+[INFO]: Time taken for simulation start Last: 0.084681 s, Mean: 0.139238 s, Std: 0.092969 s, N: 3
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.077157 s, Mean: 0.128316 s, Std: 0.083941 s, N: 4
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.016728 s, Mean: 0.026511 s, Std: 0.017145 s, N: 4
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.059014 s, Mean: 0.066882 s, Std: 0.012077 s, N: 4
+[INFO]: Time taken for simulation start Last: 0.080377 s, Mean: 0.124522 s, Std: 0.081414 s, N: 4
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.073157 s, Mean: 0.117284 s, Std: 0.076766 s, N: 5
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017260 s, Mean: 0.024661 s, Std: 0.015413 s, N: 5
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.058098 s, Mean: 0.065125 s, Std: 0.011172 s, N: 5
+[INFO]: Time taken for simulation start Last: 0.079906 s, Mean: 0.115599 s, Std: 0.073276 s, N: 5
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.074678 s, Mean: 0.110183 s, Std: 0.070831 s, N: 6
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017827 s, Mean: 0.023522 s, Std: 0.014065 s, N: 6
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.059698 s, Mean: 0.064220 s, Std: 0.010235 s, N: 6
+[INFO]: Time taken for simulation start Last: 0.082227 s, Mean: 0.110037 s, Std: 0.066941 s, N: 6
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000008
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.071847 s, Mean: 0.104707 s, Std: 0.066263 s, N: 7
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017086 s, Mean: 0.022602 s, Std: 0.013068 s, N: 7
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.060406 s, Mean: 0.063675 s, Std: 0.009454 s, N: 7
+[INFO]: Time taken for simulation start Last: 0.082379 s, Mean: 0.106086 s, Std: 0.061996 s, N: 7
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000010
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.094447 s, Mean: 0.103424 s, Std: 0.061455 s, N: 8
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.044284 s, Mean: 0.025313 s, Std: 0.014323 s, N: 8
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.070627 s, Mean: 0.064544 s, Std: 0.009091 s, N: 8
+[INFO]: Time taken for simulation start Last: 0.124114 s, Mean: 0.108339 s, Std: 0.057750 s, N: 8
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.091883 s, Mean: 0.102142 s, Std: 0.057614 s, N: 9
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.042506 s, Mean: 0.027223 s, Std: 0.014572 s, N: 9
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.082253 s, Mean: 0.066512 s, Std: 0.010352 s, N: 9
+[INFO]: Time taken for simulation start Last: 0.133434 s, Mean: 0.111128 s, Std: 0.054664 s, N: 9
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.081892 s, Mean: 0.100117 s, Std: 0.054695 s, N: 10
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018870 s, Mean: 0.026388 s, Std: 0.013990 s, N: 10
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.059905 s, Mean: 0.065851 s, Std: 0.009981 s, N: 10
+[INFO]: Time taken for simulation start Last: 0.083658 s, Mean: 0.108381 s, Std: 0.052265 s, N: 10
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.078356 s, Mean: 0.098138 s, Std: 0.052302 s, N: 11
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018824 s, Mean: 0.025700 s, Std: 0.013467 s, N: 11
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.063715 s, Mean: 0.065657 s, Std: 0.009491 s, N: 11
+[INFO]: Time taken for simulation start Last: 0.087448 s, Mean: 0.106478 s, Std: 0.049983 s, N: 11
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.099143 s, Mean: 0.098222 s, Std: 0.049869 s, N: 12
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.025209 s, Mean: 0.025659 s, Std: 0.012841 s, N: 12
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.088092 s, Mean: 0.067527 s, Std: 0.011128 s, N: 12
+[INFO]: Time taken for simulation start Last: 0.119508 s, Mean: 0.107564 s, Std: 0.047805 s, N: 12
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 1, "mode": "topk", "seed": 24582924, "train_scores": [-98.60868501628283, -105.91924638487399, -99.83139015454799, -5.0654235382098705], "train_metrics": {"requested_episodes": 40, "first_episode_steps": 4610, "simulated_world_steps": 14900, "evaluation_wall_seconds": 112.13967440800025, "evaluator_calls": 12}, "eval_metrics": {"requested_episodes": 16, "first_episode_steps": 1006, "simulated_world_steps": 2012, "evaluation_wall_seconds": 13.950077745999806, "evaluator_calls": 4}, "wall_seconds": 126.10273423599938}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.099321 s, Mean: 0.098307 s, Std: 0.047746 s, N: 13
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.028449 s, Mean: 0.025874 s, Std: 0.012319 s, N: 13
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.084514 s, Mean: 0.068833 s, Std: 0.011649 s, N: 13
+[INFO]: Time taken for simulation start Last: 0.119106 s, Mean: 0.108451 s, Std: 0.045882 s, N: 13
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.104583 s, Mean: 0.098755 s, Std: 0.045904 s, N: 14
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.036260 s, Mean: 0.026616 s, Std: 0.012157 s, N: 14
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.084617 s, Mean: 0.069961 s, Std: 0.011961 s, N: 14
+[INFO]: Time taken for simulation start Last: 0.132988 s, Mean: 0.110204 s, Std: 0.044567 s, N: 14
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.114341 s, Mean: 0.099794 s, Std: 0.044417 s, N: 15
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.029543 s, Mean: 0.026811 s, Std: 0.011739 s, N: 15
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.090007 s, Mean: 0.071297 s, Std: 0.012635 s, N: 15
+[INFO]: Time taken for simulation start Last: 0.126725 s, Mean: 0.111305 s, Std: 0.043157 s, N: 15
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.112245 s, Mean: 0.100572 s, Std: 0.043024 s, N: 16
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.028591 s, Mean: 0.026922 s, Std: 0.011349 s, N: 16
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.095595 s, Mean: 0.072816 s, Std: 0.013634 s, N: 16
+[INFO]: Time taken for simulation start Last: 0.130713 s, Mean: 0.112518 s, Std: 0.041975 s, N: 16
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 2, "mode": "topk", "seed": 24582924, "train_scores": [-99.05733910680283, -105.73964318074286, -100.15080252871849, -7.821764497784898], "train_metrics": {"requested_episodes": 76, "first_episode_steps": 7609, "simulated_world_steps": 23996, "evaluation_wall_seconds": 198.95761438300178, "evaluator_calls": 20}, "eval_metrics": {"requested_episodes": 16, "first_episode_steps": 1006, "simulated_world_steps": 2012, "evaluation_wall_seconds": 13.950077745999806, "evaluator_calls": 4}, "wall_seconds": 212.92346767599975}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.092351 s, Mean: 0.100089 s, Std: 0.041705 s, N: 17
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.019646 s, Mean: 0.026494 s, Std: 0.011130 s, N: 17
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.066016 s, Mean: 0.072416 s, Std: 0.013304 s, N: 17
+[INFO]: Time taken for simulation start Last: 0.091084 s, Mean: 0.111258 s, Std: 0.040973 s, N: 17
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.079676 s, Mean: 0.098955 s, Std: 0.040745 s, N: 18
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.019558 s, Mean: 0.026109 s, Std: 0.010921 s, N: 18
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.064894 s, Mean: 0.071998 s, Std: 0.013028 s, N: 18
+[INFO]: Time taken for simulation start Last: 0.089460 s, Mean: 0.110047 s, Std: 0.040080 s, N: 18
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.072230 s, Mean: 0.097548 s, Std: 0.040069 s, N: 19
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.016955 s, Mean: 0.025627 s, Std: 0.010819 s, N: 19
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.058469 s, Mean: 0.071286 s, Std: 0.013036 s, N: 19
+[INFO]: Time taken for simulation start Last: 0.079935 s, Mean: 0.108462 s, Std: 0.039559 s, N: 19
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.075916 s, Mean: 0.096466 s, Std: 0.039299 s, N: 20
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.016887 s, Mean: 0.025190 s, Std: 0.010710 s, N: 20
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.057710 s, Mean: 0.070607 s, Std: 0.013046 s, N: 20
+[INFO]: Time taken for simulation start Last: 0.079172 s, Mean: 0.106997 s, Std: 0.039057 s, N: 20
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 3, "mode": "topk", "seed": 24582924, "train_scores": [-89.39899035345297, -105.31630477728322, -100.08395128324628, -102.3870823928155], "train_metrics": {"requested_episodes": 112, "first_episode_steps": 12150, "simulated_world_steps": 37960, "evaluation_wall_seconds": 284.0926103340016, "evaluator_calls": 28}, "eval_metrics": {"requested_episodes": 16, "first_episode_steps": 1006, "simulated_world_steps": 2012, "evaluation_wall_seconds": 13.950077745999806, "evaluator_calls": 4}, "wall_seconds": 298.06101291399955}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.074023 s, Mean: 0.095398 s, Std: 0.038616 s, N: 21
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018132 s, Mean: 0.024854 s, Std: 0.010552 s, N: 21
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.058068 s, Mean: 0.070010 s, Std: 0.013007 s, N: 21
+[INFO]: Time taken for simulation start Last: 0.081057 s, Mean: 0.105762 s, Std: 0.038487 s, N: 21
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.082365 s, Mean: 0.094805 s, Std: 0.037787 s, N: 22
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018468 s, Mean: 0.024564 s, Std: 0.010387 s, N: 22
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.058473 s, Mean: 0.069486 s, Std: 0.012929 s, N: 22
+[INFO]: Time taken for simulation start Last: 0.081529 s, Mean: 0.104660 s, Std: 0.037913 s, N: 22
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.074130 s, Mean: 0.093906 s, Std: 0.037169 s, N: 23
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.016857 s, Mean: 0.024229 s, Std: 0.010275 s, N: 23
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.056887 s, Mean: 0.068938 s, Std: 0.012902 s, N: 23
+[INFO]: Time taken for simulation start Last: 0.078153 s, Mean: 0.103508 s, Std: 0.037451 s, N: 23
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.074994 s, Mean: 0.093118 s, Std: 0.036557 s, N: 24
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017155 s, Mean: 0.023934 s, Std: 0.010152 s, N: 24
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.057388 s, Mean: 0.068457 s, Std: 0.012837 s, N: 24
+[INFO]: Time taken for simulation start Last: 0.078963 s, Mean: 0.102485 s, Std: 0.036969 s, N: 24
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 4, "mode": "topk", "seed": 24582924, "train_scores": [10.046560623217374, -99.94898288883269, -99.61336066853255, -99.63653396593872], "train_metrics": {"requested_episodes": 148, "first_episode_steps": 14314, "simulated_world_steps": 42944, "evaluation_wall_seconds": 313.95030921000125, "evaluator_calls": 36}, "eval_metrics": {"requested_episodes": 16, "first_episode_steps": 1006, "simulated_world_steps": 2012, "evaluation_wall_seconds": 13.950077745999806, "evaluator_calls": 4}, "wall_seconds": 327.92103453099935}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.078979 s, Mean: 0.092553 s, Std: 0.035899 s, N: 25
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017319 s, Mean: 0.023669 s, Std: 0.010026 s, N: 25
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.058679 s, Mean: 0.068065 s, Std: 0.012718 s, N: 25
+[INFO]: Time taken for simulation start Last: 0.080466 s, Mean: 0.101604 s, Std: 0.036458 s, N: 25
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.071530 s, Mean: 0.091744 s, Std: 0.035414 s, N: 26
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017920 s, Mean: 0.023448 s, Std: 0.009888 s, N: 26
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.057717 s, Mean: 0.067667 s, Std: 0.012625 s, N: 26
+[INFO]: Time taken for simulation start Last: 0.080555 s, Mean: 0.100795 s, Std: 0.035959 s, N: 26
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.071347 s, Mean: 0.090989 s, Std: 0.034948 s, N: 27
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.016962 s, Mean: 0.023208 s, Std: 0.009776 s, N: 27
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.057818 s, Mean: 0.067303 s, Std: 0.012524 s, N: 27
+[INFO]: Time taken for simulation start Last: 0.079204 s, Mean: 0.099995 s, Std: 0.035504 s, N: 27
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.070211 s, Mean: 0.090247 s, Std: 0.034518 s, N: 28
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.016515 s, Mean: 0.022969 s, Std: 0.009676 s, N: 28
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.057904 s, Mean: 0.066967 s, Std: 0.012418 s, N: 28
+[INFO]: Time taken for simulation start Last: 0.078848 s, Mean: 0.099240 s, Std: 0.035069 s, N: 28
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.072296 s, Mean: 0.089628 s, Std: 0.034060 s, N: 29
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017001 s, Mean: 0.022763 s, Std: 0.009566 s, N: 29
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.057372 s, Mean: 0.066636 s, Std: 0.012324 s, N: 29
+[INFO]: Time taken for simulation start Last: 0.078871 s, Mean: 0.098538 s, Std: 0.034644 s, N: 29
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.070385 s, Mean: 0.088986 s, Std: 0.033651 s, N: 30
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.016940 s, Mean: 0.022569 s, Std: 0.009460 s, N: 30
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.058045 s, Mean: 0.066350 s, Std: 0.012211 s, N: 30
+[INFO]: Time taken for simulation start Last: 0.079445 s, Mean: 0.097901 s, Std: 0.034220 s, N: 30
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.076763 s, Mean: 0.088592 s, Std: 0.033159 s, N: 31
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018571 s, Mean: 0.022440 s, Std: 0.009329 s, N: 31
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.061937 s, Mean: 0.066207 s, Std: 0.012031 s, N: 31
+[INFO]: Time taken for simulation start Last: 0.085702 s, Mean: 0.097508 s, Std: 0.033716 s, N: 31
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.075828 s, Mean: 0.088193 s, Std: 0.032697 s, N: 32
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018219 s, Mean: 0.022308 s, Std: 0.009207 s, N: 32
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.060611 s, Mean: 0.066033 s, Std: 0.011877 s, N: 32
+[INFO]: Time taken for simulation start Last: 0.083796 s, Mean: 0.097079 s, Std: 0.033256 s, N: 32
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 5, "mode": "topk", "seed": 24582924, "train_scores": [-98.61937775160186, -4.9141320454655215, -1.1466560744447634, -98.19950103352312], "train_metrics": {"requested_episodes": 232, "first_episode_steps": 23698, "simulated_world_steps": 69180, "evaluation_wall_seconds": 467.14564106299895, "evaluator_calls": 64}, "eval_metrics": {"requested_episodes": 16, "first_episode_steps": 1006, "simulated_world_steps": 2012, "evaluation_wall_seconds": 13.950077745999806, "evaluator_calls": 4}, "wall_seconds": 481.12400518100003}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.087471 s, Mean: 0.088171 s, Std: 0.032183 s, N: 33
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.021760 s, Mean: 0.022291 s, Std: 0.009063 s, N: 33
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.070016 s, Mean: 0.066153 s, Std: 0.011711 s, N: 33
+[INFO]: Time taken for simulation start Last: 0.098617 s, Mean: 0.097126 s, Std: 0.032733 s, N: 33
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.080836 s, Mean: 0.087955 s, Std: 0.031716 s, N: 34
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018346 s, Mean: 0.022175 s, Std: 0.008950 s, N: 34
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.059946 s, Mean: 0.065971 s, Std: 0.011581 s, N: 34
+[INFO]: Time taken for simulation start Last: 0.083308 s, Mean: 0.096719 s, Std: 0.032321 s, N: 34
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000008
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.073682 s, Mean: 0.087548 s, Std: 0.031339 s, N: 35
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.017815 s, Mean: 0.022051 s, Std: 0.008848 s, N: 35
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.060270 s, Mean: 0.065808 s, Std: 0.011450 s, N: 35
+[INFO]: Time taken for simulation start Last: 0.083097 s, Mean: 0.096330 s, Std: 0.031925 s, N: 35
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000010
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.078299 s, Mean: 0.087291 s, Std: 0.030927 s, N: 36
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.019654 s, Mean: 0.021984 s, Std: 0.008730 s, N: 36
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.059746 s, Mean: 0.065639 s, Std: 0.011330 s, N: 36
+[INFO]: Time taken for simulation start Last: 0.084745 s, Mean: 0.096008 s, Std: 0.031525 s, N: 36
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.182126 s, Mean: 0.089854 s, Std: 0.034249 s, N: 37
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.052829 s, Mean: 0.022818 s, Std: 0.009990 s, N: 37
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.110892 s, Mean: 0.066862 s, Std: 0.013422 s, N: 37
+[INFO]: Time taken for simulation start Last: 0.174812 s, Mean: 0.098138 s, Std: 0.033676 s, N: 37
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.180392 s, Mean: 0.092236 s, Std: 0.036837 s, N: 38
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.050706 s, Mean: 0.023552 s, Std: 0.010843 s, N: 38
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.108092 s, Mean: 0.067947 s, Std: 0.014833 s, N: 38
+[INFO]: Time taken for simulation start Last: 0.168672 s, Mean: 0.099994 s, Std: 0.035133 s, N: 38
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.190030 s, Mean: 0.094744 s, Std: 0.039579 s, N: 39
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.056697 s, Mean: 0.024402 s, Std: 0.011944 s, N: 39
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.114404 s, Mean: 0.069139 s, Std: 0.016419 s, N: 39
+[INFO]: Time taken for simulation start Last: 0.182418 s, Mean: 0.102108 s, Std: 0.037095 s, N: 39
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.166854 s, Mean: 0.096547 s, Std: 0.040698 s, N: 40
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.047232 s, Mean: 0.024972 s, Std: 0.012330 s, N: 40
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.101271 s, Mean: 0.069942 s, Std: 0.016984 s, N: 40
+[INFO]: Time taken for simulation start Last: 0.157946 s, Mean: 0.103504 s, Std: 0.037666 s, N: 40
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 6, "mode": "topk", "seed": 24582924, "train_scores": [-98.8378910976462, -4.392885296605527, -99.29568791203201, -99.19841971364804], "train_metrics": {"requested_episodes": 268, "first_episode_steps": 26152, "simulated_world_steps": 76220, "evaluation_wall_seconds": 547.1115447509992, "evaluator_calls": 72}, "eval_metrics": {"requested_episodes": 32, "first_episode_steps": 5638, "simulated_world_steps": 9564, "evaluation_wall_seconds": 66.43231619899962, "evaluator_calls": 8}, "wall_seconds": 613.5870150369992}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.172234 s, Mean: 0.098393 s, Std: 0.041888 s, N: 41
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.050104 s, Mean: 0.025585 s, Std: 0.012792 s, N: 41
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.105374 s, Mean: 0.070806 s, Std: 0.017660 s, N: 41
+[INFO]: Time taken for simulation start Last: 0.165174 s, Mean: 0.105008 s, Std: 0.038419 s, N: 41
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.170692 s, Mean: 0.100114 s, Std: 0.042852 s, N: 42
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.049448 s, Mean: 0.026154 s, Std: 0.013160 s, N: 42
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.104549 s, Mean: 0.071610 s, Std: 0.018204 s, N: 42
+[INFO]: Time taken for simulation start Last: 0.164127 s, Mean: 0.106415 s, Std: 0.039028 s, N: 42
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.178711 s, Mean: 0.101942 s, Std: 0.044003 s, N: 43
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.052935 s, Mean: 0.026776 s, Std: 0.013629 s, N: 43
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.108444 s, Mean: 0.072466 s, Std: 0.018843 s, N: 43
+[INFO]: Time taken for simulation start Last: 0.172453 s, Mean: 0.107951 s, Std: 0.039854 s, N: 43
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.179893 s, Mean: 0.103714 s, Std: 0.045048 s, N: 44
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.052071 s, Mean: 0.027351 s, Std: 0.013999 s, N: 44
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.109927 s, Mean: 0.073318 s, Std: 0.019460 s, N: 44
+[INFO]: Time taken for simulation start Last: 0.172371 s, Mean: 0.109415 s, Std: 0.040568 s, N: 44
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 7, "mode": "topk", "seed": 24582924, "train_scores": [-98.6185285244137, -99.31292585935444, -94.25216358760372, -98.77581713721156], "train_metrics": {"requested_episodes": 304, "first_episode_steps": 29511, "simulated_world_steps": 83724, "evaluation_wall_seconds": 632.2693151010008, "evaluator_calls": 80}, "eval_metrics": {"requested_episodes": 32, "first_episode_steps": 5638, "simulated_world_steps": 9564, "evaluation_wall_seconds": 66.43231619899962, "evaluator_calls": 8}, "wall_seconds": 698.7491714089992}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.174455 s, Mean: 0.105286 s, Std: 0.045765 s, N: 45
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.050983 s, Mean: 0.027876 s, Std: 0.014280 s, N: 45
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.182687 s, Mean: 0.075748 s, Std: 0.025217 s, N: 45
+[INFO]: Time taken for simulation start Last: 0.243576 s, Mean: 0.112397 s, Std: 0.044814 s, N: 45
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.170922 s, Mean: 0.106713 s, Std: 0.046276 s, N: 46
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.051244 s, Mean: 0.028384 s, Std: 0.014535 s, N: 46
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.103675 s, Mean: 0.076355 s, Std: 0.025273 s, N: 46
+[INFO]: Time taken for simulation start Last: 0.164703 s, Mean: 0.113534 s, Std: 0.044980 s, N: 46
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.183743 s, Mean: 0.108351 s, Std: 0.047130 s, N: 47
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.052010 s, Mean: 0.028887 s, Std: 0.014783 s, N: 47
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.110316 s, Mean: 0.077078 s, Std: 0.025483 s, N: 47
+[INFO]: Time taken for simulation start Last: 0.172519 s, Mean: 0.114789 s, Std: 0.045312 s, N: 47
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.168575 s, Mean: 0.109606 s, Std: 0.047429 s, N: 48
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.049747 s, Mean: 0.029322 s, Std: 0.014932 s, N: 48
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.103456 s, Mean: 0.077627 s, Std: 0.025496 s, N: 48
+[INFO]: Time taken for simulation start Last: 0.163098 s, Mean: 0.115795 s, Std: 0.045367 s, N: 48
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 8, "mode": "topk", "seed": 24582924, "train_scores": [-98.53897543379571, -1.0141876200214028, -98.93815098702908, -90.73611960420385], "train_metrics": {"requested_episodes": 340, "first_episode_steps": 33128, "simulated_world_steps": 95212, "evaluation_wall_seconds": 756.1191393500021, "evaluator_calls": 88}, "eval_metrics": {"requested_episodes": 32, "first_episode_steps": 5638, "simulated_world_steps": 9564, "evaluation_wall_seconds": 66.43231619899962, "evaluator_calls": 8}, "wall_seconds": 822.6037051069998}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.181693 s, Mean: 0.111077 s, Std: 0.048049 s, N: 49
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.053619 s, Mean: 0.029818 s, Std: 0.015178 s, N: 49
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.115383 s, Mean: 0.078398 s, Std: 0.025799 s, N: 49
+[INFO]: Time taken for simulation start Last: 0.179701 s, Mean: 0.117099 s, Std: 0.045811 s, N: 49
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910002
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.181833 s, Mean: 0.112492 s, Std: 0.048597 s, N: 50
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.057446 s, Mean: 0.030370 s, Std: 0.015522 s, N: 50
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.110423 s, Mean: 0.079038 s, Std: 0.025933 s, N: 50
+[INFO]: Time taken for simulation start Last: 0.179202 s, Mean: 0.118341 s, Std: 0.046184 s, N: 50
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910003
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.172785 s, Mean: 0.113675 s, Std: 0.048844 s, N: 51
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.051376 s, Mean: 0.030782 s, Std: 0.015645 s, N: 51
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.105361 s, Mean: 0.079554 s, Std: 0.025936 s, N: 51
+[INFO]: Time taken for simulation start Last: 0.166821 s, Mean: 0.119292 s, Std: 0.046221 s, N: 51
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 910004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.179168 s, Mean: 0.114934 s, Std: 0.049208 s, N: 52
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.052305 s, Mean: 0.031196 s, Std: 0.015776 s, N: 52
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.107678 s, Mean: 0.080095 s, Std: 0.025975 s, N: 52
+[INFO]: Time taken for simulation start Last: 0.170709 s, Mean: 0.120281 s, Std: 0.046317 s, N: 52
+[INFO]: Completed setting up the environment...
+{"progress": "topk_seed_24582924", "iteration": 9, "mode": "topk", "seed": 24582924, "train_scores": [-98.26511548832059, -6.638758852379397, -101.3889553276822, -99.05610180553049], "train_metrics": {"requested_episodes": 376, "first_episode_steps": 38059, "simulated_world_steps": 108968, "evaluation_wall_seconds": 907.4015544000013, "evaluator_calls": 96}, "eval_metrics": {"requested_episodes": 32, "first_episode_steps": 5638, "simulated_world_steps": 9564, "evaluation_wall_seconds": 66.43231619899962, "evaluator_calls": 8}, "wall_seconds": 973.8903273809992}
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000001
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.180911 s, Mean: 0.116179 s, Std: 0.049568 s, N: 53
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.051011 s, Mean: 0.031570 s, Std: 0.015859 s, N: 53
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.110131 s, Mean: 0.080662 s, Std: 0.026052 s, N: 53
+[INFO]: Time taken for simulation start Last: 0.171671 s, Mean: 0.121250 s, Std: 0.046410 s, N: 53
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000004
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.092134 s, Mean: 0.115734 s, Std: 0.049207 s, N: 54
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.021627 s, Mean: 0.031386 s, Std: 0.015767 s, N: 54
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.067757 s, Mean: 0.080423 s, Std: 0.025865 s, N: 54
+[INFO]: Time taken for simulation start Last: 0.095937 s, Mean: 0.120782 s, Std: 0.046099 s, N: 54
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000008
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.080290 s, Mean: 0.115089 s, Std: 0.048983 s, N: 55
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.018828 s, Mean: 0.031157 s, Std: 0.015711 s, N: 55
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.062892 s, Mean: 0.080104 s, Std: 0.025733 s, N: 55
+[INFO]: Time taken for simulation start Last: 0.086869 s, Mean: 0.120165 s, Std: 0.045898 s, N: 55
+[INFO]: Completed setting up the environment...
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4000000010
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.079512 s, Mean: 0.114454 s, Std: 0.048768 s, N: 56
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 4
+	Environment spacing   : 0.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.019022 s, Mean: 0.030941 s, Std: 0.015652 s, N: 56
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Initialize solver took: Last: 0.060765 s, Mean: 0.079759 s, Std: 0.025629 s, N: 56
+[INFO]: Time taken for simulation start Last: 0.085271 s, Mean: 0.119542 s, Std: 0.045718 s, N: 56
+[INFO]: Completed setting up the environment...
+{"completed": "presentation_v2/experiments/parallel_topk_seed_24582924", "runs": 1, "wall_seconds": 1031.4047206310006}

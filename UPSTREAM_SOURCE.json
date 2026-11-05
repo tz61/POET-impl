@@ -1,0 +1,125 @@
+{
+  "repository": "https://github.com/uber-research/poet",
+  "branch": "original_poet",
+  "commit": "0b40743d414a11e1b96cb0b7869483462724bb1e",
+  "acquired_via": "GitHub connector, git blob content",
+  "paper": "https://arxiv.org/abs/1901.01753",
+  "ournotes_item": "VXICUT7B",
+  "files": [
+    {
+      "path": ".gitignore",
+      "git_blob_sha1": "9e8ccb65dbd8b15a269399a51e5ba5e17e2e7c52",
+      "size": 40
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358
+    },
+    {
+      "path": "NOTICE",
+      "git_blob_sha1": "9dd47602d60ac7629fbd12f71cc20a36062c4913",
+      "size": 4534
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "65aa7c575ea9843ad7d3f4370f08fa29c990ef1d",
+      "size": 840
+    },
+    {
+      "path": "master.py",
+      "git_blob_sha1": "af691053ada1a3f0a2a542b30781c2bff6cd83d3",
+      "size": 3400
+    },
+    {
+      "path": "poet_distributed/__init__.py",
+      "git_blob_sha1": "355909dc0a966e041e245d6b6cd0ad40a1555b3d",
+      "size": 591
+    },
+    {
+      "path": "poet_distributed/es.py",
+      "git_blob_sha1": "e85370aa5683bce1ddb978e11470be4ed35e5c17",
+      "size": 22752
+    },
+    {
+      "path": "poet_distributed/logger.py",
+      "git_blob_sha1": "431760606aa426dcfc76239c439dbe80ecee307c",
+      "size": 1495
+    },
+    {
+      "path": "poet_distributed/niches/__init__.py",
+      "git_blob_sha1": "9022532f0763d9863febe33c394319066089c277",
+      "size": 647
+    },
+    {
+      "path": "poet_distributed/niches/box2d/__init__.py",
+      "git_blob_sha1": "386b6ef46a16f9e9445481800587720cbfe20fbb",
+      "size": 622
+    },
+    {
+      "path": "poet_distributed/niches/box2d/bipedal_walker_custom.py",
+      "git_blob_sha1": "2f0e63d988395e7fd6c69eaf6f7f6e4cfb90b801",
+      "size": 24431
+    },
+    {
+      "path": "poet_distributed/niches/box2d/box2d.py",
+      "git_blob_sha1": "b567b989fac52bb0af5eda678ea73cd36e04ac50",
+      "size": 3273
+    },
+    {
+      "path": "poet_distributed/niches/box2d/env.py",
+      "git_blob_sha1": "250c96a7252206a0c699aeaa2fb2b49cfe575a99",
+      "size": 1688
+    },
+    {
+      "path": "poet_distributed/niches/box2d/model.py",
+      "git_blob_sha1": "7b2d2724f4b5abaf63ae261c31f53f783561d1df",
+      "size": 7038
+    },
+    {
+      "path": "poet_distributed/niches/core.py",
+      "git_blob_sha1": "a967665e89419de91b769450875c69dad55cc7e4",
+      "size": 988
+    },
+    {
+      "path": "poet_distributed/noise.py",
+      "git_blob_sha1": "f8602bdecacd3d9387736342a5d55f1680e6ed1b",
+      "size": 1202
+    },
+    {
+      "path": "poet_distributed/noise_module.py",
+      "git_blob_sha1": "71f415f75a2c5f7ac6b419057e05d37c10871ba5",
+      "size": 657
+    },
+    {
+      "path": "poet_distributed/novelty.py",
+      "git_blob_sha1": "16f662194fc3a912257b626ce86b656c306aaf95",
+      "size": 1808
+    },
+    {
+      "path": "poet_distributed/optimizers.py",
+      "git_blob_sha1": "d81107acfe51d0563657cad2e00311c1e300d70d",
+      "size": 2690
+    },
+    {
+      "path": "poet_distributed/poet_algo.py",
+      "git_blob_sha1": "d2a7116c2f9c3e3045d571f7197b501fbda35c45",
+      "size": 15085
+    },
+    {
+      "path": "poet_distributed/reproduce_ops.py",
+      "git_blob_sha1": "aa809cc9ccd276a63e8154c4026a0739ef8d898a",
+      "size": 5513
+    },
+    {
+      "path": "poet_distributed/stats.py",
+      "git_blob_sha1": "4bdc018f2034a22c92e825e7ec5db00994aa3a0c",
+      "size": 1347
+    },
+    {
+      "path": "run_poet_local.sh",
+      "git_blob_sha1": "6594440229918c170c2e539dd83121eb37a7163d",
+      "size": 776
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "solver": "mujoco_cpu",
+  "substeps": 1,
+  "actions": 20,
+  "ok": false,
+  "phase": "construct_environment",
+  "records": [],
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "executable": "/home/tz61/env_isaaclab/bin/python",
+    "target_isaaclab": "v3.0.0",
+    "target_commit": "e3f7d9ff1f5d7f8280de3ece9000b7117f66bcf4",
+    "packages": {
+      "isaaclab": "6.1.14",
+      "isaaclab-assets": "0.3.4",
+      "isaaclab-tasks": "1.10.9",
+      "isaaclab-newton": "0.13.6",
+      "isaacsim": "6.0.0.1",
+      "torch": "2.10.0+cu128",
+      "warp-lang": "1.13.0",
+      "newton": "1.2.1",
+      "gymnasium": "1.2.1",
+      "numpy": "2.5.2"
+    },
+    "source_url": "file:///home/tz61/IsaacLab/source/isaaclab",
+    "source_commit": "ffff603eafc6b74264a5261cc0183d6a65390d78",
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "ga_source_confirmed": false
+  },
+  "dt": 0.008333333333333333,
+  "decimation": 2,
+  "error_type": "NotImplementedError",
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tz61/Gatech/8803DRL/poet-reproduction/isaaclab_port/diagnostics/biped_zero_torque.py\", line 61, in main\n    env = PoetBipedEnv(cfg)\n          ^^^^^^^^^^^^^^^^^\n  File \"/home/tz61/Gatech/8803DRL/poet-reproduction/isaaclab_port/env.py\", line 183, in __init__\n    super().__init__(cfg, render_mode=render_mode, **kwargs)\n  File \"/home/tz61/IsaacLab/source/isaaclab/isaaclab/envs/direct_rl_env.py\", line 120, in __init__\n    self._init_sim(render_mode, **kwargs)\n  File \"/home/tz61/IsaacLab/source/isaaclab/isaaclab/envs/direct_rl_env.py\", line 206, in _init_sim\n    self.sim.reset()\n  File \"/home/tz61/IsaacLab/source/isaaclab/isaaclab/sim/simulation_context.py\", line 720, in reset\n    self.physics_manager.reset(soft)\n  File \"/home/tz61/IsaacLab/source/isaaclab_newton/isaaclab_newton/physics/newton_manager.py\", line 326, in reset\n    cls.initialize_solver()\n  File \"/home/tz61/IsaacLab/source/isaaclab_newton/isaaclab_newton/physics/newton_manager.py\", line 1257, in initialize_solver\n    cls._initialize_contacts()\n  File \"/home/tz61/IsaacLab/source/isaaclab_newton/isaaclab_newton/physics/mjwarp_manager.py\", line 74, in _initialize_contacts\n    rigid_contact_max=cls._solver.get_max_contact_count(),\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/tz61/env_isaaclab/lib/python3.12/site-packages/newton/_src/solvers/mujoco/solver_mujoco.py\", line 3967, in get_max_contact_count\n    raise NotImplementedError()\nNotImplementedError\n"
+}

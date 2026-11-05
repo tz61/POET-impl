@@ -1,0 +1,59 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:308)
+/home/tz61/env_isaaclab/lib/python3.12/site-packages/torch/cuda/__init__.py:1007: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+/home/tz61/IsaacLab/source/isaaclab_newton/isaaclab_newton/physics/newton_manager.py:989: FutureWarning: Newton shape color replacement is enabled; this workaround will be deprecated in a future release.
+  replace_newton_shape_colors(cls._model)
+Failed to get root com velocity. If the articulation is fixed, this is expected. Setting root com velocity to zeros.
+Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 4 != 7.
+Warp UserWarning: Kernel cache artifacts from a previous Warp version were found in '/home/tz61/Gatech/8803DRL/poet-reproduction/.cache/warp'. These will be ignored. You can safely delete them.
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 24582922
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation Last: 0.143117 s, Mean: 0.143117 s, Std: 0.000000 s, N: 1
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 2
+	Environment spacing   : 34.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+Finalize builder took: Last: 0.014530 s, Mean: 0.014530 s, Std: 0.000000 s, N: 1
+Initialize solver took: Last: 0.082558 s, Mean: 0.082558 s, Std: 0.000000 s, N: 1
+[INFO]: Time taken for simulation start Last: 0.158464 s, Mean: 0.158464 s, Std: 0.000000 s, N: 1
+[INFO]: Completed setting up the environment...
+{"stage": 0, "terrain": {"roughness": 0.0, "stump_height": 0.0, "gap_width": 0.0, "seed": 24582922}, "policy": "small_random", "returns": [-0.2976955436170101, -0.33668988780118525], "lengths": [10, 10], "successes": [false, false], "profile_sha256": "5d3a9107340cf60dcd386507d52dda544c3293caddd167335d48123e49fd3919", "missing_tiles": 0, "max_tile_height": 0.0, "source_collision_tiles": 75, "env_origins": [[17.0, 0.0, 0.0], [-17.0, 0.0, 0.0]], "anchors": [[17.0, 0.0, 0.0], [-17.0, 0.0, 0.0]]}
+Traceback (most recent call last):
+  File "/home/tz61/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/utils/sim_launcher.py", line 499, in launch_simulation
+    yield
+  File "/home/tz61/Gatech/8803DRL/poet-reproduction/isaaclab_port/diagnostics/terrain_switch.py", line 97, in main
+    np.testing.assert_allclose(values[0], values[1], rtol=1e-4, atol=1e-4,
+  File "/home/tz61/env_isaaclab/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/tz61/env_isaaclab/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0.0001, atol=0.0001
+Duplicated policies disagree across lanes
+Mismatched elements: 1 / 1 (100%)
+Max absolute difference among violations: 0.03899434
+Max relative difference among violations: 0.1158168
+ ACTUAL: array(-0.297696)
+ DESIRED: array(-0.33669)
+Traceback (most recent call last):
+  File "/home/tz61/Gatech/8803DRL/poet-reproduction/isaaclab_port/diagnostics/terrain_switch.py", line 97, in main
+    np.testing.assert_allclose(values[0], values[1], rtol=1e-4, atol=1e-4,
+  File "/home/tz61/env_isaaclab/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/tz61/env_isaaclab/lib/python3.12/site-packages/numpy/testing/_private/utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0.0001, atol=0.0001
+Duplicated policies disagree across lanes
+Mismatched elements: 1 / 1 (100%)
+Max absolute difference among violations: 0.03899434
+Max relative difference among violations: 0.1158168
+ ACTUAL: array(-0.297696)
+ DESIRED: array(-0.33669)

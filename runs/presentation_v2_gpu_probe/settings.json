@@ -1,0 +1,21 @@
+{
+  "seed": 24582922,
+  "pairs": 4,
+  "learning_rate": 0.01,
+  "lr_decay": 0.9999,
+  "lr_limit": 0.001,
+  "noise": 0.1,
+  "noise_decay": 0.999,
+  "noise_limit": 0.01,
+  "l2": 0.01,
+  "transfer_interval": 25,
+  "mutation_interval": 200,
+  "max_active": 4,
+  "children": 8,
+  "mc_lower": 50.0,
+  "mc_upper": 300.0,
+  "reproduce_score": 200.0,
+  "transfers": true,
+  "periodic_transfer_mode": "full",
+  "transfer_top_k": 1
+}

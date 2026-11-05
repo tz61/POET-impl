@@ -1,0 +1,192 @@
+{
+  "iteration": 15,
+  "checkpoint": "checkpoint_015.json",
+  "train_metrics": {
+    "requested_episodes": 688,
+    "first_episode_steps": 46233,
+    "simulated_world_steps": 123760,
+    "evaluation_wall_seconds": 890.1848195120074,
+    "evaluator_calls": 184
+  },
+  "eval_metrics": {
+    "requested_episodes": 64,
+    "first_episode_steps": 1435,
+    "simulated_world_steps": 1832,
+    "evaluation_wall_seconds": 26.719702178999796,
+    "evaluator_calls": 16
+  },
+  "wall_seconds": 917.0163713450002,
+  "evaluation": {
+    "policy_rule": "all four current theta; test-time oracle best-of-library, no adaptation",
+    "policy_matrix_sha256": "8fbe57e4ad656f5b45309b96f18b699e61a85b5ae29170aed2f26dd67fd32e7e",
+    "tasks": [
+      {
+        "task_id": "rough_low",
+        "terrain": {
+          "roughness": 0.12,
+          "stump_height": 0.0,
+          "gap_width": 0.0,
+          "seed": 4000000001
+        },
+        "returns_by_policy": [
+          -98.62880318053067,
+          -98.61007812898606,
+          -98.62796758301556,
+          -98.62880318053067
+        ],
+        "goal_successes_by_policy": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "episode_lengths_by_policy": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "terminal_x_by_policy": [
+          2.1341941356658936,
+          2.1310553550720215,
+          2.132009506225586,
+          2.1341941356658936
+        ],
+        "max_x_by_policy": [
+          2.140535354614258,
+          2.140371561050415,
+          2.1403322219848633,
+          2.140535354614258
+        ],
+        "best_library_return": -98.61007812898606,
+        "any_policy_reached_goal": false
+      },
+      {
+        "task_id": "stump_low",
+        "terrain": {
+          "roughness": 0.0,
+          "stump_height": 0.2,
+          "gap_width": 0.0,
+          "seed": 4000000004
+        },
+        "returns_by_policy": [
+          -98.65616567060351,
+          -98.64560779370368,
+          -98.66120129451156,
+          -98.65616567060351
+        ],
+        "goal_successes_by_policy": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "episode_lengths_by_policy": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "terminal_x_by_policy": [
+          2.131922960281372,
+          2.1331889629364014,
+          2.131580114364624,
+          2.131922960281372
+        ],
+        "max_x_by_policy": [
+          2.140681028366089,
+          2.140230655670166,
+          2.140237331390381,
+          2.140681028366089
+        ],
+        "best_library_return": -98.64560779370368,
+        "any_policy_reached_goal": false
+      },
+      {
+        "task_id": "gap_mid",
+        "terrain": {
+          "roughness": 0.0,
+          "stump_height": 0.0,
+          "gap_width": 0.8,
+          "seed": 4000000008
+        },
+        "returns_by_policy": [
+          -98.62861490715295,
+          -98.61162104550749,
+          -98.61367839667946,
+          -98.62861490715295
+        ],
+        "goal_successes_by_policy": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "episode_lengths_by_policy": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "terminal_x_by_policy": [
+          2.1341123580932617,
+          2.129706859588623,
+          2.1290059089660645,
+          2.1341123580932617
+        ],
+        "max_x_by_policy": [
+          2.140481472015381,
+          2.140360116958618,
+          2.14037823677063,
+          2.140481472015381
+        ],
+        "best_library_return": -98.61162104550749,
+        "any_policy_reached_goal": false
+      },
+      {
+        "task_id": "mixed_low",
+        "terrain": {
+          "roughness": 0.12,
+          "stump_height": 0.2,
+          "gap_width": 0.4,
+          "seed": 4000000010
+        },
+        "returns_by_policy": [
+          -98.64393672533333,
+          -98.64526401273906,
+          -98.6490373481065,
+          -98.64393672533333
+        ],
+        "goal_successes_by_policy": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "episode_lengths_by_policy": [
+          10,
+          10,
+          10,
+          10
+        ],
+        "terminal_x_by_policy": [
+          2.133066415786743,
+          2.1331493854522705,
+          2.1325647830963135,
+          2.133066415786743
+        ],
+        "max_x_by_policy": [
+          2.140697717666626,
+          2.140225410461426,
+          2.1402361392974854,
+          2.140697717666626
+        ],
+        "best_library_return": -98.64393672533333,
+        "any_policy_reached_goal": false
+      }
+    ],
+    "mean_best_library_return": -98.62781092338264,
+    "tasks_reached_goal": 0,
+    "task_count": 4
+  }
+}
