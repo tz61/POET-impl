@@ -5,9 +5,10 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def activate(noise_count=1_000_000):
+def activate(noise_count=1_000_000, workers=1):
     sys.path.insert(0, str(ROOT / "upstream"))
-    sys.path.insert(0, str(ROOT / "local_runtime"))
+    # One worker keeps the serial adapter; more use real processes.
+    sys.path.insert(0, str(ROOT / "local_runtime" / ("parallel" if workers > 1 else "")))
     import numpy as np
     import Box2D  # fail early, before creating experiment output
     import gym
@@ -22,6 +23,8 @@ def activate(noise_count=1_000_000):
 
     noise_module.SharedNoiseTable.__init__ = local_noise_init
     from poet_distributed import es
+    # Upstream caches by (iteration, optim_id), but candidate optimizers restart
+    # iteration at 0, so a worker could evaluate a stale theta or niche seed.
     es.fiber_get_theta = getattr(es.fiber_get_theta, "__wrapped__", es.fiber_get_theta)
     es.fiber_get_niche = getattr(es.fiber_get_niche, "__wrapped__", es.fiber_get_niche)
     from poet_distributed.niches.box2d import bipedal_walker_custom as walker
@@ -32,4 +35,5 @@ def activate(noise_count=1_000_000):
     return {"numpy": np.__version__, "gym": gym.__version__,
             "Box2D": getattr(Box2D, "__version__", "unknown"),
             "python": sys.version, "noise_count": noise_count,
-            "backend": "serial", "seeding": "Gym 0.17.3"}
+            "backend": "multiprocessing" if workers > 1 else "serial",
+            "workers": workers, "seeding": "Gym 0.17.3"}

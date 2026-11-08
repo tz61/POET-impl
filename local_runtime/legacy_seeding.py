@@ -6,7 +6,11 @@ import random as _random
 import struct
 import sys
 
-from gym import error
+try:
+    from gym import error
+except ImportError:  # The Isaac Lab environment has no gym, only this seed mapping is needed.
+    from types import SimpleNamespace
+    error = SimpleNamespace(Error=ValueError)
 
 def np_random(seed=None):
     if seed is not None and not (isinstance(seed, int) and 0 <= seed):

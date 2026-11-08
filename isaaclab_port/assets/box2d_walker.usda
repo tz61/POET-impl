@@ -1,0 +1,367 @@
+#usda 1.0
+(
+    defaultPrim = "planar_biped"
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "planar_biped" (
+    prepend apiSchemas = ["PhysicsArticulationRootAPI"]
+    doc = "Local planar biped: passive x/z/pitch base and four hip/knee torque joints."
+)
+{
+    def "Materials"
+    {
+        def Material "contact" (
+            prepend apiSchemas = ["PhysicsMaterialAPI"]
+        )
+        {
+            float physics:dynamicFriction = 0.9
+            float physics:restitution = 0
+            float physics:staticFriction = 0.9
+        }
+    }
+
+    def Xform "anchor" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float3 physics:diagonalInertia = (0.01, 0.01, 0.01)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 1
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Xform "x_carriage" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float3 physics:diagonalInertia = (0.000001, 0.000001, 0.000001)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 0.001
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Xform "z_carriage" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, 0)
+        float3 physics:diagonalInertia = (0.000001, 0.000001, 0.000001)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 0.001
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Xform "hull" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (-0.020036437, 0, -0.0056466404)
+        float3 physics:diagonalInertia = (1.999395, 1.999395, 1.999395)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 5.4222226
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "visual_0"
+        {
+            color3f[] primvars:displayColor = [(0.5, 0.4, 0.9)]
+            double size = 1
+            float3 xformOp:scale = (2.1333334, 0.2, 0.56666666)
+            double3 xformOp:translate = (0.06666666666666665, 0, 0.016666666666666663)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+
+    def Xform "left_upper" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, -0.56666666)
+        float3 physics:diagonalInertia = (0.03413992, 0.03413992, 0.03413992)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 0.30222222
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, 0.2, -0.26666666666666666)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "visual_0"
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.3, 0.5)]
+            double size = 1
+            float3 xformOp:scale = (0.26666668, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "collision_0" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+        )
+        {
+            rel material:binding:physics = </planar_biped/Materials/contact>
+            bool physics:collisionEnabled = 1
+            double size = 1
+            token visibility = "invisible"
+            float3 xformOp:scale = (0.26666668, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+
+    def Xform "left_lower" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, -0.56666666)
+        float3 physics:diagonalInertia = (0.026796144, 0.026796144, 0.026796144)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 0.24177778
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, 0.2, -1.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "visual_0"
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.3, 0.5)]
+            double size = 1
+            float3 xformOp:scale = (0.21333334, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "collision_0" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+        )
+        {
+            rel material:binding:physics = </planar_biped/Materials/contact>
+            bool physics:collisionEnabled = 1
+            double size = 1
+            token visibility = "invisible"
+            float3 xformOp:scale = (0.21333334, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+
+    def Xform "right_upper" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, -0.56666666)
+        float3 physics:diagonalInertia = (0.03413992, 0.03413992, 0.03413992)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 0.30222222
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, -0.2, -0.26666666666666666)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "visual_0"
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.3, 0.5)]
+            double size = 1
+            float3 xformOp:scale = (0.26666668, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "collision_0" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+        )
+        {
+            rel material:binding:physics = </planar_biped/Materials/contact>
+            bool physics:collisionEnabled = 1
+            double size = 1
+            token visibility = "invisible"
+            float3 xformOp:scale = (0.26666668, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+
+    def Xform "right_lower" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+    )
+    {
+        point3f physics:centerOfMass = (0, 0, -0.56666666)
+        float3 physics:diagonalInertia = (0.026796144, 0.026796144, 0.026796144)
+        bool physics:kinematicEnabled = 0
+        float physics:mass = 0.24177778
+        quatf physics:principalAxes = (1, 0, 0, 0)
+        bool physics:rigidBodyEnabled = 1
+        double3 xformOp:translate = (0, -0.2, -1.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "visual_0"
+        {
+            color3f[] primvars:displayColor = [(0.6, 0.3, 0.5)]
+            double size = 1
+            float3 xformOp:scale = (0.21333334, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "collision_0" (
+            prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+        )
+        {
+            rel material:binding:physics = </planar_biped/Materials/contact>
+            bool physics:collisionEnabled = 1
+            double size = 1
+            token visibility = "invisible"
+            float3 xformOp:scale = (0.21333334, 0.1, 1.1333333)
+            double3 xformOp:translate = (0, 0, -0.5666666666666667)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+
+    def "joints"
+    {
+        def PhysicsFixedJoint "anchor_world_fixed"
+        {
+            rel physics:body1 = </planar_biped/anchor>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsPrismaticJoint "root_x"
+        {
+            uniform token physics:axis = "X"
+            rel physics:body0 = </planar_biped/anchor>
+            rel physics:body1 = </planar_biped/x_carriage>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -1000
+            float physics:upperLimit = 1000
+        }
+
+        def PhysicsPrismaticJoint "root_z"
+        {
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </planar_biped/x_carriage>
+            rel physics:body1 = </planar_biped/z_carriage>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -1000
+            float physics:upperLimit = 1000
+        }
+
+        def PhysicsRevoluteJoint "root_pitch"
+        {
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </planar_biped/z_carriage>
+            rel physics:body1 = </planar_biped/hull>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsRevoluteJoint "left_hip" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 5.2359877
+            float drive:angular:physics:maxForce = 80
+            float drive:angular:physics:stiffness = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </planar_biped/hull>
+            rel physics:body1 = </planar_biped/left_upper>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.2, -0.26666668)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -63.025356
+            float physics:upperLimit = 45.836624
+        }
+
+        def PhysicsRevoluteJoint "left_knee" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 5.2359877
+            float drive:angular:physics:maxForce = 80
+            float drive:angular:physics:stiffness = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </planar_biped/left_upper>
+            rel physics:body1 = </planar_biped/left_lower>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, -1.1333333)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 5.729578
+            float physics:upperLimit = 91.67325
+        }
+
+        def PhysicsRevoluteJoint "right_hip" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 5.2359877
+            float drive:angular:physics:maxForce = 80
+            float drive:angular:physics:stiffness = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </planar_biped/hull>
+            rel physics:body1 = </planar_biped/right_upper>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, -0.2, -0.26666668)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -63.025356
+            float physics:upperLimit = 45.836624
+        }
+
+        def PhysicsRevoluteJoint "right_knee" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 5.2359877
+            float drive:angular:physics:maxForce = 80
+            float drive:angular:physics:stiffness = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </planar_biped/right_upper>
+            rel physics:body1 = </planar_biped/right_lower>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, -1.1333333)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 5.729578
+            float physics:upperLimit = 91.67325
+        }
+    }
+}
+

@@ -35,12 +35,51 @@ def write_json(path, value):
     tmp.replace(path)
 
 
+def trim_logs(output, next_iteration):
+    """Drop rows past the checkpoint, and any partial last line, so a resumed run repeats nothing."""
+    path = output / "metrics.csv"
+    if path.exists():
+        lines = path.read_text().splitlines()
+        path.write_text("".join(line + "\n" for line in lines[:1] + [
+            line for line in lines[1:] if int(line.split(",", 1)[0]) < next_iteration]))
+    path = output / "events.jsonl"
+    if path.exists():
+        kept = []
+        for line in path.read_text().splitlines():
+            try:
+                if json.loads(line)["iteration"] < next_iteration:
+                    kept.append(line)
+            except json.JSONDecodeError:
+                pass
+        path.write_text("".join(line + "\n" for line in kept))
+
+
+def reject_unbuildable(evaluate, report):
+    """Score a course Box2D cannot build as failing the minimal criterion.
+
+    Once a stump height range starts at 0, the official terrain code can draw a stump
+    so thin that Box2D's float32 area check raises, which would end the whole run.
+    """
+    def wrapped(self, theta):
+        try:
+            return evaluate(self, theta)
+        except AssertionError as error:
+            if "b2_epsilon" not in str(error):
+                raise
+            report(self.optim_id)
+            return float("-inf")
+    return wrapped
+
+
 def parse_args():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--profile", choices=PROFILES, default="smoke")
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--iterations", type=int, help="Total iteration count (also when resuming)")
     p.add_argument("--seed", type=int, default=24582922)
+    p.add_argument("--workers", type=int, default=1, help="Rollout processes; 1 uses the serial adapter")
+    p.add_argument("--max-envs", type=int, help="Override the active environment cap")
+    p.add_argument("--max-children", type=int, help="Override mutation candidates per reproduction event")
     p.add_argument("--resume", type=Path, help="Only load checkpoints you trust (Python pickle)")
     p.add_argument("--no-transfer", action="store_true", help="Disable alternate-donor child initialization and periodic transfers")
     p.add_argument("--max-seconds", type=float, default=0, help="Stop cleanly at an iteration boundary; 0 disables limit")
@@ -53,7 +92,7 @@ def config_for(cli):
     d = dict(PROFILES[cli.profile])
     d.update(init="random", learning_rate=0.01, lr_decay=0.9999, lr_limit=0.001,
              noise_std=0.1, noise_decay=0.999, noise_limit=0.01, l2_coeff=0.01,
-             eval_batch_size=1, num_workers=1, master_seed=cli.seed,
+             eval_batch_size=1, num_workers=cli.workers, master_seed=cli.seed,
              mc_lower=50, mc_upper=300, repro_threshold=200,
              normalize_grads_by_noise_std=True, propose_with_adam=True,
              checkpointing=False, returns_normalization="centered_ranks",
@@ -62,6 +101,10 @@ def config_for(cli):
              profile=cli.profile, episode_limit=2000)
     if cli.iterations is not None:
         d["n_iterations"] = cli.iterations
+    if cli.max_envs is not None:
+        d["max_num_envs"] = cli.max_envs
+    if cli.max_children is not None:
+        d["max_children"] = cli.max_children
     if d["n_iterations"] < 1 or cli.checkpoint_every < 1:
         raise ValueError("iterations and checkpoint-every must be positive")
     return d
@@ -74,8 +117,18 @@ def main():
         print(json.dumps(config, indent=2))
         return 0
     output = cli.output.resolve()
+    if not cli.resume and output.exists() and any(output.iterdir()):
+        raise ValueError(f"Output is not empty: {output}; choose a new directory or --resume")
+
+    from local_runtime.bootstrap import activate
+    try:
+        versions = activate(config["noise_count"], config["num_workers"])
+    except ImportError as exc:
+        print(f"Dependency unavailable: {exc}\nRun ./setup.sh from {ROOT} in a network-enabled terminal.", file=sys.stderr)
+        return 2
     checkpoint = None
     if cli.resume:
+        # Unpickling needs poet_distributed, which activate() puts on sys.path.
         with cli.resume.open("rb") as f:
             checkpoint = pickle.load(f)
         old = checkpoint["config"]
@@ -84,15 +137,7 @@ def main():
                 raise ValueError(f"Resume configuration differs: {k}")
         if config["n_iterations"] <= checkpoint["next_iteration"]:
             raise ValueError("--iterations must exceed completed checkpoint iterations")
-    elif output.exists() and any(output.iterdir()):
-        raise ValueError(f"Output is not empty: {output}; choose a new directory or --resume")
-
-    from local_runtime.bootstrap import activate
-    try:
-        versions = activate(config["noise_count"])
-    except ImportError as exc:
-        print(f"Dependency unavailable: {exc}\nRun ./setup.sh from {ROOT} in a network-enabled terminal.", file=sys.stderr)
-        return 2
+        trim_logs(output, checkpoint["next_iteration"])
     import numpy as np
     from poet_distributed import es
     from poet_distributed.poet_algo import MultiESOptimizer
@@ -119,15 +164,19 @@ def main():
     def event(kind, **data):
         events_file.write(json.dumps(dict(iteration=phase["iteration"], event=kind, **data)) + "\n")
 
-    original_simulate = niche_module.simulate
+    original_get_chunk = es.ESOptimizer.get_chunk
 
-    def counted_simulate(*a, **kw):
-        scores, lengths = original_simulate(*a, **kw)
-        counters["episodes"] += len(scores)
-        counters["environment_steps"] += sum(int(t) + 1 for t in lengths)
-        return scores, lengths
+    def counted_get_chunk(self, tasks):
+        # Rollouts run in workers, so count them where results reach the master.
+        results = original_get_chunk(self, tasks)
+        for result in results:
+            counters["episodes"] += int(result.lengths.size)
+            counters["environment_steps"] += int(result.lengths.sum()) + int(result.lengths.size)
+        return results
 
-    niche_module.simulate = counted_simulate
+    es.ESOptimizer.get_chunk = counted_get_chunk
+    es.ESOptimizer.evaluate_theta = reject_unbuildable(
+        es.ESOptimizer.evaluate_theta, lambda name: event("candidate_unbuildable", environment=name))
     original_update = es.ESOptimizer.update_dicts_after_transfer
     original_pick = es.ESOptimizer.pick_proposal
 
@@ -205,8 +254,10 @@ def main():
         zoo.env_reproducer.rs.set_state(checkpoint["reproducer_rng"])
         np.random.set_state(checkpoint["numpy_rng"])
         random.setstate(checkpoint["python_rng"])
-        zoo.fiber_pool._numpy_state = checkpoint["worker_numpy_rng"]
-        zoo.fiber_pool._python_state = checkpoint["worker_python_rng"]
+        # Real workers reseed from the niche for each rollout, so only serial state is saved.
+        if checkpoint["worker_numpy_rng"] is not None:
+            zoo.fiber_pool._numpy_state = checkpoint["worker_numpy_rng"]
+            zoo.fiber_pool._python_state = checkpoint["worker_python_rng"]
         zoo.restoring = False
         start_iteration = checkpoint["next_iteration"]
         event("resumed", next_iteration=start_iteration)
@@ -220,8 +271,8 @@ def main():
         data = dict(config=config, next_iteration=next_iteration, optimizers=items,
                     archive=zoo.env_archive, parent_names=zoo.parent_names,
                     reproducer_rng=zoo.env_reproducer.rs.get_state(), numpy_rng=np.random.get_state(),
-                    python_rng=random.getstate(), worker_numpy_rng=zoo.fiber_pool._numpy_state,
-                    worker_python_rng=zoo.fiber_pool._python_state, counters=counters.copy(),
+                    python_rng=random.getstate(), worker_numpy_rng=getattr(zoo.fiber_pool, "_numpy_state", None),
+                    worker_python_rng=getattr(zoo.fiber_pool, "_python_state", None), counters=counters.copy(),
                     wall_seconds=cumulative_time + time.monotonic() - clock_start)
         tmp = output / "checkpoint.pkl.tmp"
         tmp.write_bytes(pickle.dumps(data, protocol=pickle.HIGHEST_PROTOCOL))

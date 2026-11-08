@@ -1,16 +1,23 @@
 # POET on Isaac Lab 3
 
-A local port of [Paired Open-Ended Trailblazer (POET)](https://arxiv.org/abs/1901.01753) to a planar biped in Isaac Lab 3, with one modification: an optional screen that limits which donors get a one-step adaptation during periodic transfer. Course project for CS 8803 Deep Reinforcement Learning, Team 33 / Paper 44. Slides and video materials are in a separate repository, POET-slides.
+A port of [Paired Open-Ended Trailblazer (POET)](https://arxiv.org/abs/1901.01753) to Isaac Lab 3, with one modification: an optional screen that limits which donors get a one-step adaptation during periodic transfer (Top-1). Course project for CS 8803 Deep Reinforcement Learning, Team 33 / Paper 44. Slides and video materials are in a separate repository, POET-slides.
 
-It keeps POET's core mechanism: paired environments and policies, evolution strategies (ES), the minimal criterion, novelty, and direct and proposal transfer. The robot dynamics, terrain representation, and observations all differ, so **this is not a numeric reproduction of the paper's Box2D experiments**, and scores here cannot be compared with the paper's.
+The repository holds three things:
+
+- **The Box2D walker port (main).** `isaaclab_port/walker/` and `train_walker.py` run the official Box2D walker task (observation with lidar, reward, termination, velocity-servo motors, course generator) on Newton with the MuJoCo-Warp solver, thousands of worlds at once on one GPU, with the full POET loop.
+- **The official code.** `run_local.py` runs the authors' unmodified Box2D POET (`upstream/`), now with multiprocessing workers, as the reference.
+- **An earlier planar-biped port.** `isaaclab_port/core.py`, `env.py` and `train_isaaclab.py`, with its records in `experiments/`. That biped never learned to walk; it is kept for the record.
 
 ## Current status
 
-- **No policy has learned to walk.** Across the 5,880 recorded physics evaluations in `experiments/`, the best return is 11.88 and no policy reaches the goal.
-- **Environment evolution has not run on physics.** A parent needs a return of at least 200 to reproduce, and no run has reached that. The physics comparison also ran with reproduction disabled.
-- **The recorded failure ends on the torso pitch limit.** The preselected replay terminates at 0.20 s with torso pitch −1.32 rad (limit 1.3) and the hip still 0.88 m high; see `evidence/physics_replay.json`.
-- **What has been verified:** the unit tests, the synthetic transfer mechanism test, and the nine-run fixed-task physics comparison with its audit (see [Verification](#verification)).
-- **Whether Top-1 preserves transfer quality is open.** The current data cannot show it.
+Results at iteration 2000 (8% of the paper's 25,200 iterations), 3 seeds per mode, Isaac Lab 3 Beta 2:
+
+- **The full algorithm runs in both simulators.** On the GPU port each run admits about 9 environments; the hardest it solves is below the paper's *challenging* level. The official Box2D run (1 seed) passed iteration 2,449. The paper's claims about *challenging* courses are therefore untested here.
+- **The simulator decides the ranking.** On a frozen bank of 128 unseen courses, scored on GPU with 20 rollouts per course, No transfer solves the most (19.3 of 128 vs. 15.0 for Full and 10.0 for Top-1). Replaying the same policies in official Box2D flips the order (No transfer 8.0, Full 11.7, Top-1 11.3). Seed ranges overlap, so neither ordering is established.
+- **The port is a sibling simulator, not a copy.** Replaying all 145 iteration-2000 policies on their own training courses: 103 score at least 230 on GPU, only 23 of those solve the course in Box2D, and the two scores correlate at 0.13. MuJoCo's soft contacts at 200 Hz replace Box2D's rigid solver at 50 Hz.
+- **Top-1** uses 8% fewer environment steps and 20% fewer rollouts than Full, with no detectable loss in Box2D at equal iterations. It is not shown to be better.
+- **Transfer on noisy GPU scores** accepts false winners (about half of accepted direct transfers are not truly better), and each acceptance resets Adam, which late in training happens to 54-77% of targets at every transfer event. The default-off option `transfer_confirm_rollouts` rescores winner and incumbent before replacing; it helps on GPU but not in Box2D.
+- The frozen numbers behind these statements are exported by `tools/export_results.py` and stored in POET-slides at `slides/data/walker_results.json`. Raw runs stay in the ignored `runs/` folder.
 
 ## Installation
 
@@ -35,6 +42,44 @@ Check the environment with:
 ## Running
 
 Run all commands from the repository root. Each run needs a new or empty `--output` directory.
+
+### Box2D walker port (main)
+
+```bash
+# POET matrix: every mode x seed is a thread sharing one GPU simulation
+~/env_isaaclab/bin/python train_walker.py --output runs/walker_main --num_envs 8192 \
+  --iterations 2000 --seeds 24582922 24582923 24582924 --modes full topk no_transfer
+# Same arguments plus --resume continue from the checkpoints (saved every 25 iterations)
+
+# Transfer with confirmation on 40 fresh rollouts (our deviation, default off)
+~/env_isaaclab/bin/python train_walker.py --output runs/confirm_main --num_envs 8192 \
+  --iterations 2000 --seeds 24582922 24582923 24582924 --modes full_confirm topk_confirm
+
+# Paper tests 1-2: direct ES and a direct curriculum on POET-solved targets
+python3 tools/make_targets.py runs/walker_main --output targets.json --per_level 1
+~/env_isaaclab/bin/python train_walker.py --output runs/controls --num_envs 8192 \
+  --targets targets.json --seeds 24582922 24582923 24582924 24582925 24582926 --modes direct curriculum
+
+# Frozen bank of 128 courses, on GPU and in official Box2D, then the comparison
+python3 tools/compare_walker.py list runs/walker_main runs/walker_main_snapshots > checkpoints.txt
+xargs -a checkpoints.txt ~/env_isaaclab/bin/python tools/eval_walker_bank.py --headless \
+  --num_envs 8192 --repeats 20 --output bank_gpu.json
+xargs -a checkpoints.txt .venv/bin/python tools/eval_box2d_bank.py --bank bank_gpu.json \
+  --workers 6 --output bank_box2d.json
+python3 tools/compare_walker.py report bank_box2d.json --iteration 2000
+```
+
+`tools/snapshot_checkpoints.sh` keeps a copy of each checkpoint every 100 iterations, which the equal-compute comparison needs. `tools/summarize_walker.py` summarizes runs; `tools/eval_in_box2d.py` and `tools/eval_box2d_policy_gpu.py` replay policies across the two simulators.
+
+### Official Box2D code
+
+```bash
+.venv/bin/python run_local.py --profile paper --iterations 3000 --workers 14 \
+  --checkpoint-every 25 --output runs/box2d_main_s24582922
+# Add --resume runs/box2d_main_s24582922/checkpoint.pkl to continue
+```
+
+### Earlier planar-biped port
 
 Short smoke tests, which use real physics and a very small budget:
 
@@ -85,6 +130,10 @@ Notes:
 
 ## Repository layout
 
+- `isaaclab_port/walker/`: the Box2D walker port. `env.py` is the Isaac Lab `DirectRLEnv` on Newton MJWarp, `terrain.py` the official course generator as per-world collision windows, `engine.py` a rollout queue shared by many POET runs, `poet.py` POET with Full, Top-1, no-transfer and confirmation modes, `spec.py` the official constants.
+- `isaaclab_port/assets/box2d_walker.*`: the walker's URDF and USDA, and the script that generates them.
+- `train_walker.py`: runs many POET, direct-ES or curriculum runs at once on one GPU simulation.
+- `tools/`: target selection, bank evaluation on GPU and in Box2D, comparison at equal iterations and equal steps, cross-simulator replays, summaries, and the results export.
 - `isaaclab_port/core.py`: POET population, ES, environment mutation, 5-NN novelty, transfer, and JSON checkpoints. Reuses Adam and centered ranks from the official source.
 - `isaaclab_port/env.py`: Isaac Lab `DirectRLEnv` with four torques, a 30 m course, and fall, goal, and time-limit handling.
 - `isaaclab_port/runtime.py`: one independent policy per parallel world; only the first episode is scored, masking extra reward after automatic reset.
@@ -95,7 +144,7 @@ Notes:
 - `tests/`: unit tests.
 - `upstream/`: unmodified official `original_poet` source (Apache-2.0); all 23 files match their Git blobs, recorded in `UPSTREAM_SOURCE.json`.
 - `ORIGINAL_BASELINE.md`: differences between the paper and the official Box2D example.
-- `run_local.py`, `local_runtime/`, `vendor/box2d-source/`: an earlier Box2D entry point. It was never validated in a real Box2D run and is not the current target.
+- `run_local.py`, `local_runtime/`, `vendor/box2d-source/`: the entry point for the official Box2D code. `--workers` runs rollouts in processes (`local_runtime/parallel/`), and `--resume` continues from a checkpoint. A course that Box2D cannot build is scored as failing the minimal criterion instead of ending the run.
 - `runs/`: the short diagnostic runs cited below. New output in this folder is ignored by git.
 
 ## Task and parameters
@@ -142,7 +191,7 @@ Recorded checks on Beta 2:
 | Check | Result and evidence |
 | --- | --- |
 | Upstream source integrity | Git blob SHA-1 of all 23 files matches `UPSTREAM_SOURCE.json`. |
-| Unit tests | 42 pass, covering ES, transfer, checkpoints, batched policies, first-episode scoring, non-finite state detection, task compatibility, and periodic Top-K. No physics simulation needed. |
+| Unit tests | 76 run, 71 pass and 5 skip, covering ES, transfer, confirmation, checkpoints and resume, batched policies, first-episode scoring, the walker port's constants and terrain, the comparison tools, and periodic Top-K. No physics simulation needed. |
 | Zero-torque ground contact | Featherstone with 16 substeps, 20 actions, states finite and motion bounded throughout; `isaaclab_port/diagnostics/biped_zero_featherstone_sub16.json`. This only validates short-term dynamics. |
 | Terrain rebuild and parallel consistency | 2 independent worlds, flat → rough/gap → flat, 12 evaluations; the same policy gets the same return in both worlds and after rebuild; collision tiles go 75 → 73 → 75; `isaaclab_port/diagnostics/terrain_switch_spacing0.json`. Crossing obstacles was not validated. |
 | ES on CPU | `runs/isaaclab_cpu_stable/summary.json`: 3 rounds, 4 perturbation pairs each, 27 episodes, best return −98.576367. The policy fell early. |
@@ -152,7 +201,7 @@ Recorded checks on Beta 2:
 
 Early `runs/isaaclab_cpu_smoke` used 1 substep, was unstable, and is marked `rejected_unstable_dynamics`, so it is not evidence of training success. `terrain_switch_spacing34.json` keeps the parallel differences from the original scene translation, which led to independent worlds with a shared origin.
 
-GA training and graphical replay remain unverified. A full paper-level conclusion would still need sufficient training, independent seeds, and budget-matched comparisons with direct ES, a direct-path curriculum, and no-transfer POET. This project claims no reproduction of the paper's hard-terrain solve rate, coverage, or advantage.
+The rows above describe the earlier planar-biped port. GA training and graphical replay remain unverified. The walker results in [Current status](#current-status) use 8% of the paper's iterations and 3 seeds, and no run reached a *challenging* course, so this project claims no reproduction of the paper's hard-terrain solve rate, coverage, or advantage.
 
 ## License and attribution
 
